@@ -1,0 +1,236 @@
+[2011-02-01 00:47:31][系統]System initialize
+[2011-02-01 00:47:31][錯誤]Basic Sys Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Card Type Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Discount Plan Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Group Type Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Fee Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Pay Mode Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Station Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Accounting File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Receipt Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Peripheral Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Communication Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Date Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Group Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Car Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Time Zone Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Unit Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][錯誤]Fix Rule Settings File Reading Error, use init data instead!
+[2011-02-01 00:47:31][系統]Socket Listen start Successful.
+[2011-02-01 00:47:32][系統]login by "NORVASEA","X65536"
+[2011-02-01 00:47:32][系統]Login successful.
+[2011-02-01 00:47:32][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 00:48:17][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 00:48:21][系統]System normal exit.
+[2011-02-01 00:48:21][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2011-02-01 01:15:15][系統]System initialize
+[2011-02-01 01:15:15][系統]Socket Listen start Successful.
+[2011-02-01 01:15:17][系統]login by "NORVASEA","X65536"
+[2011-02-01 01:15:17][系統]Login successful.
+[2011-02-01 01:15:17][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 01:15:47][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 01:17:10][系統]System initialize
+[2011-02-01 01:17:11][系統]Socket Listen start Successful.
+[2011-02-01 01:17:12][系統]login by "NORVASEA","X65536"
+[2011-02-01 01:17:12][系統]Login successful.
+[2011-02-01 01:17:12][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 09:26:16][系統]System initialize
+[2011-02-01 09:26:16][系統]Socket Listen start Successful.
+[2011-02-01 09:26:18][系統]login by "NORVASEA","X65536"
+[2011-02-01 09:26:18][系統]Login successful.
+[2011-02-01 09:26:18][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 09:31:07][系統]System initialize
+[2011-02-01 09:31:07][系統]Socket Listen start Successful.
+[2011-02-01 09:31:08][系統]login by "NORVASEA","X65536"
+[2011-02-01 09:31:08][系統]Login successful.
+[2011-02-01 09:31:08][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 09:49:03][系統]System initialize
+[2011-02-01 09:49:03][系統]Socket Listen start Successful.
+[2011-02-01 09:49:04][系統]login by "NORVASEA","X65536"
+[2011-02-01 09:49:04][系統]Login successful.
+[2011-02-01 09:49:04][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 09:56:05][詳情]recv successful: 266
+[2011-02-01 09:56:05][操作員]Recv Command: <Station Information>.
+[2011-02-01 09:56:05][操作員]Send Command: <Station Information success reply>.
+[2011-02-01 09:56:14][詳情]recv successful: 1259
+[2011-02-01 09:56:14][操作員]Recv Command: <Fee park rate>.
+[2011-02-01 09:56:15][操作員]Send Command: <Fee park rate success reply>.
+[2011-02-01 09:56:22][詳情]recv successful: 155
+[2011-02-01 09:56:22][操作員]Recv Command: <Timezone park rate>.
+[2011-02-01 09:56:22][操作員]Send Command: <Timezone park rate success reply>.
+[2011-02-01 09:56:25][詳情]recv successful: 69
+[2011-02-01 09:56:25][操作員]Recv Command: <Vehicle park rate>.
+[2011-02-01 09:56:25][操作員]Send Command: <Vehicle park rate success reply>.
+[2011-02-01 09:56:29][詳情]recv successful: 69
+[2011-02-01 09:56:29][操作員]Recv Command: <Group park rate>.
+[2011-02-01 09:56:29][操作員]Send Command: <Group park rate success reply>.
+[2011-02-01 09:57:59][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 09:57:59][錯誤]Send buffer command error! Auto retry.
+[2011-02-01 09:57:59][系統]System normal exit.
+[2011-02-01 09:57:59][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2011-02-01 09:59:30][系統]System initialize
+[2011-02-01 09:59:31][系統]Socket Listen start Successful.
+[2011-02-01 09:59:32][系統]login by "NORVASEA","X65536"
+[2011-02-01 09:59:32][系統]Login successful.
+[2011-02-01 09:59:32][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 09:59:32][詳情]recv successful: 29
+[2011-02-01 09:59:32][操作員]Recv Command: <Time Synchronize>.
+[2011-02-01 09:59:32][操作員]Send Command: <Time Synchronize failure reply>.
+[2011-02-01 10:02:00][詳情]recv successful: 155
+[2011-02-01 10:02:00][操作員]Recv Command: <Timezone park rate>.
+[2011-02-01 10:02:00][操作員]Send Command: <Timezone park rate success reply>.
+[2011-02-01 10:25:32][系統]System initialize
+[2011-02-01 10:25:32][系統]Socket Listen start Successful.
+[2011-02-01 10:25:33][系統]login by "NORVASEA","X65536"
+[2011-02-01 10:25:33][系統]Login successful.
+[2011-02-01 10:25:33][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 10:25:34][詳情]recv successful: 29
+[2011-02-01 10:25:34][操作員]Recv Command: <Time Synchronize>.
+[2011-02-01 10:25:34][操作員]Send Command: <Time Synchronize failure reply>.
+[2011-02-01 12:07:57][系統]System initialize
+[2011-02-01 12:07:57][系統]Socket Listen start Successful.
+[2011-02-01 12:07:58][系統]login by "NORVASEA","X65536"
+[2011-02-01 12:07:58][系統]Login successful.
+[2011-02-01 12:07:58][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 12:07:58][詳情]recv successful: 29
+[2011-02-01 12:07:58][操作員]Recv Command: <Time Synchronize>.
+[2011-02-01 12:07:58][操作員]Send Command: <Time Synchronize failure reply>.
+[2011-02-01 12:08:07][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:08:08][詳情]SendOk TickCount: 11316889
+[2011-02-01 12:08:08][詳情]RecvOK TickCount: 11317123
+[2011-02-01 12:08:08][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:08:42][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:08:42][詳情]SendOk TickCount: 11351506
+[2011-02-01 12:08:42][詳情]RecvOK TickCount: 11351584
+[2011-02-01 12:08:48][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:08:48][詳情]SendOk TickCount: 11357293
+[2011-02-01 12:08:48][詳情]RecvOK TickCount: 11357325
+[2011-02-01 12:09:50][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:09:50][詳情]SendOk TickCount: 11419663
+[2011-02-01 12:09:50][詳情]RecvOK TickCount: 11419678
+[2011-02-01 12:09:50][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:09:54][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:09:54][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:10:25][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:10:25][詳情]SendOk TickCount: 11454233
+[2011-02-01 12:10:25][詳情]RecvOK TickCount: 11454248
+[2011-02-01 12:10:25][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:10:30][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:10:30][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:11:15][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:11:15][詳情]SendOk TickCount: 11504543
+[2011-02-01 12:11:15][詳情]RecvOK TickCount: 11504558
+[2011-02-01 12:11:15][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:11:16][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:11:17][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:12:55][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:12:55][詳情]SendOk TickCount: 11604243
+[2011-02-01 12:12:55][詳情]RecvOK TickCount: 11604259
+[2011-02-01 12:12:55][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:12:56][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:12:56][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:13:29][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:13:29][詳情]SendOk TickCount: 11638048
+[2011-02-01 12:13:29][詳情]RecvOK TickCount: 11638048
+[2011-02-01 12:13:37][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:13:37][詳情]SendOk TickCount: 11646675
+[2011-02-01 12:13:37][詳情]RecvOK TickCount: 11646675
+[2011-02-01 12:13:37][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:14:05][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:14:05][詳情]SendOk TickCount: 11674444
+[2011-02-01 12:14:05][詳情]RecvOK TickCount: 11674459
+[2011-02-01 12:14:05][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:14:07][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:14:07][詳情]SendOk TickCount: 11676487
+[2011-02-01 12:14:07][詳情]RecvOK TickCount: 11676503
+[2011-02-01 12:14:07][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:14:09][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:14:09][詳情]SendOk TickCount: 11678640
+[2011-02-01 12:14:09][詳情]RecvOK TickCount: 11678656
+[2011-02-01 12:14:09][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:14:13][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:14:13][詳情]SendOk TickCount: 11682400
+[2011-02-01 12:14:13][詳情]RecvOK TickCount: 11682415
+[2011-02-01 12:14:13][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:14:21][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:14:21][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:14:37][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:18:21][系統]System initialize
+[2011-02-01 12:18:22][系統]Socket Listen start Successful.
+[2011-02-01 12:18:23][系統]login by "NORVASEA","X65536"
+[2011-02-01 12:18:23][系統]Login successful.
+[2011-02-01 12:18:23][操作員]Send Command: <Time Synchronize>.
+[2011-02-01 12:18:23][詳情]recv successful: 29
+[2011-02-01 12:18:23][操作員]Recv Command: <Time Synchronize>.
+[2011-02-01 12:18:23][操作員]Send Command: <Time Synchronize failure reply>.
+[2011-02-01 12:19:21][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:19:21][詳情]SendOk TickCount: 11990361
+[2011-02-01 12:19:21][詳情]RecvOK TickCount: 11990517
+[2011-02-01 12:19:21][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:19:26][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:19:26][詳情]SendOk TickCount: 11994979
+[2011-02-01 12:19:26][詳情]RecvOK TickCount: 11995135
+[2011-02-01 12:19:26][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:19:35][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:19:35][詳情]SendOk TickCount: 12004354
+[2011-02-01 12:19:35][詳情]RecvOK TickCount: 12004510
+[2011-02-01 12:19:35][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:19:38][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:19:39][詳情]SendOk TickCount: 12007958
+[2011-02-01 12:19:39][詳情]RecvOK TickCount: 12008052
+[2011-02-01 12:19:39][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:19:59][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:19:59][詳情]SendOk TickCount: 12028472
+[2011-02-01 12:19:59][詳情]RecvOK TickCount: 12028581
+[2011-02-01 12:19:59][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:20:58][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:20:58][詳情]SendOk TickCount: 12087597
+[2011-02-01 12:20:58][詳情]RecvOK TickCount: 12087706
+[2011-02-01 12:20:58][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:21:01][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:21:01][詳情]SendOk TickCount: 12089968
+[2011-02-01 12:21:01][詳情]RecvOK TickCount: 12090077
+[2011-02-01 12:21:01][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:21:22][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:21:22][詳情]SendOk TickCount: 12111449
+[2011-02-01 12:21:22][詳情]RecvOK TickCount: 12111558
+[2011-02-01 12:21:22][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:21:24][操作員]Buffer Command: <UpdateTrans>.
+[2011-02-01 12:21:25][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-01 12:21:37][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:21:38][詳情]SendOk TickCount: 12126846
+[2011-02-01 12:21:38][詳情]RecvOK TickCount: 12126956
+[2011-02-01 12:22:02][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:22:02][詳情]SendOk TickCount: 12151682
+[2011-02-01 12:22:02][詳情]RecvOK TickCount: 12151775
+[2011-02-01 12:22:10][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:22:10][詳情]SendOk TickCount: 12159248
+[2011-02-01 12:22:10][詳情]RecvOK TickCount: 12159341
+[2011-02-01 12:22:28][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:22:28][詳情]SendOk TickCount: 12177250
+[2011-02-01 12:22:28][詳情]RecvOK TickCount: 12177360
+[2011-02-01 12:23:06][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:23:06][詳情]SendOk TickCount: 12215767
+[2011-02-01 12:23:07][詳情]RecvOK TickCount: 12216219
+[2011-02-01 12:23:43][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:23:43][詳情]SendOk TickCount: 12252365
+[2011-02-01 12:23:44][詳情]RecvOK TickCount: 12252833
+[2011-02-01 12:24:00][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:24:00][詳情]SendOk TickCount: 12269151
+[2011-02-01 12:24:00][詳情]RecvOK TickCount: 12269665
+[2011-02-01 12:24:27][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:24:27][詳情]SendOk TickCount: 12296201
+[2011-02-01 12:24:27][詳情]RecvOK TickCount: 12296700
+[2011-02-01 12:24:32][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:24:32][詳情]SendOk TickCount: 12301115
+[2011-02-01 12:24:32][詳情]RecvOK TickCount: 12301568
+[2011-02-01 12:25:13][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:25:13][詳情]SendOk TickCount: 12342206
+[2011-02-01 12:25:13][詳情]RecvOK TickCount: 12342658
+[2011-02-01 12:25:34][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:25:34][詳情]SendOk TickCount: 12363079
+[2011-02-01 12:25:34][詳情]RecvOK TickCount: 12363547
+[2011-02-01 12:25:34][操作員]Recv Command: <CardStatus>.
+[2011-02-01 12:25:41][操作員]Send Command: <QueryCardStatus>.
+[2011-02-01 12:25:41][詳情]SendOk TickCount: 12370364
+[2011-02-01 12:25:42][詳情]RecvOK TickCount: 12370863

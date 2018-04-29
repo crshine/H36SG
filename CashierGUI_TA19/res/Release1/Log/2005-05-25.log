@@ -1,0 +1,11 @@
+[2005-05-25 23:01:40][系統]System initialize
+[2005-05-25 23:01:40][系統]Socket Listen start Successful.
+[2005-05-25 23:01:48][系統]login by "NORVASEA","X65536"
+[2005-05-25 23:01:48][系統]Login successful.
+[2005-05-25 23:01:48][操作員]Send Command: <Time Synchronize>.
+[2005-05-25 23:01:48][操作員]Recv Command: <Time Synchronize>.
+[2005-05-24 21:56:07][操作員]Send Command: <Time Synchronize success reply>.
+[2005-05-24 21:56:07][錯誤]Start reader error: '八達通錯誤(001) 未能接駁八達通收費器' 
+[2005-05-24 22:00:30][操作員]Buffer Command: <OperatorActionLog>.
+[2005-05-24 22:00:31][系統]System normal exit.
+[2005-05-24 22:00:31][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

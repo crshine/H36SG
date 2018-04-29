@@ -1,0 +1,6 @@
+[2006-08-03 15:44:40][系統]System initialize
+[2006-08-03 15:44:40][系統]Socket Listen start Successful.
+[2006-08-03 15:44:41][系統]login by "NORVASEA","X65536"
+[2006-08-03 15:44:41][系統]Login successful.
+[2006-08-03 15:44:41][操作員]Send Command: <Time Synchronize>.
+[2006-08-03 15:45:10][操作員]Send Command: <FinancialMaintain>.

@@ -1,0 +1,18 @@
+[2011-02-11 11:30:47][系統]System initialize
+[2011-02-11 11:30:47][系統]Socket Listen start Successful.
+[2011-02-11 11:30:48][系統]login by "NORVASEA","X65536"
+[2011-02-11 11:30:48][系統]Login successful.
+[2011-02-11 11:30:48][操作員]Send Command: <Time Synchronize>.
+[2011-02-11 11:46:15][詳情]recv successful: 1259
+[2011-02-11 11:46:15][操作員]Recv Command: <Fee park rate>.
+[2011-02-11 11:46:15][操作員]Send Command: <Fee park rate success reply>.
+[2011-02-11 11:46:20][詳情]recv successful: 155
+[2011-02-11 11:46:20][操作員]Recv Command: <Timezone park rate>.
+[2011-02-11 11:46:20][操作員]Send Command: <Timezone park rate success reply>.
+[2011-02-11 11:46:37][詳情]recv successful: 155
+[2011-02-11 11:46:37][操作員]Recv Command: <Timezone park rate>.
+[2011-02-11 11:46:37][操作員]Send Command: <Timezone park rate success reply>.
+[2011-02-11 13:26:18][操作員]Buffer Command: <OperatorActionLog>.
+[2011-02-11 13:26:18][錯誤]Send buffer command error! Auto retry.
+[2011-02-11 13:26:18][系統]System normal exit.
+[2011-02-11 13:26:18][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

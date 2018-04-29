@@ -1,0 +1,50 @@
+[2011-03-30 15:06:02][系統]System initialize
+[2011-03-30 15:06:02][系統]Socket Listen start Successful.
+[2011-03-30 15:06:05][系統]login by "NORVASEA","X65536"
+[2011-03-30 15:06:05][系統]Login successful.
+[2011-03-30 15:06:05][操作員]Send Command: <Time Synchronize>.
+[2011-03-30 15:06:45][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:07:48][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:08:51][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:09:54][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:10:58][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:12:01][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:13:04][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:14:07][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:15:10][錯誤]Send buffer command error! Auto retry.
+[2011-03-30 15:15:40][操作員]Send Command: <FinancialMaintain>.
+[2011-03-30 15:15:48][操作員]Send Command: <QueryOperator>.
+[2011-03-30 15:15:48][詳情]SendOk TickCount: 28499011
+[2011-03-30 15:15:48][詳情]RecvOK TickCount: 28499151
+[2011-03-30 15:16:17][操作員]Send Command: <QueryOperator>.
+[2011-03-30 15:16:17][詳情]SendOk TickCount: 28528246
+[2011-03-30 15:16:17][詳情]RecvOK TickCount: 28528261
+[2011-03-30 15:16:36][操作員]Send Command: <QueryOperator>.
+[2011-03-30 15:16:36][詳情]SendOk TickCount: 28547387
+[2011-03-30 15:16:36][詳情]RecvOK TickCount: 28547387
+[2011-03-30 15:18:06][操作員]Buffer Command: <OperatorActionLog>.
+[2011-03-30 15:48:33][系統]System initialize
+[2011-03-30 15:48:33][系統]Socket Listen start Successful.
+[2011-03-30 15:57:05][系統]login by "NORVASEA","X65536"
+[2011-03-30 15:57:05][系統]Login successful.
+[2011-03-30 15:57:05][操作員]Send Command: <Time Synchronize>.
+[2011-03-30 15:57:06][詳情]recv successful: 29
+[2011-03-30 15:57:06][操作員]Recv Command: <Time Synchronize>.
+[2011-03-30 15:57:06][操作員]Send Command: <Time Synchronize failure reply>.
+[2011-03-30 15:57:20][操作員]Send Command: <FinancialMaintain>.
+[2011-03-30 15:59:04][操作員]Send Command: <QueryOperator>.
+[2011-03-30 15:59:56][詳情]SendOk TickCount: 31138236
+[2011-03-30 16:00:21][詳情]RecvOK TickCount: 31171370
+[2011-03-30 16:00:55][操作員]Send Command: <QueryOperator>.
+[2011-03-30 16:00:55][詳情]SendOk TickCount: 31206814
+[2011-03-30 16:00:56][詳情]RecvOK TickCount: 31207266
+[2011-03-30 16:08:53][操作員]Recv Command: <Operator>.
+[2011-03-30 16:08:53][系統]login by "444444","********"
+[2011-03-30 16:08:53][系統]Login successful.
+[2011-03-30 16:08:57][操作員]Send Command: <FinancialMaintain>.
+[2011-03-30 16:09:08][操作員]Send Command: <QueryOperator>.
+[2011-03-30 16:09:08][詳情]SendOk TickCount: 31699106
+[2011-03-30 16:09:08][詳情]RecvOK TickCount: 31699559
+[2011-03-30 16:09:12][操作員]Recv Command: <Operator>.
+[2011-03-30 16:09:12][系統]login by "444444","********"
+[2011-03-30 16:09:12][系統]Login successful.

@@ -1,0 +1,48 @@
+barcode printer:
+6.22-new priter arrived shanghai
+6.25-let ken to ask them about the printing DATA problem?
+6.29-指令调试通过。
+
+一 cashier:
+1.操作流程
+《考虑在特殊处理中修改！》
+用户拍OTP卡后直接进入操作界面：选择车种，扣费方式选择（OTP/CASH）
+CCustomer::CBase::Payment()中直接进入操作界面。
+
+Custom::BASE类中增加_TicketProcessCate变量,控制收费处理与特殊处理,两种不同处理方式下的界面显示.
+if(press OTP card/barcode ticket)
+ calcu fee in operating dialog
+ deduct with otp/or cash
+else if special process
+ show hand_KDE_ticket dialog
+
+直接调用费率计算函数,显示在界面上.
+
+2.过夜计算费用问题
+  这种类型计算方法,不宜使用原来的计费表,可以直接写算法.
+
+3.damage,lost ticket 需要改掉原来磁票打印
+
+4.关于UCH正常收费处理中，车型改变流程：
+	CCustomer::COtpUserExitCarPark::Pre_Trade() 取当前交易信息 车型在变量_VehicleId中
+	CCustomer::Payment（）收费处理
+	CCustomer::COtpUserExitCarPark::Sub_Trade() 根据全局变量_TicketProcessCate等，修改_VehicleId值
+	打印及上传记录。
+二 条码机驱动类设计：
+普通票格式： 头，条码，进站时间，进站号；条码：系统号(2)+票类型(1)+进站(2)+票号(6)+保留(4)+校验(1)
+优惠票格式： 头，条码，进站时间，进站号；条码：系统号(2)+票类型(1)+打印站号(2)+票号(6)+优惠小时(2)+保留(2)+校验(1)
+
+
+三 进出口
+
+1 进口FULLSIGN ON时不打印条码票
+
+2 收据格式修改:
+  进口不用车型显示,  出口根据新车型显示.
+  原来磁票格式改为B,(或直接将条码票用回P*****)
+
+3 出口如果已经在CASHIER收过费，继续收费计算问题
+
+四 管理站:
+报表
+

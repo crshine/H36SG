@@ -1,0 +1,3561 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splash.bmp"
+IDB_KEY                 BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_CARDKDEERROR        BITMAP  DISCARDABLE     "res\\KDEErrorCard.bmp"
+IDB_CARDKDE             BITMAP  DISCARDABLE     "res\\KDECard.bmp"
+IDB_CARDOTPERROR        BITMAP  DISCARDABLE     "res\\OTPErrorCard.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TIME                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_OPERATOR            BITMAP  DISCARDABLE     "res\\operator.bmp"
+IDR_STATUS              BITMAP  DISCARDABLE     "res\\status.bmp"
+IDR_STATUS1             BITMAP  DISCARDABLE     "res\\status1.bmp"
+IDR_STATUS2             BITMAP  DISCARDABLE     "res\\status2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CashierGUI.ico"
+IDI_ICON_CREATE1        ICON    DISCARDABLE     "res\\Client.ico"
+IDI_ICON_CREATE2        ICON    DISCARDABLE     "res\\Book04.ico"
+IDI_ICON_CREATE4        ICON    DISCARDABLE     "res\\3D.ico"
+IDI_ICON_PARTICULARS    ICON    DISCARDABLE     "res\\Contactl.ico"
+IDI_KEY                 ICON    DISCARDABLE     "res\\key.ico"
+IDI_CASH                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_SLASH          ICON    DISCARDABLE     "res\\icon_sla.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 207, 65
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,147,44,44,14,NOT WS_VISIBLE | WS_GROUP
+    LTEXT           "Version 3.7",IDC_STATIC,78,45,50,13
+    LTEXT           "Smaron Automatic Carpark System \n         Cashier Station",
+                    IDC_STATIC,42,13,125,24
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登錄/登出"
+FONT 9, "System"
+BEGIN
+    EDITTEXT        IDC_OPERATORNAME,51,28,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,51,57,104,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登錄",IDOK,38,77,46,14
+    PUSHBUTTON      "退出",IDCANCEL,102,77,46,14
+    LTEXT           "登錄密碼：",IDC_STATIC,36,44,47,8
+    LTEXT           "操作員姓名：",IDC_STATIC,36,15,54,8
+    ICON            IDI_KEY,IDC_STATIC,13,17,20,20
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 273, 185
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Setting"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_SETTING,"SysTabControl32",0x0,0,0,273,185
+END
+
+IDD_SETTING_COMMUNICATE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_STATION_NAME,45,24,75,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "IPAddress1",IDC_STATION_IP,"SysIPAddress32",WS_DISABLED | 
+                    WS_TABSTOP,45,47,75,12
+    EDITTEXT        IDC_STATION_ID,207,24,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SEND_THREAD_STEP,207,48,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "IPAddress1",IDC_MNT_IP,"SysIPAddress32",WS_TABSTOP,45,
+                    97,75,12
+    EDITTEXT        IDC_SEND_PORT,97,120,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MNT_ID,207,97,22,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_RECV_PORT,207,120,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "應用",IDOK,134,147,63,14
+    DEFPUSHBUTTON   "退出",IDCANCEL,202,147,63,14
+    LTEXT           "名字：",IDC_STATIC,13,27,26,8
+    LTEXT           "編號：",IDC_STATIC,135,25,28,8
+    LTEXT           "發送端口：",IDC_STATIC,13,122,65,8
+    LTEXT           "接受端口：",IDC_STATIC,135,122,71,8
+    LTEXT           "IP地址：",IDC_STATIC,13,100,31,8
+    LTEXT           "編號：",IDC_STATIC,135,99,31,8
+    LTEXT           "頻率：",IDC_STATIC,135,50,24,8
+    GROUPBOX        "收費站設定",IDC_STATIC,0,4,268,67
+    GROUPBOX        "管理站設定",IDC_STATIC,0,76,268,67
+    LTEXT           "IP地址：",IDC_STATIC,13,50,31,8
+    LTEXT           "0~1000ms",IDC_STATIC,232,52,32,8
+    LTEXT           "00~99",IDC_STATIC,232,28,20,8
+    LTEXT           "00~99",IDC_STATIC,232,101,20,8
+END
+
+IDD_SETTING_PERIPHERAL DIALOG DISCARDABLE  0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_OTP_PORT,39,13,36,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OTP_BAUD_RATE,122,13,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OTP_STEP,208,13,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_KDE_PORT,39,48,36,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_KDE_BAUD_RATE,122,48,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_KDE_STEP,208,48,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LCD_PORT,39,83,36,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_LCD_BAUD_RATE,122,83,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LCD_STEP,208,83,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PRINTER_PORT,39,118,36,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PRINTER_BAUD_RATE,122,118,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRINTER_STEP,208,118,22,12,ES_AUTOHSCROLL
+    GROUPBOX        "八達通讀卡器",IDC_STATIC,0,0,268,144
+    LTEXT           "0~1000ms",IDC_STATIC,232,18,32,8
+    GROUPBOX        "磁條讀卡機",IDC_STATIC,0,35,268,109
+    LTEXT           "0~1000ms",IDC_STATIC,232,53,32,8
+    GROUPBOX        "顧客顯示器",IDC_STATIC,0,70,268,74
+    LTEXT           "0~5000ms",IDC_STATIC,232,88,32,8
+    LTEXT           "端口:",IDC_STATIC,13,120,22,8
+    LTEXT           "波特率：",IDC_STATIC,83,120,35,8
+    GROUPBOX        "打印機",IDC_STATIC,0,105,268,39
+    LTEXT           "頻率：",IDC_STATIC,164,120,40,8
+    LTEXT           "0~1000ms",IDC_STATIC,232,123,32,8
+    DEFPUSHBUTTON   "退出",IDCANCEL,202,147,63,14
+    PUSHBUTTON      "應用",IDOK,134,147,63,14
+    LTEXT           "端口:",IDC_STATIC,13,85,22,8
+    LTEXT           "端口:",IDC_STATIC,13,50,22,8
+    LTEXT           "端口:",IDC_STATIC,14,14,22,8
+    LTEXT           "波特率：",IDC_STATIC,84,85,35,8
+    LTEXT           "頻率：",IDC_STATIC,165,85,40,8
+    LTEXT           "波特率：",IDC_STATIC,83,50,35,8
+    LTEXT           "頻率：",IDC_STATIC,164,50,40,8
+    LTEXT           "波特率：",IDC_STATIC,83,15,35,8
+    LTEXT           "頻率：",IDC_STATIC,164,15,40,8
+END
+
+IDD_MESSAGEBOX DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "收款臺信息"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,77,83,33,13
+    LTEXT           "Show message in this static",IDC_STATIC_MESSAGE,5,11,
+                    176,67
+END
+
+IDD_PAYMENT_KDE DIALOGEX 0, 0, 221, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "磁條票付款"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        RECEIVE,62,67,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "付款",ID_PAY,154,76,63,14
+    PUSHBUTTON      "取消",IDCANCEL,154,94,63,14
+    EDITTEXT        CHANGE,62,90,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        REMAIN,62,21,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT,62,44,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "應付款額：",IDC_LABEL_10,9,47,48,15
+    LTEXT           "實付款額：",IDC_LABEL_11,9,70,48,15
+    LTEXT           "找贖：",IDC_LABEL_12,9,93,48,15
+    LTEXT           "剩余：",IDC_LABEL_13,9,24,48,15
+    LTEXT           "金額交易",CUR_STATUS,9,2,140,11,0,WS_EX_STATICEDGE
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,171,
+                    2,49,31
+END
+
+IDD_EVENTLOG DIALOGEX 0, 0, 365, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "歷史事件"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DLGEVENTLOG_DATE_BEGIN,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,21,27,59,
+                    14
+    CONTROL         "DateTimePicker1",IDC_DLGEVENTLOG_DATE_END,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,21,57,59,
+                    14
+    COMBOBOX        IDC_EVENTLOG_TYPE,21,88,104,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EVENTLOG_KEY,21,118,104,14,ES_AUTOHSCROLL
+    CONTROL         "Search",IDSEARCH,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    152,35,13
+    CONTROL         "Print",IDPRINT,"Button",BS_OWNERDRAW | WS_TABSTOP,57,
+                    152,35,13
+    CONTROL         "確認",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,93,152,35,
+                    13
+    CONTROL         "List1",IDC_EVENTLOG_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,134,22,224,160
+    LTEXT           "開始：",IDC_STATIC,10,12,57,9,WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,3,128,179,WS_TABSTOP
+    LTEXT           "結束：",IDC_STATIC,10,43,33,9,WS_TABSTOP
+    LTEXT           "類型：",IDC_STATIC,10,73,30,9,WS_TABSTOP
+    LTEXT           "關鍵字：",IDC_STATIC,10,103,35,9,WS_TABSTOP
+    LTEXT           "操作",IDC_STATIC,10,134,35,9,WS_TABSTOP
+    LTEXT           "結果",IDC_TEXT_RESULT,134,7,224,12,0,WS_EX_STATICEDGE
+END
+
+IDD_RATE DIALOG DISCARDABLE  0, 0, 272, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fee Rate Setting"
+FONT 9, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_RATE,"SysTabControl32",0x0,0,0,272,181
+END
+
+IDD_RATE_FEE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_TIMEZONE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_CARTYPE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_BORDER | WS_TABSTOP,0,0,268,137,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+    LTEXT           "由車輛類型來確定時間段收費規則",IDC_STATIC,9,142,120,20
+END
+
+IDD_RATE_GROUP DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,137,WS_EX_STATICEDGE
+    LTEXT           "由分組收費規則確定車輛收費規則",IDC_STATIC,7,145,117,9
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_DAY DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+    LTEXT           "由日期確定分組收費規則",IDC_STATIC,6,150,118,10
+END
+
+IDD_RATE_FIX DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_HAND_KDE_TICKET DIALOGEX 0, 0, 191, 209
+STYLE DS_SYSMODAL | WS_POPUP
+FONT 9, "System"
+BEGIN
+    EDITTEXT        IDC_TICKETNO,45,92,73,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "DateTimePicker1",IDC_ENTRYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,45,129,65,12
+    CONTROL         "DateTimePicker1",IDC_ENTRYTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,117,129,65,12
+    CONTROL         "DateTimePicker1",IDC_EXITDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,45,143,65,12
+    CONTROL         "DateTimePicker1",IDC_EXITTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,117,143,65,12
+    COMBOBOX        IDC_ENTRYSTATION,45,157,82,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VEHICLETYPE,45,171,82,30,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "搜尋 >>",IDOK3,126,93,56,17
+    PUSHBUTTON      "付款",IDOK,2,189,88,15
+    PUSHBUTTON      "取消",IDCANCEL,100,189,89,15
+    GROUPBOX        "請輸入相關資料",IDC_STATIC,2,115,187,70,BS_CENTER
+    LTEXT           "進入時間",IDC_STATIC2,7,126,34,8
+    LTEXT           "付款時間",IDC_STATIC4,7,140,32,9
+    GROUPBOX        "請輸入卡類型及卡號",IDC_STATIC,2,53,187,60,BS_CENTER
+    LTEXT           "票號碼",IDC_STATIC,14,100,25,9
+    CONTROL         "八達通",IDC_RADIO_OTP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,55,71,37,10
+    CONTROL         "條碼票",IDC_RADIO_KDE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,95,71,36,10
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,6,60,45,30
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,135,
+                    60,49,31
+    LTEXT           "進口站號",IDC_STATIC3,7,155,33,8
+    LTEXT           "車輛類型",IDC_STATIC5,7,171,32,8
+    LTEXT           "特殊處理",IDC_STATIC_TITLE,120,4,66,10,NOT WS_VISIBLE | 
+                    NOT WS_GROUP
+    CONTROL         "損壞票",IDC_RADIO_DAMG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,39,40,10
+    CONTROL         "遺失票",IDC_RADIO_LOST,"Button",BS_AUTORADIOBUTTON,55,
+                    39,40,10
+    CONTROL         "上船票",IDC_RADIO_FR_SEA,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,55,26,40,10
+    CONTROL         "更改車輛類型",IDC_RADIO_CHANGE_VT,"Button",
+                    BS_AUTORADIOBUTTON,101,39,64,10
+    CONTROL         289,IDC_STATIC,"Static",SS_BITMAP,6,5,24,24
+    LTEXT           "Special Transaction Process",IDC_STATIC_TITLE2,63,16,
+                    100,8
+    LTEXT           "特殊處理",IDC_STATIC,63,5,45,8
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 377, 201
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,
+                    377,201
+    LTEXT           "...",IDC_CURRENT_OPR,206,163,164,12,NOT WS_GROUP
+END
+
+IDD_RATE_CALCULATE DIALOG DISCARDABLE  0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_ENTRYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,198,24,54,12
+    CONTROL         "DateTimePicker1",IDC_ENTRYTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,38,54,
+                    12
+    CONTROL         "DateTimePicker1",IDC_EXITDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,198,63,54,12
+    CONTROL         "DateTimePicker1",IDC_EXITTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,78,54,
+                    12
+    COMBOBOX        IDC_VEHICLETYPE,197,104,54,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GROUPTYPE,197,120,54,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "計算",IDC_CALCULATE,142,146,56,14
+    DEFPUSHBUTTON   "確認",IDOK,202,146,56,14
+    PUSHBUTTON      "改變寬度",IDC_CHANGELISTWIDTH,40,146,56,14
+    LTEXT           "進入日期：",IDC_STATIC,144,26,39,8
+    LTEXT           "進入時間：",IDC_STATIC,144,41,40,8
+    LTEXT           "付款日期：",IDC_STATIC,144,65,39,8
+    LTEXT           "付款時間：",IDC_STATIC,144,80,43,8
+    LTEXT           "車輛類型：",IDC_STATIC,144,104,49,12
+    LTEXT           "組別類型：",IDC_STATIC,144,122,39,8
+    CONTROL         "List1",IDC_DETAILS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,129,136
+END
+
+IDD_PAYMENT_RECEIPT DIALOGEX 0, 0, 145, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt print ..."
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,42,206,63,14
+    CTEXT           "Title1",IDC_TITLE1,14,10,116,8
+    LTEXT           "Title2",IDC_TITLE2,14,21,116,8
+    LTEXT           "Title3",IDC_TITLE3,14,32,116,8
+    CTEXT           "End1",IDC_END1,16,173,116,8
+    CTEXT           "End2",IDC_END2,16,184,116,8
+    LTEXT           "value",IDC_TAX_NAME,76,142,29,8
+    LTEXT           "value",IDC_TAX_REG_NO,76,153,29,8
+    LTEXT           "value",IDC_TAX_PECENTAGE_RATE,92,164,29,8
+    LTEXT           "Ticket No.",IDC_LABEL_0,14,54,116,8
+    LTEXT           "Entry Date",IDC_LABEL_1,14,65,116,8
+    LTEXT           "Entry Time",IDC_LABEL_2,14,76,116,8
+    LTEXT           "Pay Date",IDC_LABEL_3,14,87,116,8
+    LTEXT           "Pay Time",IDC_LABEL_4,14,98,116,8
+    LTEXT           "Parking Fee",IDC_LABEL_7,14,109,116,8
+    GROUPBOX        "",IDC_STATIC,6,0,133,196
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,6,196,133,6
+    LTEXT           "Tax Name :",IDC_STATIC,15,142,57,8
+    LTEXT           "Tax Reg. No. :",IDC_STATIC,15,153,57,8
+    LTEXT           "Tax Pecentage Rate :",IDC_STATIC,15,164,71,8
+    LTEXT           "Receipt No :",IDC_LABEL_8,14,119,53,8
+    EDITTEXT        RECEIPTNO,81,117,50,14,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+END
+
+IDD_PAYMENT_HAND_ENTRYTIME DIALOGEX 0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "手動輸入信息"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_ENTRYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,21,83,18
+    CONTROL         "DateTimePicker1",IDC_ENTRYTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,66,44,83,
+                    18
+    CONTROL         "DateTimePicker1",IDC_EXITDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,67,83,18
+    CONTROL         "DateTimePicker1",IDC_EXITTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,66,90,83,
+                    18
+    COMBOBOX        IDC_VEHICLETYPE,154,44,63,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTRYSTATION,154,60,63,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "確認",IDOK,154,76,63,14
+    PUSHBUTTON      "取消",IDCANCEL,154,94,63,14
+    LTEXT           "輸入進出時間",CUR_STATUS,9,2,140,11,0,WS_EX_STATICEDGE
+    LTEXT           "進入日期",IDC_STATIC1,9,24,56,15,0,WS_EX_TRANSPARENT
+    LTEXT           "進入時間：",IDC_STATIC2,9,47,56,15
+    LTEXT           "付款日期：",IDC_STATIC3,9,70,56,15
+    LTEXT           "付款時間：",IDC_STATIC4,9,93,56,15
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,169,
+                    2,49,31
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,163,
+                    11,46,31
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,188,77,
+                    10,14
+END
+
+IDD_CARD_CATEGROY DIALOGEX 0, 0, 268, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "特殊卡種類定義"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "關閉",IDOK,158,149,39,11
+    LTEXT           "察看特殊卡種類定義",IDC_STATIC,50,14,197,11
+    CONTROL         194,IDC_STATIC,"Static",SS_BITMAP,7,7,20,19
+    PUSHBUTTON      "刷新",IDC_BUTTON_REFRASH,72,149,39,11
+    EDITTEXT        IDC_CATEGORY,8,27,253,119,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+END
+
+IDD_CARD_CREATE1 DIALOG DISCARDABLE  0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_CARD_TYPE_PART,43,52,52,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CARD_NUMBER_PART,134,52,103,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Category 1",IDC_CATE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,84,72,10
+    CONTROL         "Category 2",IDC_CATE2,"Button",BS_AUTORADIOBUTTON,12,99,
+                    72,10
+    CONTROL         "Category 3",IDC_CATE3,"Button",BS_AUTORADIOBUTTON,12,
+                    114,72,10
+    CONTROL         "Category 4",IDC_CATE4,"Button",BS_AUTORADIOBUTTON,12,
+                    129,72,10
+    EDITTEXT        IDC_TYPE_BRIEF,89,84,172,55,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN | NOT WS_TABSTOP
+    ICON            IDI_ICON_CREATE1,IDC_STATIC,3,3,20,20
+    LTEXT           "步驟 : \n1. 選擇季票類型\n2. 使用讀卡器讀取八達通卡號碼 / 輸入磁票號碼",
+                    IDC_STATIC,62,24,193,25
+    GROUPBOX        "登記季票號碼",IDC_STATIC,3,18,262,50
+    GROUPBOX        "選擇特殊卡的種類",IDC_STATIC,3,70,262,73
+    LTEXT           "類型",IDC_STATIC,20,54,17,8
+    LTEXT           "卡號碼",IDC_STATIC,104,54,25,8
+END
+
+IDD_CARD_CREATE2 DIALOGEX 0, 0, 268, 150
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker2",PERIODTO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,46,68,62,11
+    CONTROL         "一個月",RADIO_1M,"Button",BS_AUTORADIOBUTTON,123,53,42,
+                    10
+    CONTROL         "兩個月",RADIO_2M,"Button",BS_AUTORADIOBUTTON,169,53,42,
+                    10
+    CONTROL         "三個月",RADIO_3M,"Button",BS_AUTORADIOBUTTON,216,53,42,
+                    10
+    CONTROL         "半年",RADIO_6M,"Button",BS_AUTORADIOBUTTON,123,69,42,10
+    CONTROL         "一年",RADIO_12M,"Button",BS_AUTORADIOBUTTON,169,69,42,
+                    10
+    CONTROL         "兩年",RADIO_24M,"Button",BS_AUTORADIOBUTTON,216,69,42,
+                    10
+    EDITTEXT        TRANSTIMES,81,124,47,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,202,124,47,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_RIGHT | WS_EX_STATICEDGE
+    GROUPBOX        "有效期",IDC_STATIC,3,32,262,67
+    LTEXT           "開始 :",IDC_STATIC,16,53,27,8
+    LTEXT           "截止 :",IDC_STATIC,16,69,27,8
+    GROUPBOX        "免費交易數或者系統儲值",IDC_STATIC,3,105,262,38
+    LTEXT           "1： 定義卡的有效期。\n2：增值金額",IDC_STATIC,45,6,217,
+                    17
+    ICON            IDI_ICON_CREATE2,IDC_STATIC,5,6,20,20
+    CONTROL         "DateTimePicker1",PERIODFROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,46,52,62,11
+    LTEXT           "用'開始'定義此卡的有效期開始日期，用'截止'定義結束日期。",
+                    IDC_STATIC,45,87,216,8
+    LTEXT           "系統儲值：",IDC_STATIC,156,126,39,8
+    LTEXT           "免費交易數：",IDC_STATIC,16,126,35,8
+END
+
+IDD_CARD_CREATE3 DIALOGEX 0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "新的持卡人",RADIO_NEW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,53,22,53,10
+    CONTROL         "無持卡人",RADIO_NO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,123,22,55,10
+    CONTROL         "現有的持卡人",RADIO_EXIST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,193,22,67,10
+    EDITTEXT        IDC_ID,68,48,28,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_NAME,68,64,76,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PLATE,178,64,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_TEL,68,80,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_IC,178,80,76,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR1,68,96,186,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR2,68,112,186,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR3,68,128,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ZIP,178,128,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "查詢如果持卡人已存在",IDC_BTN_SET,155,44,94,14
+    ICON            IDI_ICON_PARTICULARS,IDC_STATIC,5,6,20,20
+    LTEXT           "輸入持卡人個人信息。",IDC_STATIC,45,6,217,11
+    GROUPBOX        "持卡人信息",IDC_STATIC,3,32,262,111
+    LTEXT           "持卡人編號：",IDC_STATIC,7,50,57,8
+    LTEXT           "持卡人姓名：",IDC_STATIC,7,66,57,8
+    LTEXT           "電話號碼：",IDC_STATIC,7,82,57,8
+    LTEXT           "聯系住址：",IDC_STATIC,7,98,57,8
+    LTEXT           "車牌號",IDC_STATIC,151,66,23,8
+    LTEXT           "身份證",IDC_STATIC,151,82,25,8
+    LTEXT           "郵編；",IDC_STATIC,151,130,24,8
+    LTEXT           "< 5 數字",IDC_STATIC,98,52,26,8
+END
+
+IDD_CARD_CREATE4 DIALOGEX 0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Jan 01,04  -->  May 23, 08",PERIOD,42,46,108,17,
+                    SS_CENTERIMAGE
+    LTEXT           "申請費：",IDC_STATIC,168,51,38,8
+    LTEXT           "卡費：",IDC_STATIC,168,69,34,8
+    LTEXT           "$200 / year",PERIOD_PRICE,38,69,58,8
+    LTEXT           "系統儲值：",IDC_STATIC,164,109,43,8,NOT WS_VISIBLE
+    LTEXT           "總額：",IDC_STATIC,164,127,43,8
+    LTEXT           "付款總額一覽",IDC_STATIC,45,6,145,12
+    ICON            IDI_ICON_CREATE4,IDC_STATIC,5,6,20,20
+    GROUPBOX        "免費交易數",IDC_STATIC,3,90,152,53
+    EDITTEXT        PERIOD_AMOUNT,100,66,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "2345",TRANSACTION,68,109,59,8
+    LTEXT           "$0.5 / Trans",TRANSACTION_PRICE,41,127,57,8
+    GROUPBOX        "有效日期",IDC_STATIC,3,32,152,53
+    EDITTEXT        TRANSACTION_AMOUNT,101,124,49,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        STORE_VALUE,212,107,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "卡費和申請費",IDC_STATIC,158,32,107,53
+    EDITTEXT        TOTAL,212,124,49,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        JOINING_FEE,212,49,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        CARD_FEE,212,66,49,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "有效期：",IDC_STATIC,7,51,37,8
+    LTEXT           "價格：",IDC_STATIC,7,69,24,8
+    LTEXT           "交易數：",IDC_STATIC,7,109,31,8
+    LTEXT           "價格：",IDC_STATIC,7,127,24,8
+END
+
+IDD_CARD_SEARCH DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "搜索特殊卡"
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_CARD_TYPE,52,7,27,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CARD_NO,81,7,50,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "搜索",IDC_SEARCH,152,7,38,12
+    PUSHBUTTON      "退出",IDOK,197,7,38,12
+    EDITTEXT        IDC_DESCRIPTION,7,28,254,131,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT           "卡號：",IDC_STATIC,7,9,31,8
+END
+
+IDD_PAYMENT_HAND_OTP_TICKET DIALOGEX 0, 0, 193, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "手動輸入八達通票號碼"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TICKETNO,93,44,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,43,48,19,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,44,30,17,14,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    LTEXT           "票號碼",IDC_STATIC,63,49,27,10
+    LTEXT           "請在空格處輸入八達通票號碼 ...",CUR_STATUS,55,7,131,11
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    49,31
+    CTEXT           "O",IDC_BIG_O,47,13,11,15,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO1,93,26,88,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,5,
+                    38,49,31
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,58,21,128,47
+    LTEXT           "卡種類",IDC_STATIC,62,29,27,8
+END
+
+IDD_SETTING_PAYMODE DIALOGEX 0, 0, 268, 144
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View paymode settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        MODECASHCARD,98,22,86,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "八達通卡付款方式：",IDC_STATIC,10,10,85,14
+    EDITTEXT        MODECASHBACK,98,51,86,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "現金付款方式：",IDC_STATIC,10,39,85,14
+    EDITTEXT        MODESTROEVALUE,98,80,86,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "系統儲值付款方式：",IDC_STATIC,10,68,85,14
+    CONTROL         "可以給予找零",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED,196,24,61,10
+    CONTROL         "可以給予找零",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED,196,53,61,10
+    CONTROL         "可以給予找零",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED,196,82,61,10
+    LTEXT           "* 所有設定必須在管理站進行修改，收費站只可以察看",
+                    IDC_STATIC,7,104,206,10
+    DEFPUSHBUTTON   "退出",IDOK,198,123,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,129,123,63,14
+END
+
+IDD_SETTING_DISCOUNTPLAN DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View discount plan"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_SHIFTACCOUNT DIALOG DISCARDABLE  0, 0, 324, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "換班結賬 Shift Close Account"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "確定換班結賬",IDOK,169,137,63,14
+    PUSHBUTTON      "取消",IDCANCEL,254,137,63,14
+    EDITTEXT        STOREVALUE_REMAIN,222,51,84,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        OCTOPUS_REMAIN,234,36,72,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        CASH_REMAIN,225,22,81,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        AMOUNT_REMAIN,209,69,97,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "現金收入：",IDC_STATIC,175,24,45,15
+    LTEXT           "八達通收入：",IDC_STATIC,175,39,48,15
+    LTEXT           "儲值收入：",IDC_STATIC,175,54,41,15
+    LTEXT           "總收入：",IDC_STATIC,175,71,50,15
+    LTEXT           "換班結賬",IDC_STATIC,7,7,33,8
+    LTEXT           "工作人員 : ",IDC_STATIC,7,21,39,8
+    LTEXT           "值班時間 :",IDC_STATIC,7,38,37,8
+    LTEXT           "此更賬目總結 :",IDC_STATIC,165,7,53,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,165,17,152,72
+    EDITTEXT        IDC_EDIT1,48,18,111,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,48,35,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "注意 : 確定後系統將自動登出",IDC_STATIC,56,140,108,11
+    LTEXT           "交易次數 :",IDC_STATIC,7,55,37,8
+    EDITTEXT        IDC_EDIT3,48,53,111,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        SHIFT_CASHMAINTAIN,235,109,73,18,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        CASHKEEP_REMAIN,225,92,81,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "現存現金：",IDC_STATIC,175,94,45,15
+    LTEXT           "提取現金：",IDC_STATIC,175,113,45,15
+END
+
+IDD_PAYMENT_RECEIPT_SHIFTACCOUNT DIALOG DISCARDABLE  0, 0, 145, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt Shift Account"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,38,185,63,14
+    GROUPBOX        "",IDC_STATIC,6,0,133,174
+    CTEXT           "Shift Account",IDC_TITLE,14,10,116,8
+    LTEXT           "Operater :\tDeepool",OPERATER,19,27,106,8
+    LTEXT           "WithDrawal :",IDC_STATIC,19,66,106,8
+    LTEXT           "Old Balance :\t$1200.00",OLDBALANCE,19,40,106,8
+    LTEXT           "Balance :\t$400.00",BALANCE,19,53,106,8
+    LTEXT           "Time :\t\t12:23:45",TIME,19,144,106,8
+    LTEXT           "Date :\t\t2004-05-06",DATE,19,131,106,8
+    LTEXT           "Receipt No. : \t02000001",RECEIPTNO,19,157,106,8
+    LTEXT           "Cash:\t\t$500.00",CASH,33,79,103,8
+    LTEXT           "Octupos:\t$200.00",OCTUPOS,33,92,103,8
+    LTEXT           "Store Value:\t$100.00",STOREVALUE,33,105,103,8
+    LTEXT           "Total:\t\t$800.00",TOTAL,33,118,103,8
+END
+
+IDD_PAYMENT_RECEIPT_CLOSEACCOUNT DIALOG DISCARDABLE  0, 0, 145, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt Close Account"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,38,163,63,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,6,152,133,6
+    GROUPBOX        "",IDC_STATIC,6,0,133,152
+    CTEXT           "Close Account",IDC_TITLE,14,10,116,8
+    LTEXT           "Operater",IDC_OPERATER,59,35,79,8
+    LTEXT           "WithDrawal",IDC_WITHDRAWAL,59,63,79,8
+    LTEXT           "Old Balance",IDC_OLDBALANCE,59,49,79,8
+    LTEXT           "Balance",IDC_BALANCE,59,77,79,8
+    LTEXT           "LogoutTime",IDC_LOGOUTTIME,59,105,79,8
+    LTEXT           "LoginTime",IDC_LOGINTIME,59,91,79,8
+    LTEXT           "Operater :",IDC_STATIC,10,35,42,8
+    LTEXT           "WithDrawal :",IDC_STATIC,10,63,42,8
+    LTEXT           "Old Balance :",IDC_STATIC,10,49,42,8
+    LTEXT           "Balance :",IDC_STATIC,10,77,42,8
+    LTEXT           "Logout Time :",IDC_STATIC,10,105,42,8
+    LTEXT           "Login Time :",IDC_STATIC,10,91,42,8
+    LTEXT           "Receipt No. :",IDC_STATIC,10,119,42,8
+    LTEXT           "Receipt No.",IDC_RECEIPTNO,59,119,79,8
+END
+
+IDD_SETTING_CALCULATERULE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View calculate rule's parameters"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "設定收費率規則和相關參數",IDC_STATIC,7,7,252,9
+    GROUPBOX        "停車免費時間",IDC_STATIC,7,26,124,59
+    GROUPBOX        "特殊收費金額",IDC_STATIC,137,26,124,59
+    LTEXT           "進入免費時間：",IDC_STATIC,11,40,68,8
+    LTEXT           "付款後免費時間：",IDC_STATIC,11,55,68,8
+    LTEXT           "時間段免費時間：",IDC_STATIC,11,70,77,8
+    LTEXT           "票丟失罰款：",IDC_STATIC,145,40,58,8
+    LTEXT           "進入時卡內最低金額：",IDC_STATIC,145,55,80,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "固定收費時金額",IDC_STATIC,145,70,69,8,NOT WS_VISIBLE
+    EDITTEXT        ENTERGRACETIME,98,39,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        PAIDGRACETIME,98,54,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        TZONEGRACETIME,98,69,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        LOSTTICKETPENALTY,228,39,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        CREDITLIMIT,228,54,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        PERENTRYAMT,228,69,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         "一但超越時間段時立刻嘗試使用新的收費率",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX,14,95,165,10
+    CONTROL         "對遺失票收費總額，加入停車費",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX,14,113,121,10
+    CONTROL         "使用固定時間折扣率收費規則",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX,14,130,114,10
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_STATION DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View all station settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_CARDTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View card category setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_GROUPTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View group type settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_PAYMODETYPE DIALOGEX 0, 0, 268, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View paymode type settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_CARTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View vehicle  type setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_TRY_MNT DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test communication with 'MNT' (management)"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Exit View",IDOK,202,147,63,14
+    PUSHBUTTON      "Query from Server",IDC_BUTTON_REFRASH,134,147,63,14
+    PUSHBUTTON      "Operator Action Log",IDC_OPERATORACTIONLOG,7,25,91,14
+    PUSHBUTTON      "Payment",IDC_PAYMENT,7,43,91,14
+    PUSHBUTTON      "Time Synchronize",IDC_TIMESYNCHRONIZE,7,61,91,14
+    PUSHBUTTON      "Non Parking Payment",IDC_NONPARKINGPAYMENT,7,79,91,14
+    PUSHBUTTON      "Financial Maintain",IDC_FINANCIALMAINTAIN,7,97,91,14
+    PUSHBUTTON      "Error Warn Notice Log",IDC_ERRORWARNNOTICELOG,7,7,91,14
+    PUSHBUTTON      "Upload Octopus X File",IDC_UPLOADOTPXFILE,7,115,91,14
+END
+
+IDD_CARD_CREATE DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "創建特殊卡"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "取消 (&C)",IDCANCEL,202,149,63,14
+    PUSHBUTTON      "下一步 (&N) >",IDC_BUTTON_NEXT,134,149,63,14
+    PUSHBUTTON      "< 上一步 (&B)",IDC_BUTTON_BACK,66,149,63,14,WS_DISABLED
+END
+
+IDD_PAYMENT_PARK_FEE DIALOGEX 250, 100, 173, 182
+STYLE DS_SYSMODAL | WS_POPUP | WS_CAPTION
+CAPTION "收費處理"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        CASH,68,106,98,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,86,84,28,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,17,7,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "                確認\n全數使用現金進行交易",IDOK,7,146,
+                    88,28,BS_MULTILINE
+    PUSHBUTTON      "        取消\n所有收費處理",IDCANCEL,99,146,67,28,
+                    BS_MULTILINE
+    EDITTEXT        AMOUNT,68,44,98,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_REMAIN,130,19,26,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,127,84,39,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        CHANGE,68,127,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "找贖 :",IDC_STATIC,7,128,55,8
+    LTEXT           "八達通餘額 :",IDC_STATIC,104,33,55,8,NOT WS_VISIBLE
+    LTEXT           "剩余:",IDC_STATIC,77,22,48,8,NOT WS_VISIBLE
+    EDITTEXT        UNPAID,53,84,18,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    LTEXT           "剩余 UnPaid :",IDC_STATIC,7,84,46,8,NOT WS_VISIBLE
+    LTEXT           "現金 :",IDC_STATIC,7,111,56,9
+    LTEXT           "八達通付款 :",IDC_STATIC,58,32,56,9,NOT WS_VISIBLE
+    LTEXT           "系統儲值：",IDC_STATIC,19,19,40,11,NOT WS_VISIBLE
+    LTEXT           "總金額 :",IDC_STATIC,7,46,55,9,0,0,HIDC_STATIC
+    CONTROL         "打印收據",PRINT_RECEIPT,"Button",BS_AUTOCHECKBOX,120,7,
+                    46,10
+    CONTROL         273,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    49,31
+    LTEXT           "收費處理",IDC_STATIC,63,7,43,10
+    LTEXT           "八達通付款 : 顧客即時可以八達通付款",
+                    IDC_STATIC_ENABLEOTP,7,72,159,10
+    LTEXT           "現金付款 :",IDC_STATIC,7,95,56,9
+END
+
+IDD_PAYMENT_ACCOUNT DIALOGEX 0, 0, 191, 205
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "當前",IDC_STATIC,47,3,68,88,BS_CENTER
+    PUSHBUTTON      "退出",IDCANCEL,99,191,92,14
+    EDITTEXT        AMOUNT,57,17,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CASH,57,36,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,57,55,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,57,74,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT_TOTAL,128,17,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CASH_TOTAL,128,36,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_TOTAL,128,55,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_TOTAL,128,74,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    LTEXT           "現金：",IDC_STATIC,4,38,36,12
+    LTEXT           "八達通：",IDC_STATIC,4,57,34,12
+    LTEXT           "系統儲值：",IDC_STATIC,4,78,40,12
+    LTEXT           "總金額：",IDC_STATIC,4,19,38,12
+    GROUPBOX        "總額",IDC_STATIC,118,3,68,88,BS_CENTER
+    LTEXT           "八達通增值",IDC_STATIC,134,101,41,8
+    LTEXT           "特殊卡付款",IDC_STATIC,134,146,41,8
+    LTEXT           "次數",IDC_STATIC,107,130,17,8
+    LTEXT           "金額",IDC_STATIC,107,115,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,99,96,87,93,
+                    WS_EX_STATICEDGE
+    EDITTEXT        ADAMT,130,113,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        ADNUM,130,127,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        SCMGNAMT,130,157,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        SCMGNNUM,130,171,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "次數",IDC_STATIC,108,173,17,8
+    LTEXT           "金額",IDC_STATIC,108,158,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,4,96,92,109,
+                    WS_EX_STATICEDGE
+    LTEXT           "各卡種類使用次數",IDC_STATIC,18,101,65,8
+    LISTBOX         IDC_LIST1,5,113,90,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_SETTING_RECEIPT_FORMAT DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View receipt format setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_OTP_PRE_ADDVALUE DIALOGEX 0, 0, 186, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "八達通卡增值"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        AMOUNT,19,194,22,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "確認",IDOK,45,194,22,12,NOT WS_VISIBLE | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,105,191,75,20
+    EDITTEXT        OCTOPUS_CARDNO,67,56,113,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,67,79,113,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    49,31
+    LTEXT           "請放八達通卡於讀卡器上...",CUR_STATUS,67,41,113,11,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "八達通餘額 :",IDC_LABEL_13,7,80,55,15
+    LTEXT           "八達通卡號碼 :",IDC_LABEL_14,7,57,56,15
+    PUSHBUTTON      "讀卡",ID_WAIT_OTP_POLL,71,194,22,12,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "注意:\n增值後卡內金額須小於1000元。\n增值金額必須是50元的倍數。",
+                    IDC_STATIC,67,155,112,27
+    LTEXT           "八達通增值處理\nOctopus Add Value Process",IDC_STATIC,
+                    59,7,95,18
+    COMBOBOX        ID_AVSEL,15,156,49,67,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "選擇增值金額",IDC_STATIC,7,102,173,85
+    PUSHBUTTON      "HK$ 50",ID_AV50,15,115,49,15,WS_DISABLED
+    PUSHBUTTON      "HK$ 100",ID_AV100,68,115,49,15,WS_DISABLED
+    PUSHBUTTON      "HK$ 200",ID_AV200,121,115,49,15,WS_DISABLED
+    PUSHBUTTON      "HK$ 300",ID_AV300,15,135,49,15,WS_DISABLED
+    PUSHBUTTON      "HK$ 400",ID_AV400,68,135,49,15,WS_DISABLED
+    PUSHBUTTON      "HK$ 500",ID_AV500,121,135,49,15,WS_DISABLED
+END
+
+IDD_PAYMENT_OTP_SUB_ADDVALUE DIALOGEX 0, 0, 221, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "八達通卡增值"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "增值",IDOK,154,76,63,14
+    PUSHBUTTON      "取消",IDCANCEL,154,94,63,14
+    EDITTEXT        OCTOPUS_CARDNO,67,21,82,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,67,44,82,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT,67,67,82,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,172,
+                    2,46,31
+    LTEXT           "正在搜尋八達通卡 ...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "八達通卡號碼：",IDC_LABEL_14,9,23,55,15
+    LTEXT           "增值金額：",IDC_LABEL_10,9,69,48,15
+    LTEXT           "八達通內金額：",IDC_LABEL_13,9,46,56,15
+END
+
+IDD_SETTING_PERMISSION DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View function permission settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 187, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View progress ..."
+FONT 9, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    20,173,8
+    LTEXT           "Operate name: ",IDC_STATIC,7,7,51,11
+    LTEXT           "Elapse Time :",IDC_STATIC,7,32,51,11
+    PUSHBUTTON      "Continue",IDOK,130,31,50,14
+    LTEXT           "Printer ... ",IDC_OPERATE,64,7,116,11
+    LTEXT           "10sec.",IDC_ELAPSE,64,32,51,11
+END
+
+IDD_RECEIPT_PARKING_FEE DIALOG DISCARDABLE  0, 0, 145, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview parking fee receipt"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,39,225,63,14
+    CTEXT           "Title1",IDC_TITLE1,14,10,116,8
+    LTEXT           "Title2",IDC_TITLE2,14,19,116,8
+    LTEXT           "Title3",IDC_TITLE3,14,28,116,8
+    CTEXT           "End1",IDC_END1,14,199,116,8
+    CTEXT           "End2",IDC_END2,14,208,116,8
+    LTEXT           "卡號 :",IDC_CARD_NO,14,64,116,8
+    LTEXT           "進入時間 :",IDC_TIME_ENTRY,14,91,116,8
+    LTEXT           "付款時間 :",IDC_TIME_PAY,14,100,116,8
+    LTEXT           "繳付金額 :",IDC_AMOUNT,14,118,116,8
+    GROUPBOX        "",IDC_STATIC,6,0,133,220
+    LTEXT           "Tax Name :",IDC_TAX_NAME,14,163,116,8
+    LTEXT           "Tax Reg. No. :",IDC_TAX_REG_NO,14,172,116,8
+    LTEXT           "Tax Pecentage Rate :",IDC_TAX_PECENTAGE,14,181,116,8
+    LTEXT           "收據號:",IDC_RECEIPT_NO,14,55,116,8
+    LTEXT           "----------------------------------------------------------",
+                    IDC_STATIC,14,37,116,8
+    LTEXT           "----------------------------------------------------------",
+                    IDC_STATIC,14,190,116,8
+    LTEXT           "站號 :",IDC_STATION_ID,14,46,116,8
+    LTEXT           "付款卡號 :",IDC_PAY_CARD_NO,14,73,116,8
+    LTEXT           "卡種類   :",IDC_CARD_CATEGORY,14,82,116,8
+    LTEXT           "折扣率   :",IDC_DISCOUNT,14,109,116,8
+    LTEXT           "實付金額 :",IDC_PAID,14,127,116,8
+    LTEXT           "找零 :",IDC_CHANGE,14,136,116,8
+    LTEXT           "卡內金額 :",IDC_CARD_REMAIN,14,145,116,8
+    LTEXT           "系統儲值 :",IDC_STORE_VALUE,14,154,116,8
+END
+
+IDD_VIEW_OTP_CARD DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "八達通卡信息"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "卡號：",IDC_STATIC,10,14,28,8
+    GROUPBOX        "卡信息",IDC_STATIC,2,0,139,140
+    EDITTEXT        IDC_CARD_NO,93,12,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "讀卡",ID_WAIT_OTP_POLL,128,151,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "退出",IDCANCEL,198,151,63,14,NOT WS_TABSTOP
+    LTEXT           "剩余：",IDC_STATIC,10,30,28,8
+    EDITTEXT        IDC_REMAIN,93,28,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "充值詳情：",IDC_STATIC,10,46,39,8
+    EDITTEXT        IDC_ADD_VALUE_DETAIL,93,44,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "上次充值設備：",IDC_STATIC,10,62,54,8
+    EDITTEXT        IDC_LAST_ADD_VALUE_DEVICE,93,60,42,12,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "類別：",IDC_STATIC,10,78,24,8
+    EDITTEXT        IDC_CLASS,93,76,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "語言：",IDC_STATIC,10,94,24,8
+    EDITTEXT        IDC_LANGUAGE,93,92,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "可用金額：",IDC_STATIC,10,110,39,8
+    LTEXT           "生產商：",IDC_STATIC,10,126,31,8
+    EDITTEXT        IDC_AVAILABLE_AMOUNT,93,108,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MANUFACTURE_ID,62,124,73,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "類別:  1.成人 2.學生 3.小童 4.老人\n+8 私人卡;",
+                    IDC_STATIC,8,146,120,18
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    141,4,125,136,WS_EX_STATICEDGE
+END
+
+IDD_SETTING_OTPREADER DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OTP RWL Settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Dev ID",IDC_STATIC,8,103,22,8
+    LTEXT           "Oper ID",IDC_STATIC,8,118,26,8
+    LTEXT           "Company ID",IDC_STATIC,8,88,41,8
+    LTEXT           "Dev Time",IDC_STATIC,176,88,42,8
+    LTEXT           "EOD Ver",IDC_STATIC,98,102,33,8
+    LTEXT           "BList Ver",IDC_STATIC,98,87,33,8
+    LTEXT           "CCHS Ver",IDC_STATIC,98,132,33,8
+    LTEXT           "Fware Ver",IDC_STATIC,98,117,33,8
+    LTEXT           "Loc ID",IDC_STATIC,176,103,22,8
+    LTEXT           "Key Ver",IDC_STATIC,8,133,26,8
+    EDITTEXT        IDC_DEVID,50,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_OPERID,50,116,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_COMPID,50,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_LOCID,222,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_DEVTIME,222,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_BLVER,134,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EODVER,134,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FIRMVER,134,116,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CCHSVER,134,131,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_KEYVER,50,131,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "New Loc ID",IDC_STATIC,176,118,36,8
+    EDITTEXT        IDC_EDIT_NEWLOCID,222,116,36,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_XFILEPATH,181,12,77,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BLISTPATH,50,12,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FWAREPATH,50,27,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EODPATH,50,42,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CCHSPATH,50,57,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ARPATH1,181,27,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ARPATH2,181,42,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        " Folders ",IDC_STATIC,2,0,264,74
+    LTEXT           "XFile :",IDC_STATIC,145,14,19,8
+    LTEXT           "Black List :",IDC_STATIC,8,14,33,8
+    LTEXT           "Firmware :",IDC_STATIC,8,29,32,8
+    LTEXT           "EOD :",IDC_STATIC,8,44,19,8
+    LTEXT           "CCHS :",IDC_STATIC,8,59,23,8
+    LTEXT           "AR1 :",IDC_STATIC,145,29,17,8
+    LTEXT           "AR2 :",IDC_STATIC,145,44,17,8
+    PUSHBUTTON      "Set Folders",ID_SET_FOLDERS,195,57,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Set Time Read Ver",ID_SET_TIME_READ_VER,184,132,74,14,
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "退出",IDCANCEL,184,152,74,14,NOT WS_TABSTOP
+    GROUPBOX        " 版本號/時間/號碼",IDC_STATIC,2,75,264,74
+    PUSHBUTTON      "Load Folders",ID_READ_FOLDERS,130,57,63,14,NOT 
+                    WS_TABSTOP
+END
+
+IDD_SETTING_SYS_PARAMETERS DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System parameters"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_DISABLED | WS_TABSTOP,0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "退出",IDOK,202,147,63,14
+    PUSHBUTTON      "更新",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_VIEW_KDE_CARD DIALOGEX 0, 0, 268, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "察看票卡信息"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "卡內容",IDC_STATIC,5,26,257,121
+    DEFPUSHBUTTON   "讀卡",ID_READ_TICKET,128,151,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "退出",IDCANCEL,198,151,63,14,NOT WS_TABSTOP
+    LTEXT           "卡號：",IDC_STATIC,20,40,28,8
+    EDITTEXT        IDC_CARD_NO,73,38,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "特殊卡",IDC_RADIO_SPECIAL,"Button",BS_AUTORADIOBUTTON,
+                    66,8,57,10
+    GROUPBOX        "卡類型",IDC_STATIC,5,0,207,22
+    CONTROL         "普通卡",IDC_RADIO_HOURLY,"Button",BS_AUTORADIOBUTTON,
+                    147,8,39,10
+    LTEXT           "車輛類型：",IDC_STATIC,20,58,48,8
+    EDITTEXT        IDC_VEHICLE_TYPE,73,56,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "進口站號：",IDC_STATIC,20,94,49,8
+    EDITTEXT        IDC_ENTRY_STATION,73,92,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "進入時間：",IDC_STATIC,122,94,39,8
+    LTEXT           "付款站號：",IDC_STATIC,20,111,46,8
+    EDITTEXT        IDC_PAY_STATION,73,110,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "付款時間：",IDC_STATIC,122,111,38,8
+    EDITTEXT        IDC_PAY_TIME,162,110,84,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "折扣率：",IDC_STATIC,20,76,40,8
+    EDITTEXT        IDC_DISCOUNT,73,74,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "付款次數：",IDC_STATIC,122,58,50,8
+    EDITTEXT        IDC_PAYMENT_TIMES,176,56,70,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "付款金額：",IDC_STATIC,122,77,48,8
+    EDITTEXT        IDC_AMOUNT,176,74,70,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "備注：",IDC_STATIC,20,130,34,8
+    EDITTEXT        IDC_REMARK,73,128,174,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_TIME,162,92,84,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,216,
+                    3,49,31
+END
+
+IDD_TOOL_KDE DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+END
+
+IDD_PAYMENT_SELECT_DISCOUNT DIALOGEX 0, 0, 231, 175
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "優惠處理"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,85,146,63,22
+    PUSHBUTTON      "取消",IDCANCEL,161,146,63,22
+    CONTROL         "List2",ID_DISCOUNT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,7,60,217,83,WS_EX_STATICEDGE
+    CONTROL         272,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    49,31
+    LTEXT           "優惠處理, 請選擇折扣方式...\nDiscount Process",
+                    IDC_STATIC,68,14,108,20
+    LTEXT           "前一個優惠模式 :",IDC_STATIC,7,42,61,8
+    EDITTEXT        IDC_EDIT1,69,40,155,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PAYMENT DIALOGEX 0, 0, 399, 261
+STYLE DS_SYSMODAL | WS_CHILD
+FONT 9, "System"
+BEGIN
+    EDITTEXT        IDC_TICKET_NO,98,57,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_DATE,98,69,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_TIME,98,81,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PAY_DATE,98,96,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PAY_TIME,98,108,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DURATION,98,120,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PARKING_FEE,98,147,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISCOUNT,98,171,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_AMOUNT,98,186,87,21,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_RECEIVE,7,198,17,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CHANGE,26,199,16,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "車輛類型更改處理&K)",IDC_ERROR_KDE_CARD,128,32,79,15,
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "特殊處理",IDC_ERROR_OTP_CARD,298,9,88,15
+    PUSHBUTTON      "八達通增值服務",IDC_OTP_CARD_ADD_VALUE,205,25,88,15
+    PUSHBUTTON      "確認離場",IDC_TIMESYNCHRONIZE,298,25,88,15
+    EDITTEXT        IDC_PAY_RULE,98,135,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISCOUNT_RULE,98,159,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "上一次交易或查詢資料",IDC_STATIC,7,46,189,166
+    GROUPBOX        "",IDC_STATIC,199,3,193,55
+    CONTROL         "List2",PAYMENT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,199,69,193,60,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "系統結帳(&S)",IDC_SHIFT_ACCOUNT,247,59,79,15,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "換班結賬",IDC_CLOSEACCOUNT,205,41,88,15
+    LTEXT           "交易紀錄：",IDC_STATIC,203,59,57,8
+    LISTBOX         IDC_MSG_LIST,18,216,374,15,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    CONTROL         IDI_ICON_CREATE1,IDC_STATIC,"Static",SS_BITMAP,7,57,87,
+                    150
+    PUSHBUTTON      "票查詢",IDC_BUTTON1,298,41,88,15
+    GROUPBOX        "此更賬目",IDC_STATIC,302,130,90,82,0,WS_EX_TRANSPARENT
+    LTEXT           "啟動時間:",IDC_STATIC,120,3,35,8
+    LTEXT           "操作員:",IDC_STATIC,12,3,27,8
+    LTEXT           "交易總數:",IDC_STATIC,307,142,35,8
+    EDITTEXT        IDC_EDIT_CUROPTR,42,3,73,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_DUTYSTART,159,3,36,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PAYNUM,345,141,41,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_TOTALAMT,244,199,46,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_CASHAMT,255,139,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_OTPAMT,254,173,36,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SVAMT,255,185,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_TRANSPARENT
+    LTEXT           "現金收入 :",IDC_STATIC,307,161,37,9
+    LTEXT           "儲值收入 : ",IDC_STATIC,307,186,36,8
+    LTEXT           "此更收入 :",IDC_STATIC,307,200,39,9
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,304,198,86,1
+    LTEXT           "Static",IDC_STATIC_WMODE,66,28,90,9
+    PUSHBUTTON      "免費處理",IDC_SEL_DISCOUNT,205,9,88,15
+    LTEXT           ">>",IDC_STATIC,7,218,8,9
+    LISTBOX         IDC_MSG_LIST2,18,231,374,18,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "上/落船票處理(&S)",IDC_SHIP,126,16,79,15,NOT WS_VISIBLE
+    LTEXT           "已提取現金 :",IDC_STATIC,203,151,45,8
+    GROUPBOX        "總賬目",IDC_STATIC,199,130,100,82,0,WS_EX_TRANSPARENT
+    LTEXT           "現存現金 :",IDC_STATIC,203,162,38,9
+    LTEXT           "現金收入 :",IDC_STATIC,203,140,37,9
+    LTEXT           "八達通收入 :",IDC_STATIC,203,173,50,8
+    LTEXT           "總收入 :",IDC_STATIC,203,200,31,9
+    EDITTEXT        IDC_EDIT_SHIFT_TOTALAMT,352,199,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SHIFT_OTPAMT,352,173,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SHIFT_CASHAMT,352,160,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SHIFT_SVAMT,352,186,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,204,198,86,1
+    LTEXT           "八達通收入 :",IDC_STATIC,307,174,50,8
+    LTEXT           "儲值收入 : ",IDC_STATIC,203,185,36,8
+    GROUPBOX        "當前優惠模式",IDC_STATIC,7,18,189,23
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,303,155,86,1
+    EDITTEXT        IDC_EDIT_CASHMAINTAIN,255,151,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_CASHKEEP,254,162,36,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "Last4Record",IDC_LAST4RECORD,58,15,68,13,NOT WS_VISIBLE
+END
+
+IDD_CHECKCARD DIALOG DISCARDABLE  0, 0, 277, 247
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "System"
+BEGIN
+    LTEXT           "票查詢",IDC_STATIC,56,4,30,8
+    LTEXT           "票號:",IDC_STATIC,56,33,18,8
+    LTEXT           "停車類型:",IDC_STATIC,133,46,34,8
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    5,142,266,28
+    LTEXT           "已完成的交易",IDC_STATIC,9,132,65,8
+    GROUPBOX        "當前泊車資訊",IDC_STATIC,5,58,266,72,BS_LEFT
+    EDITTEXT        IDC_EDIT_CARDNO,76,33,53,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CATE,179,46,56,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_ENTTIME,48,71,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "付款站號:",IDC_STATIC,131,84,35,8
+    LTEXT           "已付金額:",IDC_STATIC,9,99,35,8
+    EDITTEXT        IDC_EDIT_ENTSTN,167,71,21,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PAYTIME,48,85,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PAYSTN,167,84,21,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PAYNUM,167,97,21,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PAYAMT,48,99,76,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "進入時間:",IDC_STATIC2,9,71,34,9
+    LTEXT           "付款時間:",IDC_STATIC4,9,85,34,9
+    LTEXT           "進口站號:",IDC_STATIC3,131,71,34,9
+    LTEXT           "付款次數:",IDC_STATIC,131,97,34,9
+    GROUPBOX        "季票資訊",IDC_STATICX,5,172,266,69,BS_LEFT
+    LTEXT           "持卡者",IDC_STATIC,12,187,24,8
+    LTEXT           "使用限制",IDC_STATIC,11,229,33,8
+    LTEXT           "車牌",IDC_STATIC,160,201,18,8
+    LTEXT           "系統儲值",IDC_STATIC,11,215,33,8
+    LTEXT           "登記日期",IDC_STATIC,144,215,32,8
+    EDITTEXT        IDC_EDIT_VALIDITY,51,227,214,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_HOLDER,51,185,214,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_VEHNO,183,199,82,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_REGTIME,183,213,82,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SVAMT,51,213,89,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "卡種類",IDC_STATIC,11,201,27,8
+    EDITTEXT        IDC_EDIT1,51,199,89,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "八達通餘額:",IDC_STATIC,133,32,43,8
+    EDITTEXT        IDC_EDIT_CREDIT,179,32,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "類型:",IDC_STATIC,56,47,19,8
+    EDITTEXT        IDC_EDIT_KIND,76,47,53,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "車輛類型:",IDC_STATIC5,194,71,34,9
+    EDITTEXT        IDC_EDIT_VEHTYPE,231,71,37,11,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Check Ticket",IDC_STATIC,56,14,42,8
+    PUSHBUTTON      "確定變更車輛類型",IDC_CHANGE_VEHTYPE,194,83,74,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "備註:",IDC_STATIC,9,113,35,8
+    EDITTEXT        IDC_EDIT_REMARKS,48,114,217,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CONTROL         290,IDC_STATIC,"Static",SS_BITMAP,6,5,24,24
+END
+
+IDD_DLG_OTP_RECORD DIALOG DISCARDABLE  0, 0, 257, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Octopus Card Records"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,200,114,50,14
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,28,243,76
+    LTEXT           "Card NO:",IDC_STATIC,7,7,32,14
+    EDITTEXT        IDC_CARDNO,41,7,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMAIN,158,7,44,12,ES_AUTOHSCROLL
+    LTEXT           "Remain:",IDC_STATIC,119,7,33,12
+END
+
+IDD_DLG_PAYMODE DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,32,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,56,50,14
+END
+
+IDD_PAYMENT_PARK_FEE1 DIALOGEX 250, 100, 301, 182
+STYLE DS_SYSMODAL | WS_POPUP | WS_CAPTION
+CAPTION "收費處理"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        CASH,72,103,98,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,114,82,28,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,17,7,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "現金付款",IDOK,105,150,72,18,BS_MULTILINE
+    PUSHBUTTON      "取消",IDCANCEL,202,150,64,18,BS_MULTILINE
+    EDITTEXT        AMOUNT,86,42,98,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_REMAIN,163,19,26,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,213,82,39,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        CHANGE,115,127,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "找贖 :",-1,7,128,55,8
+    LTEXT           "八達通餘額 :",-1,104,33,55,8,NOT WS_VISIBLE
+    LTEXT           "剩余:",-1,77,22,48,8,NOT WS_VISIBLE
+    EDITTEXT        UNPAID,61,84,18,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    LTEXT           "剩余 UnPaid :",-1,7,84,46,8,NOT WS_VISIBLE
+    LTEXT           "現金 :",-1,7,111,56,9
+    LTEXT           "八達通付款 :",-1,58,32,56,9,NOT WS_VISIBLE
+    LTEXT           "系統儲值：",-1,19,19,40,11,NOT WS_VISIBLE
+    LTEXT           "收费金額 :",-1,24,45,55,9,0,0,0x8128ffff
+    CONTROL         "打印收據",PRINT_RECEIPT,"Button",BS_AUTOCHECKBOX,248,7,
+                    46,10
+    CONTROL         273,-1,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,49,31
+    LTEXT           "八達通付款 : 顧客即時可以八達通付款",
+                    IDC_STATIC_ENABLEOTP,7,72,137,10
+    PUSHBUTTON      "八达通付款",IDC_BTN_OTP,15,150,68,19
+    EDITTEXT        CARDNO,148,69,63,12,ES_AUTOHSCROLL
+END
+
+IDD_PAYMENT_HAND_TICKET DIALOGEX 0, 0, 269, 204
+STYLE DS_SYSMODAL | WS_POPUP | WS_CAPTION
+CAPTION "收費處理"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TICKETNO,94,80,89,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_VEHICLETYPE,94,101,112,98,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "現金付款",IDOK,100,177,61,15
+    PUSHBUTTON      "取消",IDCANCEL,174,177,58,15
+    LTEXT           "進入時間",IDC_STATIC2,48,125,34,8
+    LTEXT           "付款時間",IDC_STATIC4,48,139,32,9
+    LTEXT           "票 號 碼",IDC_STATIC,48,83,29,9
+    CONTROL         181,IDC_IMAGE_OTP,"Static",SS_BITMAP,196,18,49,34
+    LTEXT           "進口站號",IDC_STATIC3,48,154,33,8
+    LTEXT           "車輛類型",IDC_STATIC5,48,103,32,8
+    PUSHBUTTON      "八達通付款",IDC_BTN_OTP,28,177,59,15
+    EDITTEXT        IDC_AMOUNT,94,36,98,16,ES_READONLY | NOT WS_BORDER,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_ENTERTIME,94,123,90,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PAYTIME,94,138,90,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "收費金額",IDC_STATIC,48,39,38,14
+    GROUPBOX        "交易信息",IDC_STATIC,26,62,204,110
+    EDITTEXT        IDC_EDIT_ENTRYSTATION,94,153,48,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         273,IDC_STATIC,"Static",SS_BITMAP,2,1,49,31
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,64,18,40,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SETTING_COMMUNICATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_SETTING_PERIPHERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PAYMENT_KDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_EVENTLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_RATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_RATE_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_TIMEZONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_CARTYPE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_RATE_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_DAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_FIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_PAYMENT_HAND_KDE_TICKET, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_RATE_CALCULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_PAYMENT_RECEIPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PAYMENT_HAND_ENTRYTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_CARD_CATEGROY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_CARD_CREATE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 265
+        TOPMARGIN, 3
+    END
+
+    IDD_CARD_CREATE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_CARD_CREATE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 257
+    END
+
+    IDD_CARD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_HAND_OTP_TICKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_SETTING_PAYMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_SETTING_DISCOUNTPLAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_SHIFTACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_PAYMENT_RECEIPT_SHIFTACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PAYMENT_RECEIPT_CLOSEACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_SETTING_CALCULATERULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_STATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_CARDTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_GROUPTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_PAYMODETYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_SETTING_CARTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_TRY_MNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_CARD_CREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_PARK_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_SETTING_RECEIPT_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_OTP_PRE_ADDVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_PAYMENT_OTP_SUB_ADDVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_SETTING_PERMISSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_RECEIPT_PARKING_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_VIEW_OTP_CARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_SETTING_OTPREADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_SYS_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_VIEW_KDE_CARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_TOOL_KDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PAYMENT_SELECT_DISCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_PAYMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_CHECKCARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 271
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DLG_OTP_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DLG_PAYMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PAYMENT_PARK_FEE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PAYMENT_HAND_TICKET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 257
+        BOTTOMMARGIN, 203
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  37, 35
+BEGIN
+    BUTTON      ID_VIEW_ACCOUNT
+    BUTTON      ID_SETTING_FEERATE
+    BUTTON      ID_CALCULATE
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_CUT
+END
+
+IDR_TIME TOOLBAR DISCARDABLE  155, 35
+BEGIN
+    BUTTON      ID_CURRENT_TIME
+END
+
+IDR_OPERATOR TOOLBAR DISCARDABLE  155, 35
+BEGIN
+    BUTTON      ID_BUTTON32772
+END
+
+IDR_STATUS TOOLBAR DISCARDABLE  35, 35
+BEGIN
+    BUTTON      ID_STATUS_MNT_STOP
+    BUTTON      ID_STATUS_MNT_NORMAL
+    BUTTON      ID_STATUS_MNT_BUSY
+    BUTTON      ID_STATUS_MNT_ERROR
+    BUTTON      ID_STATUS_OTP_STOP
+    BUTTON      ID_STATUS_OTP_NORMAL
+    BUTTON      ID_STATUS_OTP_BUSY
+    BUTTON      ID_STATUS_OTP_ERROR
+    BUTTON      ID_STATUS_KDE_STOP
+    BUTTON      ID_STATUS_KDE_NORMAL
+    BUTTON      ID_STATUS_KDE_BUSY
+    BUTTON      ID_STATUS_KDE_ERROR
+END
+
+IDR_STATUS1 TOOLBAR DISCARDABLE  35, 35
+BEGIN
+    BUTTON      ID_STATUS_MNT_STOP
+    BUTTON      ID_STATUS_MNT_NORMAL
+    BUTTON      ID_STATUS_MNT_BUSY
+    BUTTON      ID_STATUS_MNT_ERROR
+    BUTTON      ID_STATUS_OTP_STOP
+    BUTTON      ID_STATUS_OTP_NORMAL
+    BUTTON      ID_STATUS_OTP_BUSY
+    BUTTON      ID_STATUS_OTP_ERROR
+    BUTTON      ID_STATUS_KDE_STOP
+    BUTTON      ID_STATUS_KDE_NORMAL
+    BUTTON      ID_STATUS_KDE_BUSY
+    BUTTON      ID_STATUS_KDE_ERROR
+END
+
+IDR_STATUS2 TOOLBAR DISCARDABLE  35, 35
+BEGIN
+    BUTTON      ID_STATUS_MNT_STOP
+    BUTTON      ID_STATUS_MNT_NORMAL
+    BUTTON      ID_STATUS_MNT_BUSY
+    BUTTON      ID_STATUS_MNT_ERROR
+    BUTTON      ID_STATUS_OTP_STOP
+    BUTTON      ID_STATUS_OTP_NORMAL
+    BUTTON      ID_STATUS_OTP_BUSY
+    BUTTON      ID_STATUS_OTP_ERROR
+    BUTTON      ID_STATUS_KDE_STOP
+    BUTTON      ID_STATUS_KDE_NORMAL
+    BUTTON      ID_STATUS_KDE_BUSY
+    BUTTON      ID_STATUS_KDE_ERROR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "系統(&S)"
+    BEGIN
+        MENUITEM "退出(&E)",                    ID_APP_EXIT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具欄(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "狀態欄(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "時間欄(&M)",                  ID_VIEW_TIME_BAR
+        MENUITEM "操作員欄(&O)",                ID_VIEW_OPERATOR_BAR
+    END
+    POPUP "季票(&C)", INACTIVE
+    BEGIN
+        MENUITEM "搜尋(&S)...",                 ID_CARD_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "續期(&E)...",                 ID_CARD_TOPUP, INACTIVE
+        MENUITEM "新增(&C)...",                 ID_CARD_CREATE
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "卡记录查询",                  ID_OTP_RECORD
+        MENUITEM "計算器(&C)",                  ID_CALCULATE
+    END
+    POPUP "系統設定(&S)"
+    BEGIN
+        MENUITEM "系統設定(&S)",                ID_SETTING_SYSTEM
+        MENUITEM "收費率設定(&F)",              ID_SETTING_FEERATE
+        MENUITEM "折扣率設定(&D)",              ID_SETTING_DISCOUNTPLAN
+        , GRAYED
+        MENUITEM "計算方式(&L)",                ID_SETTING_CALCULATERULE
+        MENUITEM SEPARATOR
+        MENUITEM "組類別設定(&G)",              ID_SETTING_GROUPTYPE
+        MENUITEM "卡種類設定(&C)",              ID_SETTING_CARDTYPE
+        MENUITEM "站設定(&T)",                  ID_SETTING_STATION
+        MENUITEM "付款種類(&M)",                ID_SETTING_PAYMODETYPE
+        MENUITEM "車輛種類(&V)",                ID_SETTING_CARTYPE
+        MENUITEM "操作員權限(&I)",              ID_SETTING_PERMISSION
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "收據格式(&R)",                ID_SETTING_RECEIPT_FORMAT
+        MENUITEM "八達通讀卡器(&O)",            ID_SETTING_OTP_READER
+        MENUITEM "系統參數(&P)",                ID_SETTING_SYS_PARAMETERS
+    END
+    POPUP "通訊(&C)"
+    BEGIN
+        POPUP "管理站(&C)"
+        BEGIN
+            MENUITEM "開始 / 重新開始",             ID_MNT_SET_START
+            MENUITEM "停止",                        ID_MNT_SET_STOP
+        END
+        POPUP "磁條讀卡器(&K)"
+        BEGIN
+            MENUITEM "開始 / 重新開始",             ID_KDE_SET_START
+            MENUITEM "停止",                        ID_KDE_SET_STOP
+        END
+        POPUP "八達通讀卡器(&O)"
+        BEGIN
+            MENUITEM "開始 / 重新開始",             ID_OTP_SET_START
+            MENUITEM "停止",                        ID_OTP_SET_STOP
+        END
+    END
+    POPUP "幫助(&H)"
+    BEGIN
+        MENUITEM "幫助(&H)",                    ID_HELP
+        MENUITEM "查找幫助(&F)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "關於...(&A)",                 ID_APP_ABOUT
+    END
+    POPUP "         ", CHECKED, INACTIVE
+    BEGIN
+        MENUITEM "測試與管理站的通訊(&T)",      ID_TRY_MNT
+        MENUITEM "察看八達通信息(&O)",          ID_TOOL_VIEW_OTP_CARD
+        MENUITEM "察看KDE信息(&K)",             ID_TOOL_VIEW_KDE_CARD
+        MENUITEM "付款方式設定(&E)",            ID_SETTING_PAYMODE
+    END
+    POPUP "        ", INACTIVE
+    BEGIN
+        MENUITEM "事件紀錄(&E)",                ID_EVENT_LOG
+        MENUITEM "賬目簡報(&A)",                ID_VIEW_ACCOUNT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 14,19,1703,0
+ PRODUCTVERSION 2,6,3,40
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CashierGUI MFC Application\0"
+            VALUE "FileVersion", "14, 19, 1703, 0\0"
+            VALUE "InternalName", "CashierGUI\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CashierGUI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CashierGUI Application\0"
+            VALUE "ProductVersion", "2, 6, 3, 40\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CARD_SEARCH DLGINIT
+BEGIN
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0050, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x004f, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0043, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x004d, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0052, 
+    0
+END
+
+IDD_CARD_CREATE1 DLGINIT
+BEGIN
+    IDC_CARD_TYPE_PART, 0x403, 11, 0
+0xcfba, 0xf8b1, 0x64a5, 0xb228, 0x29bc, "\000" 
+    IDC_CARD_TYPE_PART, 0x403, 9, 0
+0x4ba4, 0x46b9, 0x71b3, 0x64a5, "\000" 
+    0
+END
+
+IDD_PAYMENT_HAND_ENTRYTIME DLGINIT
+BEGIN
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3128, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3165, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3228, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3265, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3328, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3365, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3428, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3465, "\000" 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3028, 0x2931, 0x4520, 0x746e, 0x7972, 0x0031, 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3128, 0x2932, 0x4520, 0x746e, 0x7972, 0x0032, 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3228, 0x2931, 0x4520, 0x746e, 0x7972, 0x0033, 
+    0
+END
+
+IDD_RATE_CALCULATE DLGINIT
+BEGIN
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3128, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3165, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3228, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3265, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3328, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3365, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3428, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3465, "\000" 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3028, 0x2931, 0x4520, 0x746e, 0x7972, 0x0031, 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3128, 0x2932, 0x4520, 0x746e, 0x7972, 0x0032, 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3228, 0x2931, 0x4520, 0x746e, 0x7972, 0x0033, 
+    0
+END
+
+IDD_SETTING_PERIPHERAL DLGINIT
+BEGIN
+    IDC_OTP_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_OTP_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_OTP_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_OTP_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_OTP_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_KDE_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_KDE_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_KDE_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_KDE_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_LCD_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_LCD_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_LCD_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_LCD_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3154, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3254, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3354, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3454, "\000" 
+    IDC_PRINTER_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_PRINTER_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_PRINTER_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_PRINTER_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+IDD_PAYMENT_HAND_KDE_TICKET DLGINIT
+BEGIN
+    IDC_ENTRYSTATION, 0x403, 11, 0
+0x69b6, 0x66a4, 0xb8af, 0xa428, 0x2940, "\000" 
+    IDC_ENTRYSTATION, 0x403, 11, 0
+0x69b6, 0x66a4, 0xb8af, 0xa428, 0x2947, "\000" 
+    IDC_ENTRYSTATION, 0x403, 11, 0
+0x69b6, 0x66a4, 0xb8af, 0xa428, 0x2954, "\000" 
+    IDC_VEHICLETYPE, 0x403, 9, 0
+0x2e31, 0x70a8, 0x61ae, 0xaea8, "\000" 
+    IDC_VEHICLETYPE, 0x403, 11, 0
+0x2e32, 0xb4bb, 0xacab, 0x66b3, 0xaea8, "\000" 
+    IDC_VEHICLETYPE, 0x403, 11, 0
+0x2e36, 0x74a8, 0xceb2, 0xfbba, 0x40c5, "\000" 
+    0
+END
+
+IDD_PAYMENT_HAND_OTP_TICKET DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 13, 0
+0x6150, 0x6570, 0x2072, 0x6954, 0x6b63, 0x7465, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x634f, 0x6f74, 0x7570, 0x2073, 0x6143, 0x6472, "\000" 
+    0
+END
+
+IDD_PAYMENT_OTP_PRE_ADDVALUE DLGINIT
+BEGIN
+    ID_AVSEL, 0x403, 3, 0
+0x3035, "\000" 
+    ID_AVSEL, 0x403, 4, 0
+0x3031, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3531, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3032, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3532, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3033, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3533, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3034, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3534, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3035, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3535, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3036, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3536, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3037, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3537, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3038, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3538, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3039, 0x0030, 
+    ID_AVSEL, 0x403, 4, 0
+0x3539, 0x0030, 
+    ID_AVSEL, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    0
+END
+
+IDD_PAYMENT_HAND_TICKET DLGINIT
+BEGIN
+    IDC_VEHICLETYPE, 0x403, 10, 0
+0x2e31, 0xb420, 0xb3b6, 0xa871, 0x00ae, 
+    IDC_VEHICLETYPE, 0x403, 20, 0
+0x2e32, 0xc020, 0xa85c, 0x2fae, 0xd1a6, 0x48a4, 0x7cb0, 0xa52f, 0xa8ae, 
+0x00e0, 
+    IDC_VEHICLETYPE, 0x403, 12, 0
+0x2e33, 0xaf20, 0xb353, 0xa45c, 0xa448, 0x0068, 
+    IDC_VEHICLETYPE, 0x403, 13, 0
+0x2e34, 0xbec2, 0xfbad, 0xc228, 0xa5e5, 0x29cd, "\000" 
+    IDC_VEHICLETYPE, 0x403, 21, 0
+0x2e35, 0xbec2, 0xfbad, 0xa828, 0xa5e4, 0xc24c, 0xa8be, 0xa674, 0xa850, 
+0x29c6, "\000" 
+    IDC_VEHICLETYPE, 0x403, 11, 0
+0x2e36, 0x74a8, 0xceb2, 0xfbba, 0x40c5, "\000" 
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CARDOTP             BITMAP  DISCARDABLE     "res\\OTPCard.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MSGBOX_WAIT DIALOG DISCARDABLE  0, 0, 133, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注意"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,29,37,11
+    PUSHBUTTON      "Cancel",IDCANCEL,67,29,38,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MSGBOX_WAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CashierGUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Singapore) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZHI)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SINGAPORE
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTP_NOERR           "读卡器正常操作"
+    IDS_OTP_COM_ERR         "与读卡器的通讯错误，\n读卡器未能连接！"
+    IDS_OTP_FILE_OPEN       "文件打开出错！"
+    IDS_OTP_INVPARAM        "无效的参数！"
+    IDS_OTP_FILE_READ       "文件读取出错！"
+    IDS_OTP_COM_INVRESP     "读卡器返回结果无效！"
+    IDS_OTP_FILE_CHECKSUM   "文件的校验码出错！"
+    IDS_OTP_CSCREAD         "卡信息读取出错！"
+    IDS_OTP_CSCWRITE        "卡信息写入出错！"
+    IDS_OTP_CSCBLOCK        "此卡已被禁止使用！"
+    IDS_OTP_NOCSC           "卡不存在，无法继续操作！"
+    IDS_OTP_INCOMP          "卡交易尚未完成！"
+    IDS_OTP_TLOGFULL        "交易记录位置已满！"
+    IDS_OTP_CSCBLOCKED      "CSC被禁止！"
+    IDS_OTP_POLLTIME        "卡查询超时，无卡存在！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTP_POLLAUTH        "卡授权校验出错！"
+    IDS_OTP_POLLRECOVER     "卡内容恢复出错！"
+    IDS_OTP_NOFUND          "卡内金额不足！"
+    IDS_OTP_EXCLMT          "卡内金额数值超过顶限！"
+    IDS_OTP_AVEXPIRE        "超越充值限额，无法继续操作！"
+    IDS_OTP_CTRLID          "控制器编码无效！"
+    IDS_OTP_WRITEID         "写编码无效！"
+    IDS_OTP_DEFER_NOMORE    "卡内已无可用金额！"
+    IDS_OTP_DEFER_STATE     "扣钱顺序出错！"
+    IDS_OTP_FIRM_NONE       "没有发现新的系统更新！"
+    IDS_OTP_FIRM_DONE       "读卡器已经通过系统整理操作完成更新！"
+    IDS_OTP_OPEN_AR         "打开本地的AR出错!"
+    IDS_OTP_OPEN_UD         "打开本地的UD出错!"
+    IDS_OTP_CCHS_1005       "读卡器系统软件/数据操作软件更新失败(1005)！"
+    IDS_OTP_CCHS_1006       "读卡器系统软件/数据操作软件更新失败(1006)！"
+    IDS_OTP_CCHS_1007       "读卡器系统软件/数据操作软件更新失败(1007)！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTP_CCHS_1008       "读卡器系统软件/数据操作软件更新失败(1008)！"
+    IDS_OTP_CCHS_1009       "读卡器系统软件/数据操作软件更新失败(1009)！"
+    IDS_OTP_DIFFER_CARD     "使用另外的八达通卡出错！"
+    IDS_OTP_UNKNOWN         "操作出错（原因不明）！"
+    IDS_OTP_USAGEEXCEED     "已经超越零售业务金额顶限！"
+END
+
+#endif    // Chinese (Singapore) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PAYMENT_LABEL       BITMAP  DISCARDABLE     "res\\PaymentLabel(Taiwan).bmp"
+IDB_DISCOUNT            BITMAP  DISCARDABLE     "res\\discount.bmp"
+IDB_CASH                BITMAP  DISCARDABLE     "res\\cash.bmp"
+IDB_CEXIT               BITMAP  DISCARDABLE     "res\\cexit.bmp"
+IDB_SHIP                BITMAP  DISCARDABLE     "res\\ship.bmp"
+IDB_PROCESS             BITMAP  DISCARDABLE     "res\\process.bmp"
+IDB_CHECK               BITMAP  DISCARDABLE     "res\\check.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_CONFEXIT DIALOGEX 0, 0, 243, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Exit Confirmation"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "穓碝 >>",IDOK,161,87,66,16
+    PUSHBUTTON      "",IDCANCEL,172,206,63,14
+    EDITTEXT        IDC_TICKETNO,58,86,87,16,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO1,148,7,87,52,CBS_DROPDOWNLIST | NOT WS_VISIBLE | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "猔種: 盢э氨ó篈, 絋粄玡叫浪琩ó琌瞒初!",
+                    IDC_STATIC,6,192,212,8
+    EDITTEXT        IDC_EDIT_ENTTIME,64,120,98,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ENTSTN,215,121,13,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "蹿丁",IDC_STATIC2,29,136,34,9
+    LTEXT           "秈腹",IDC_STATIC3,174,122,33,9
+    PUSHBUTTON      "絋粄",IDC_BUTTON2,6,206,121,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT_EXTSTN,215,159,13,12,ES_AUTOHSCROLL
+    LTEXT           "砞﹚瞒初丁",IDC_STATIC4,12,161,49,9
+    LTEXT           "砞﹚瞒初腹",IDC_STATIC5,165,161,48,9
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,64,159,51,13
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,114,159,
+                    48,13
+    LTEXT           "8布腹絏 :",IDC_STATIC,13,90,41,10
+    LTEXT           "秈丁",IDC_STATIC6,29,122,33,9
+    LTEXT           "絋粄瞒初",CUR_STATUS3,71,7,37,9
+    LTEXT           "Exit Confirmation",CUR_STATUS4,71,17,67,11
+    GROUPBOX        "叫块笷硄 / 兵絏布 腹絏",IDC_STATIC,6,40,229,67
+    CONTROL         149,IDC_STATIC11,"Static",SS_BITMAP,13,52,49,31
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP,178,51,49,31
+    EDITTEXT        IDC_EDIT_PAYMENTTIME,64,134,98,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "蹿腹",IDC_STATIC7,174,136,33,9
+    EDITTEXT        IDC_EDIT_PAYMENTSTN,215,135,13,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "氨ó魁",IDC_STATIC,6,109,229,42
+    CONTROL         "笷硄",IDC_RADIO_CE_OCTOPUS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,70,56,40,10
+    CONTROL         "布",IDC_RADIO_CE_NORMALTK,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,139,50,40,10
+    CONTROL         "穕胊布",IDC_RADIO_CE_DAMGTK,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,139,62,40,10
+    CONTROL         "框ア布",IDC_RADIO_CE_LOSTTK,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,139,74,40,10
+    CONTROL         281,IDC_STATIC,"Static",SS_BITMAP,6,7,59,29
+    CONTROL         "  る",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,135,54,
+                    43,11
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,182,82,50,30
+END
+
+IDD_DLG_RENEW DIALOGEX 0, 0, 257, 286
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Renew Special Card ..."
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "絋﹚",IDOK,137,265,56,14,WS_DISABLED
+    PUSHBUTTON      "",IDCANCEL,200,265,50,14
+    EDITTEXT        IDC_CARDNUM,182,26,61,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",PERIODTO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_DISABLED | 
+                    WS_TABSTOP,50,73,62,11
+    CONTROL         "る",RADIO_1M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,120,58,42,10
+    CONTROL         "ㄢる",RADIO_2M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,162,58,42,10
+    CONTROL         "る",RADIO_3M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,206,58,42,10
+    CONTROL         "",RADIO_6M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,120,74,42,10
+    CONTROL         "",RADIO_12M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,162,74,42,10
+    CONTROL         "ㄢ",RADIO_24M,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,206,74,42,10
+    GROUPBOX        "Τ戳",IDC_STATIC,7,42,243,113
+    LTEXT           "秨﹍ :",IDC_STATIC,20,58,27,8
+    LTEXT           "篒ゎ :",IDC_STATIC,20,74,27,8
+    CONTROL         "DateTimePicker1",PERIODFROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_DISABLED | 
+                    WS_TABSTOP,50,57,62,11
+    LTEXT           "ノ'秨﹍'﹚竡Τ戳秨﹍ら戳ノ'篒ゎ'﹚竡挡ら戳",
+                    IDC_STATIC,25,92,216,8
+    LTEXT           "$200 / year",PERIOD_PRICE,80,135,50,9,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        PERIOD_AMOUNT,177,132,57,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "尿戳禣ノ",IDC_STATIC,133,135,41,8
+    EDITTEXT        ORGTRANSTIMES,70,171,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        ORGSTOREVALUE,184,172,56,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "禣ユ计",IDC_STATIC,7,158,119,121
+    LTEXT           "セ纗",IDC_STATIC_2,139,174,40,8,NOT WS_VISIBLE
+    LTEXT           "セユ计",IDC_STATIC,15,174,49,8
+    LTEXT           "羆肂禣ノ",IDC_STATIC,139,249,43,8
+    LTEXT           "$0.5 / Trans",TRANSACTION_PRICE,51,233,57,10,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        TRANSACTION_AMOUNT,51,250,57,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        TOTAL,184,247,56,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "基",IDC_STATIC,23,234,24,8
+    CONTROL         273,IDC_STATIC,"Static",SS_BITMAP,7,7,49,31
+    LTEXT           "尿戳基",IDC_STATIC,22,135,41,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,12,105,231,44
+    GROUPBOX        "╰参纗",IDC_STATIC_1,130,158,120,83,NOT WS_VISIBLE
+    EDITTEXT        ADDTRANSTIMES,70,188,49,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        NEWTRANSTIMES,70,206,49,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "糤ユ计",IDC_STATIC,15,192,48,8
+    LTEXT           "瞷ユ计",IDC_STATIC,16,210,49,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,15,227,103,45
+    EDITTEXT        ADDSTOREVALUE,184,187,56,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    LTEXT           "糤纗",IDC_STATIC_3,138,189,43,8,NOT WS_VISIBLE
+    EDITTEXT        NEWSTOREVALUE,184,202,56,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    LTEXT           "瞷纗",IDC_STATIC_4,139,204,42,8,NOT WS_VISIBLE
+    LTEXT           "禣ノ",IDC_STATIC,24,254,25,8
+    EDITTEXT        STOREVALUE_AMOUNT,184,221,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    LTEXT           "摸",IDC_STATIC,75,28,17,8
+    LTEXT           "腹絏",IDC_STATIC,156,28,17,8
+    LTEXT           "叫础(竚)┮惠尿戳笷硄┪合兵...",IDC_STATIC,
+                    74,9,162,8
+    EDITTEXT        IDC_CARDTYPE,103,26,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "セΤ戳",IDC_STATIC,23,110,57,8
+    LTEXT           "瞷Τ戳",IDC_STATIC,22,122,57,8
+    LTEXT           "",IDC_ORGPERIOD,80,110,154,9,0,WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_CURPERIOD,80,121,154,9,0,WS_EX_STATICEDGE
+    LTEXT           "禣ノ",IDC_STATIC_5,155,223,25,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC_6,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    146,218,99,19
+END
+
+IDD_DLG_TOSHIP DIALOG DISCARDABLE  0, 0, 196, 213
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "絋﹚",IDOK,3,194,50,14
+    PUSHBUTTON      "",IDCANCEL,139,194,50,14
+    CONTROL         283,IDC_STATIC,"Static",SS_BITMAP,3,7,49,31
+    LTEXT           "辅差布矪瞶",IDC_STATIC,55,9,55,9
+    LTEXT           "Vehicle to Sea Parking Process",IDC_STATIC,56,19,125,9
+    EDITTEXT        IDC_EDIT1,28,95,90,9,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,28,114,92,11,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATEPICKER_TOSHIP,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,19,158,
+                    51,13
+    CONTROL         "DateTimePicker2",IDC_TIMEPICKER_TOSHIP,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,79,157,48,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_CONFEXIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_DLG_RENEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_DLG_TOSHIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_CONFEXIT DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 13, 0
+0x6150, 0x6570, 0x2072, 0x6954, 0x6b63, 0x7465, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x634f, 0x6f74, 0x7570, 0x2073, 0x6143, 0x6472, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SMARON Automatic Carpark System - Cashier Station"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "猔種"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "show help\nhelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "埃匡拒兜\n埃"
+    ID_EDIT_CLEAR_ALL       "场埃\n场埃"
+    ID_EDIT_COPY            "盢匡拒兜ī芭禟狾\nī"
+    ID_EDIT_CUT             "盢匡拒兜芭禟芭禟狾\n芭禟"
+    ID_EDIT_FIND            "琩т﹚ゅ\n琩т"
+    ID_EDIT_PASTE           "盢芭禟狾ず甧诌禟秈ㄓ\n诌禟"
+    ID_EDIT_REPEAT          "笆確\n確"
+    ID_EDIT_REPLACE         "蠢传﹚ゅ\n蠢传"
+    ID_EDIT_SELECT_ALL      "匡拒场ゅ郎\n匡"
+    ID_EDIT_UNDO            "篗綪Ω笆\n篗綪"
+    ID_EDIT_REDO            "確Ω笆\n確"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "盢怠へ秸タ盽"
+    AFX_IDS_SCTASKLIST      "縀ヴ叭逆"
+    KDE_MSG_READCARDERR     "弄岿\n叫浪琩布┪も笆块獺\n\n翴阑ˉ弄ˇΩ弄\n翴阑ˉˇも笆块獺"
+    KDE_MSG_CAPTION         "合兵弄竟巨獺"
+    KDE_MSG_READENTERTIMEERR "ず獺礚!\n叫も笆块闽獺"
+    MSG_CONNECT_MNT_ERR     "恨瞶礚猭臫莱┪臫莱岿粇\n叫刚┪╰参恨瞶碝―腊"
+    SYS_SHOW_DATE           "%b-%d-%Y"
+    SYS_SHOW_HHMMSS         "%H:%M:%S"
+    SYS_SHOW_TIMESPAN       "%D Days, %H : %M"
+    SYS_SHOW_DATETIME       "%b-%d-%Y %H:%M:%S"
+    SYS_STORE_DATE          "%y%m%d"
+    SYS_STORE_HHMM          "%H%M"
+    SYS_STORE_WEEK          "W%w"
+    SYS_SHOW_WEEK           "%W"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_SYSTEM       "\nAll system setting at here"
+    ID_BUTTON32777          "Comm With Management Status ""Stop"""
+    ID_BUTTON32778          "Comm With Management Status"
+    ID_BUTTON32779          "Comm With Management Status"
+    ID_BUTTON32780          "Octopus Reader Status"
+    ID_BUTTON32781          "Octopus Reader Status"
+    ID_STATUS_OTP_ERROR     "\n'error' communication with Octopus reader status"
+    ID_BUTTON32783          "KDE Reader Status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32784          "合兵弄诀篈"
+    ID_BUTTON32785          "合兵弄诀篈"
+    ID_STATUS_MNT_STOP      "'氨ゎ'籔恨瞶硄癟"
+    ID_STATUS_MNT_NORMAL    "'タ盽'籔恨瞶硄癟"
+    ID_STATUS_MNT_ERROR     "'岿粇' 籔恨瞶硄癟"
+    ID_STATUS_OTP_STOP      "\nい耞笷硄弄竟硄癟"
+    ID_STATUS_OTP_NORMAL    "\n確笷硄弄竟硄癟"
+    ID_STATUS_KDE_STOP      "\nい耞籔合兵弄竟硄癟"
+    ID_STATUS_KDE_NORMAL    "\n確籔合兵弄竟硄癟"
+    ID_STATUS_KDE_ERROR     "\n籔合兵弄竟硄癟岿"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EVENT_LOG            "\nゴ秨ㄆン魁"
+    ID_CALCULATE            "\n璸衡竟"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_SHOW_HHMM           "%H:%M"
+    SYS_SHOW_MONEY          "%.2f"
+    OTP_MSG_CAPTION         "笷硄弄竟巨獺"
+    OTP_MSG_READENTERTIMEERR 
+                            "礚猭眖祇瞷ヴ┕秈禣魁\n叫も笆块獺"
+    ERR_MSG_OPENDATABASE    "ゴ秨计沮畐岿\n┮Τ闽计沮畐巨礚猭磅︽\n1. 叫闽超祘礛Ω沽刚ゴ秨计沮畐\n2. 叫浪琩琌计沮畐ゅン框ア┪穕胊\n"
+    SYS_MSG_CANCEL_PAYMENT  "タ刚瓜讽玡蹿巨 \n\n叫絋粄"
+    SYS_MSG_NOT_ENOUGH      "氨ó禣蹿ぃì"
+    SYS_MSG_WARNING         "牡"
+    SYS_MSG_CANCEL_OPERATE  "タ刚瓜讽玡巨 \n\n叫絋粄"
+    ERR_READ_KDE_TICKET     "合兵布ず甧礚猭タ盽弄\n\n刚┪も笆块"
+    SYS_MSG_KDE_DEVICE      "合兵弄竟"
+    SYS_MSG_MNT_COMMUNICATE "籔恨瞶硄癟"
+    SYS_MSG_OTP_DEVICE      "笷硄弄竟"
+    MNT_ERR_READ_CARD_STATUS "弄岿 \n\n刚┪?"
+    MNT_ERR_READ_OPERATOR_MSG "礚猭タ絋莉眔巨獺 \n\n刚┪l?"
+    MNT_ERR_READ_ENTRYLOG   "礚猭т秈獺 \n\n叫も笆匡拒"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_STORE_DATETIME      "%y%m%d%H%M%S"
+    SYS_SHOW_PERCENTAGE     "%.2f%%"
+    CONFIRM_KDE_START       "弄竟タ絋﹚璶ㄏウ氨ゎ盾"
+    CONFIRM_MNT_START       "硂盢穦刚瓜币笆籔恨瞶硄癟\n狦タ硄癟碞氨ゎウ\n絋﹚秈︽硂巨盾"
+    CONFIRM_OTP_START       "硂盢穦刚瓜币笆笷硄弄竟.\n絋﹚秈︽硂巨盾"
+    TIP_CARDNO_NUMERIC      "腹ゲ斗琌计Α"
+    TIP_CARDNO_LENGTH       "腹莱8"
+    Err_Read_Entry_Msg      "腹莱8"
+    Err_No_Entry_Info       "⊿Τ莱初獺叫浪代腹琌タ絋"
+    CONFIRM_MNT_STOP        "硂盢穦氨ゎ籔恨瞶硄癟\n┮Τ膀籔恨瞶硄癟家遏盢笲︽硄癟钵盽家Α"
+    CONFIRM_KDE_STOP        "硂盢穦氨ゎKDE弄竟\n盢ぃ穦笆弄布\n絋﹚膥尿硂兜巨盾"
+    CONFIRM_OTP_STOP        "硂盢穦氨ゎ笷硄弄竟\n盢ぃ穦笆弄\n絋﹚膥尿硂兜巨盾"
+    SPECIAL_CARD_MODE_PERIOD "沮ㄏノΤ戳璸衡"
+    SPECIAL_CARD_MODE_TIMES "沮ㄏノΤΩ计璸衡"
+    SPECIAL_CARD_MODE_FREE  "礚"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_PAYMODE      "蹿よΑ砞﹚"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_MNT_BUSY      "\n'busy' communication with Management"
+    ID_STATUS_OTP_BUSY      "\n'busy' communication with Octopus reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_KDE_BUSY      "\n'busy' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SPECIAL_CARD_MODE_ILLEGAL "獶猭ㄏノ家Α"
+    TIP_CARD_CATEGORY_ABSENCE "ぶ贺摸叫恨瞶睰"
+    TIP_EMPTY_CARDNO        "腹ぃ叫块腹"
+    TIP_EXIST_CARDNO        "浪代腹叫块ㄤウ腹"
+    TIP_ERROR_QUERY         "硄癟岿粇ぃ硄癟钵盽薄猵快瞶疭叫单硄癟確┪眖刚"
+    TIP_INVALID_PERIOD      "Τ戳块岿粇"
+    TIP_EMPTY_HOLDERID      "Τ絪腹ぃ叫块"
+    TIP_INEXISTENCE_HOLDERID "⊿Τ浪代Τ絪腹"
+    TIP_DUPLICATE_HOLDERID  "Τ絪腹竒叫块ㄤウ絪腹┪匡拒ㄏノ竒Τ"
+    TIP_EMPTY_NAME_PWD      "ノめ㎝盞絏ぃ"
+    TIP_COMM_ERROR          "硄癟岿粇⊿Τ臫莱┪莱岿粇叫刚"
+    TIP_INVALID_NAME_PWD    "礚ノめ┪盞絏叫穝块"
+    TIP_INVALID_ADD_VALUE   "肂ゲ斗琌50计"
+    TIP_MIN_LIMIT_ADD_VALUE "糤肂筁ぶ"
+    TIP_MAX_LIMIT_ADD_VALUE "糤肂筁"
+    TIP_SUCCESSFUL_ADDVALUE "糤Θ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING1             "The value of 'Cash Remain' is negative, Too many cash withdrawal!\n\n韢\n\tTIP_NEGATIVE_STOREVALUEREMAIN = ""The value of 'Store Value Remain' is negative,\nToo many store value  withdrawal!"";\n\tTIP_NEGATIVE_OCTOPUSREMAIN = ""The value of 'Octopus Remain' is negative,\nToo many octopus withdrawal!"";\n"
+    IDS_STRING2             "Save setting successful!\nUse the new parameters now.\n\n麋擹?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIP_SHORTAGE_STORE_VALUE "纗緇肂ぃì"
+    TIP_SHORTAGE_OCTOPUS_REMAIN "笷硄緇肂ぃì"
+    TIP_SHORTAGE_PAYMENT    "蹿肂ぃì"
+    TIP_SUCCESSFUL_OTP_DEDUCT "笷硄Ι禣Θ"
+    TIP_SUCCESSFUL_SAVE_SETTING "砞竚竒э跑のネ"
+    TIP_NEGATIVE_CASHREMAIN "瞷緇肂璽"
+    TIP_NEGATIVE_OCTOPUSREMAIN "笷硄緇肂璽"
+    TIP_NEGATIVE_STOREVALUEREMAIN "ず纗緇肂璽"
+    TIP_KDE_STOP            "KDE弄竟⊿Τ币笆"
+    TIP_KDE_NO_TICKET       "⊿Τ浪代合兵布"
+    TIP_KDE_EMPTY_TICKET    "硂琌眎布叫传布"
+    TIP_INVALID_IO_TIME     "秈丁块Τ粇"
+    TIP_NEED_READ_OTP_CARD  "叫╃笷硄"
+    TIP_OTP_NO_CARD         "⊿Τ浪代笷硄"
+    TIP_NEED_DISCOUNT       "⊿Τ浪代笷硄"
+    IDS_STRING_COMM         "硄癟"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_DAYRULE      "ら戳Μ禣砏玥"
+    IDS_STRING_GROUPRULE    "舱Μ禣砏玥"
+    IDS_STRING_VEHRULE      "óΜ禣砏玥"
+    IDS_STRING_TZRULE       "丁琿Μ禣砏玥"
+    IDS_STRING_FEERULE      "虫丁Μ禣砏玥"
+    IDS_STRING_FIXRULE      "㏕篈чΙ瞯Μ禣砏玥"
+    IDS_STRING_CALCULATE    "Μ禣冈薄"
+    IDS_STRING_PERIP        "砞"
+    IDS_STRING_TIME         "丁"
+    IDS_STRING_TYPE         "摸"
+    IDS_STRING_MSG          "獺"
+    IDS_STRING_CARDNO       "腹"
+    IDS_STRING_CATEGORY     "贺摸"
+    IDS_STRING_VEHTYPE      "ó摸"
+    IDS_STRING_STNID        "腹"
+    IDS_STRING_PAYTIME      "蹿丁"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_RECEIPTNO    "Μ沮腹"
+    IDS_STRING_AMOUNT       "肂"
+    IDS_STRING_TRANSNO      "ユ腹"
+    IDS_STRING_DESCRIP      "磞瓃"
+    IDS_STRING_OPTR         "巨"
+    IDS_STRING_CUROPTR      "讽玡巨"
+    IDS_STRING_INDEX        "腹"
+    IDS_STRING_NAME         ""
+    IDS_STRING_DISCOUNT     "чΙ"
+    IDS_STRING_RULEID       "砏玥絪腹"
+    IDS_STRING_DATEWEEK     "ら戳/琍戳"
+    IDS_STRING_GROUPID      "だ舱絪腹"
+    IDS_STRING_TIMEUNIT     "丁虫"
+    IDS_STRING_CHARGE       "Μ禣"
+    IDS_STRING_INZONESTART  "秈琿秨﹍"
+    IDS_STRING_INZONEEND    "秈琿挡"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_INZONEDATE   "秈琿ら戳"
+    IDS_STRING_OUTZONESTART "瞒秨琿秨﹍"
+    IDS_STRING_OUTZONEEND   "瞒秨琿挡"
+    IDS_STRING_OUTZONEDATE  "瞒秨琿ら戳"
+    IDS_STRING_IODAYDIFF    "秈ぱ计"
+    IDS_STRING_START        "秨﹍丁"
+    IDS_STRING_END          "挡丁"
+    IDS_STRING_UNITRULEID   "虫Μ禣絪腹"
+    IDS_STRING_WORKMODE     "家Α"
+    IDS_STRING_JOINFEE      "ビ叫禣"
+    IDS_STRING_CARDFEE      "禣"
+    IDS_STRING_UNITPRICE    "虫基"
+    IDS_STRING_WARNLVL      "牡з絬"
+    IDS_STRING_ISSV         "琌纗"
+    IDS_STRING_PLOTS        "氨ó"
+    IDS_STRING_PAYMODE      "蹿よΑ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_NEEDCHANGE   "惠璶т箂"
+    IDS_STRING_STNTYPE      "摸"
+    IDS_STRING_GUEST        "砐"
+    IDS_STRING_OPTRLVL      "巨"
+    IDS_STRING_SUPR         "恨瞶"
+    IDS_STRING_MGR          "竒瞶"
+    IDS_STRING_ADMIN        "╰参"
+    IDS_STRING_SETTING      "砞﹚"
+    IDS_STRING_IPADDR       "IP"
+    IDS_STRING_SPID         "ㄑ莱坝"
+    IDS_STRING_MID          "诀竟腹"
+    IDS_STRING_AMOUNT2      "肂2"
+    IDS_STRING_AMOUNT3      "肂3"
+    IDS_STRING_AMOUNT1      "肂1"
+    IDS_STRING_PAYMODE2     "蹿よΑ2"
+    IDS_STRING_PAYMODE3     "蹿よΑ3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_PAYMODE1     "蹿よΑ1"
+    IDS_STRING61345         "⊿Τ浪代笷硄"
+    IDS_CMS_DOWNLOAD        "恨瞶更"
+    IDS_CMS_UPLOAD          "恨瞶更"
+    IDS_BACKUP              "称"
+    IDS_LOG                 "魁"
+    IDS_MYCOMPUTER          "и筿福"
+    IDS_MSG_TYPE_ALL        "┮Τ"
+    IDS_MSG_TYPE_WARNING    "牡"
+    IDS_MSG_TYPE_ERROR      "岿粇"
+    IDS_MSG_TYPE_OPERATOR   "巨"
+    IDS_MSG_TYPE_SHOWONLY   "诡"
+    IDS_MSG_TYPE_SYSTEM     "╰参"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TYPE_DETAIL     "冈薄"
+    IDS_STRING_EXITSYS      "眤タ刚瓜癶╰参叫谔﹚琌璶癶..."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "CashierGUI"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CashierGUI"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "show help\nhelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    KDE_MSG_READCARDERR     "There have some error\nCheck the card or input by hand.\n\nClick 'Retry' to reread the card\nClick 'Cancel' to input by hand."
+    KDE_MSG_CAPTION         "KDE Operate Message"
+    KDE_MSG_READENTERTIMEERR 
+                            "This card didn't have transaction message!\nYou need input by hand."
+    MSG_CONNECT_MNT_ERR     "Car Park Management no response or error esponse,\nPlease retry or ask System manager!"
+    SYS_SHOW_DATE           "%b-%d-%Y"
+    SYS_SHOW_HHMMSS         "%H:%M:%S"
+    SYS_SHOW_TIMESPAN       "%D Days, %H : %M"
+    SYS_SHOW_DATETIME       "%b-%d-%Y %H:%M:%S"
+    SYS_STORE_DATE          "%y%m%d"
+    SYS_STORE_HHMM          "%H%M"
+    SYS_STORE_WEEK          "W%w"
+    SYS_SHOW_WEEK           "%W"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_SYSTEM       "\nAll system setting at here"
+    ID_BUTTON32777          "Comm With Management Status ""Stop"""
+    ID_BUTTON32778          "Comm With Management Status"
+    ID_BUTTON32779          "Comm With Management Status"
+    ID_BUTTON32780          "Octopus Reader Status"
+    ID_BUTTON32781          "Octopus Reader Status"
+    ID_STATUS_OTP_ERROR     "\n'error' communication with Octopus reader status"
+    ID_BUTTON32783          "KDE Reader Status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32784          "KDE Reader Status"
+    ID_BUTTON32785          "KDE Reader Status"
+    ID_STATUS_MNT_STOP      "\n'stop' communication with Management"
+    ID_STATUS_MNT_NORMAL    "\n'normal' communication with Management"
+    ID_STATUS_MNT_ERROR     "\n'error' communication with Management"
+    ID_STATUS_OTP_STOP      "\n'stop' communication with Octopus reader status"
+    ID_STATUS_OTP_NORMAL    "\n'normal' communication with Octopus reader status"
+    ID_STATUS_KDE_STOP      "\n'stop' communication with KDE reader status"
+    ID_STATUS_KDE_NORMAL    "\n'normal' communication with KDE reader status"
+    ID_STATUS_KDE_ERROR     "\n'error' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EVENT_LOG            "\nView the log files "
+    ID_CALCULATE            "\nCalculate"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_SHOW_HHMM           "%H:%M"
+    SYS_SHOW_MONEY          "%.2f"
+    OTP_MSG_CAPTION         "OTP Operate Message"
+    OTP_MSG_READENTERTIMEERR 
+                            "This card didn't have transaction message!\nYou need input by hand."
+    ERR_MSG_OPENDATABASE    "Open Database Error!\nAll Operate about database cancel!\n1. You should reopen the system try again.\n2. You database file breakon or miss.\n"
+    SYS_MSG_CANCEL_PAYMENT  "This operate 'Cancel' current payment!\nAre you sure!"
+    SYS_MSG_NOT_ENOUGH      "Not enough park fee payment!"
+    SYS_MSG_WARNING         "Warning!"
+    SYS_MSG_CANCEL_OPERATE  "Cancel current operate.     \n\nAre you sure!"
+    ERR_READ_KDE_TICKET     "Read KDE ticket error,     \n\nReread or hand input?"
+    SYS_MSG_KDE_DEVICE      "KDE Device"
+    SYS_MSG_MNT_COMMUNICATE "Communicate with car park management"
+    SYS_MSG_OTP_DEVICE      "Octopus card reader device"
+    MNT_ERR_READ_CARD_STATUS 
+                            "Read card status error,     \n\nRetry or cancel?"
+    MNT_ERR_READ_OPERATOR_MSG 
+                            "Read operate msg error,     \n\nRetry or cancel?"
+    MNT_ERR_READ_ENTRYLOG   "Entry log inexistent,     \n\nPlease input by hand."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_STORE_DATETIME      "%y%m%d%H%M%S"
+    SYS_SHOW_PERCENTAGE     "%.2f%%"
+    CONFIRM_KDE_START       "This will try to start the\nKDE reader. If KDE reader is\nworking, we'll stop it first!\nReally want to do this?"
+    CONFIRM_MNT_START       "This will try to start the\ncommunicate with MNT(Car Park\nManagement). If communicate is\nrunning, we restart it!\n\nReally want to do this?"
+    CONFIRM_OTP_START       "This will try to start the\nOTP reader. If OTP reader is\nworking, we'll stop it first!\n\nReally want to do this?"
+    SPECIAL_CARD_MODE_PERIOD "Define the using period"
+    SPECIAL_CARD_MODE_TIMES "Define the using times"
+    SPECIAL_CARD_MODE_FREE  "Using freely"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_PAYMODE      "Paymode settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_MNT_BUSY      "\n'busy' communication with Management"
+    ID_STATUS_OTP_BUSY      "\n'busy' communication with Octopus reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_KDE_BUSY      "\n'busy' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SPECIAL_CARD_MODE_ILLEGAL "Illegal mode"
+    TIP_CARD_CATEGORY_ABSENCE "Card category absence, please input at 'MNT'."
+    TIP_EMPTY_CARDNO        "'Card no' is empty.Please input 'Card no'."
+    TIP_EXIST_CARDNO        "Same 'Card no' detected! Please input another 'Card no'."
+    TIP_ERROR_QUERY         "Communicate Error, Can't create special card communicate down or error! Retry or create card when communicate resumed!"
+    TIP_INVALID_PERIOD      "'Valid From' date must before 'Valid To' date."
+    TIP_EMPTY_HOLDERID      "'Holder ID' is Empty, You must input it."
+    TIP_INEXISTENCE_HOLDERID "Not find 'Holder ID' same as current."
+    TIP_DUPLICATE_HOLDERID  "Duplicate 'Holder ID' is find, Input another or select a exist user info."
+    TIP_EMPTY_NAME_PWD      "OperatorID or Password is empty, Please input !"
+    TIP_COMM_ERROR          "Communicate Error, No response or Error response, Please retry! "
+    TIP_INVALID_NAME_PWD    "Invalid Name or Password! Please retry. "
+    TIP_INVALID_ADD_VALUE   "Amount must whole times of 50!"
+    TIP_MIN_LIMIT_ADD_VALUE "Too little value add. "
+    TIP_MAX_LIMIT_ADD_VALUE "Too much value add."
+    TIP_SUCCESSFUL_ADDVALUE "Add value successful."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIP_SHORTAGE_STORE_VALUE "Shortage Store Value!"
+    TIP_SHORTAGE_OCTOPUS_REMAIN "Shortage Octopus Remain!"
+    TIP_SHORTAGE_PAYMENT    "Shortage payment!"
+    TIP_SUCCESSFUL_OTP_DEDUCT "OTP deduct value successful."
+    TIP_SUCCESSFUL_SAVE_SETTING 
+                            "Save setting successful! Use the new parameters now."
+    TIP_NEGATIVE_CASHREMAIN "Negative cash remain."
+    TIP_NEGATIVE_OCTOPUSREMAIN "Negative octopus remain."
+    TIP_NEGATIVE_STOREVALUEREMAIN "Negative store value remain."
+    TIP_KDE_STOP            "KDE reader is stop."
+    TIP_KDE_NO_TICKET       "No ticket detected."
+    TIP_KDE_EMPTY_TICKET    "This is a empty ticket."
+    TIP_INVALID_IO_TIME     "Exit time must later than entry time."
+    TIP_NEED_READ_OTP_CARD  "Please read OCTOPUS card first."
+    TIP_OTP_NO_CARD         "No Card Detected. Please poll the otp card at reader."
+    TIP_NEED_DISCOUNT       "You must select a discount.\n\n敧?ゆ┶捗黂?愢"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CashierGUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

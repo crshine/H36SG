@@ -1,0 +1,2770 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CashierGUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splash.bmp"
+IDB_KEY                 BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_CARDOTP             BITMAP  DISCARDABLE     "res\\OTPCard.bmp"
+IDB_CARDKDEERROR        BITMAP  DISCARDABLE     "res\\KDEErrorCard.bmp"
+IDB_CARDKDE             BITMAP  DISCARDABLE     "res\\KDECard.bmp"
+IDB_CARDOTPERROR        BITMAP  DISCARDABLE     "res\\OTPErrorCard.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TIME                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_OPERATOR            BITMAP  DISCARDABLE     "res\\operator.bmp"
+IDR_STATUS              BITMAP  DISCARDABLE     "res\\status.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CashierGUI.ico"
+IDI_ICON_CREATE1        ICON    DISCARDABLE     "res\\Client.ico"
+IDI_ICON_CREATE2        ICON    DISCARDABLE     "res\\Book04.ico"
+IDI_ICON_CREATE4        ICON    DISCARDABLE     "res\\3D.ico"
+IDI_ICON_PARTICULARS    ICON    DISCARDABLE     "res\\Contactl.ico"
+IDI_KEY                 ICON    DISCARDABLE     "res\\key.ico"
+IDI_CASH                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_SLASH          ICON    DISCARDABLE     "res\\icon_sla.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 496, 267
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP,0,0,488,291
+    LTEXT           "CashierGUI Version 1.0",IDC_STATIC,317,229,119,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "½T»{",IDOK,439,226,44,14,WS_GROUP
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "µn¿ý/µn¥X"
+FONT 9, "System"
+BEGIN
+    EDITTEXT        IDC_OPERATORNAME,51,28,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,51,57,104,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "µn¿ý",IDOK,38,77,46,14
+    PUSHBUTTON      "°h¥X",IDCANCEL,102,77,46,14,WS_DISABLED
+    LTEXT           "µn¿ý±K½X¡G",IDC_STATIC,36,44,47,8
+    LTEXT           "¾Þ§@­û©m¦W¡G",IDC_STATIC,36,15,54,8
+    ICON            IDI_KEY,IDC_STATIC,13,17,20,20
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 273, 185
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Setting"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_SETTING,"SysTabControl32",0x0,0,0,273,185
+END
+
+IDD_SETTING_COMMUNICATE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_STATION_NAME,45,24,75,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "IPAddress1",IDC_STATION_IP,"SysIPAddress32",WS_DISABLED | 
+                    WS_TABSTOP,45,47,75,12
+    EDITTEXT        IDC_STATION_ID,207,24,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SEND_THREAD_STEP,207,48,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "IPAddress1",IDC_MNT_IP,"SysIPAddress32",WS_TABSTOP,45,
+                    97,75,12
+    EDITTEXT        IDC_SEND_PORT,97,120,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MNT_ID,207,97,22,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_RECV_PORT,207,120,22,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "À³¥Î",IDOK,134,147,63,14
+    DEFPUSHBUTTON   "°h¥X",IDCANCEL,202,147,63,14
+    LTEXT           "¦W¦r¡G",IDC_STATIC,13,27,26,8
+    LTEXT           "½s¸¹¡G",IDC_STATIC,135,25,28,8
+    LTEXT           "µo°eºÝ¤f¡G",IDC_STATIC,13,123,65,8
+    LTEXT           "±µ¨üºÝ¤f¡G",IDC_STATIC,135,124,71,8
+    LTEXT           "IP¦a§}¡G",IDC_STATIC,13,100,31,8
+    LTEXT           "½s¸¹¡G",IDC_STATIC,135,100,23,8
+    LTEXT           "ÀW²v¡G",IDC_STATIC,135,50,24,8
+    GROUPBOX        "¦¬´Ú»O³]©w",IDC_STATIC,0,4,268,67
+    GROUPBOX        "ºÞ²z¯¸³]©w",IDC_STATIC,0,76,268,67
+    LTEXT           "IP¦a§}¡G",IDC_STATIC,13,50,31,8
+    LTEXT           "0~1000ms",IDC_STATIC,232,52,32,8
+    LTEXT           "00~99",IDC_STATIC,232,28,20,8
+    LTEXT           "00~99",IDC_STATIC,232,101,20,8
+END
+
+IDD_SETTING_PERIPHERAL DIALOG DISCARDABLE  0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_OTP_PORT,39,13,36,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OTP_BAUD_RATE,122,13,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OTP_STEP,208,13,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_KDE_PORT,39,48,36,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_KDE_BAUD_RATE,122,48,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_KDE_STEP,208,48,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LCD_PORT,39,83,36,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_LCD_BAUD_RATE,122,83,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LCD_STEP,208,83,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PRINTER_PORT,39,118,36,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PRINTER_BAUD_RATE,122,118,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRINTER_STEP,208,118,22,12,ES_AUTOHSCROLL
+    GROUPBOX        "¤K¹F³qÅª¥d¾¹",IDC_STATIC,0,0,268,144
+    LTEXT           "0~1000ms",IDC_STATIC,232,18,32,8
+    GROUPBOX        "ºÏ±øÅª¥d¾÷",IDC_STATIC,0,35,268,109
+    LTEXT           "0~1000ms",IDC_STATIC,232,53,32,8
+    GROUPBOX        "ÅU«ÈÅã¥Ü¾¹",IDC_STATIC,0,70,268,74
+    LTEXT           "0~5000ms",IDC_STATIC,232,88,32,8
+    LTEXT           "ºÝ¤f:",IDC_STATIC,13,120,22,8
+    LTEXT           "ªi¯S²v¡G",IDC_STATIC,83,120,35,8
+    GROUPBOX        "¥´¦L¾÷",IDC_STATIC,0,105,268,39
+    LTEXT           "ÀW²v¡G",IDC_STATIC,164,120,40,8
+    LTEXT           "0~1000ms",IDC_STATIC,232,123,32,8
+    DEFPUSHBUTTON   "°h¥X",IDCANCEL,202,147,63,14
+    PUSHBUTTON      "À³¥Î",IDOK,134,147,63,14
+    LTEXT           "ºÝ¤f:",IDC_STATIC,13,85,22,8
+    LTEXT           "ºÝ¤f:",IDC_STATIC,13,50,22,8
+    LTEXT           "ºÝ¤f:",IDC_STATIC,14,14,22,8
+    LTEXT           "ªi¯S²v¡G",IDC_STATIC,84,85,35,8
+    LTEXT           "ÀW²v¡G",IDC_STATIC,165,85,40,8
+    LTEXT           "ªi¯S²v¡G",IDC_STATIC,83,50,35,8
+    LTEXT           "ÀW²v¡G",IDC_STATIC,164,50,40,8
+    LTEXT           "ªi¯S²v¡G",IDC_STATIC,83,15,35,8
+    LTEXT           "ÀW²v¡G",IDC_STATIC,164,15,40,8
+END
+
+IDD_MESSAGEBOX DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¦¬´Ú»O«H®§"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "½T»{",IDOK,77,83,33,13
+    LTEXT           "Show message in this static",IDC_STATIC_MESSAGE,5,11,
+                    176,67
+END
+
+IDD_PAYMENT_KDE DIALOGEX 0, 0, 221, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ºÏ±ø²¼¥I´Ú"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        RECEIVE,62,67,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "¥I´Ú",ID_PAY,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    EDITTEXT        CHANGE,62,90,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        REMAIN,62,21,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT,62,44,87,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "À³¥I´ÚÃB¡G",IDC_LABEL_10,9,47,48,15
+    LTEXT           "¹ê¥I´ÚÃB¡G",IDC_LABEL_11,9,70,48,15
+    LTEXT           "§äÅ«¡G",IDC_LABEL_12,9,93,48,15
+    LTEXT           "³Ñ§E¡G",IDC_LABEL_13,9,24,48,15
+    LTEXT           "ª÷ÃB¥æ©ö",CUR_STATUS,9,2,140,11,0,WS_EX_STATICEDGE
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,171,
+                    2,49,31
+END
+
+IDD_EVENTLOG DIALOGEX 0, 0, 365, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¾ú¥v¨Æ¥ó"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DLGEVENTLOG_DATE_BEGIN,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,21,27,59,
+                    14
+    CONTROL         "DateTimePicker1",IDC_DLGEVENTLOG_DATE_END,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,21,57,59,
+                    14
+    COMBOBOX        IDC_EVENTLOG_TYPE,21,88,104,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EVENTLOG_KEY,21,118,104,14,ES_AUTOHSCROLL
+    CONTROL         "Search",IDSEARCH,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    152,35,13
+    CONTROL         "Print",IDPRINT,"Button",BS_OWNERDRAW | WS_TABSTOP,57,
+                    152,35,13
+    CONTROL         "½T»{",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,93,152,35,
+                    13
+    CONTROL         "List1",IDC_EVENTLOG_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,134,22,224,160
+    LTEXT           "¶}©l¡G",IDC_STATIC,10,12,57,9,WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,3,128,179,WS_TABSTOP
+    LTEXT           "µ²§ô¡G",IDC_STATIC,10,43,33,9,WS_TABSTOP
+    LTEXT           "Ãþ«¬¡G",IDC_STATIC,10,73,30,9,WS_TABSTOP
+    LTEXT           "ÃöÁä¦r¡G",IDC_STATIC,10,103,35,9,WS_TABSTOP
+    LTEXT           "¾Þ§@",IDC_STATIC,10,134,35,9,WS_TABSTOP
+    LTEXT           "µ²ªG",IDC_TEXT_RESULT,134,7,224,12,0,WS_EX_STATICEDGE
+END
+
+IDD_RATE DIALOG DISCARDABLE  0, 0, 272, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fee Rate Setting"
+FONT 9, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_RATE,"SysTabControl32",0x0,0,0,272,181
+END
+
+IDD_RATE_FEE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_TIMEZONE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_CARTYPE DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,0,268,137,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+    LTEXT           "¥Ñ¨®½øÃþ«¬¨Ó½T©w®É¶¡¬q¦¬¶O³W«h",IDC_STATIC,9,142,120,20
+END
+
+IDD_RATE_GROUP DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,137,WS_EX_STATICEDGE
+    LTEXT           "¥Ñ¤À²Õ¦¬¶O³W«h½T©w¨®½ø¦¬¶O³W«h",IDC_STATIC,7,145,117,9
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_RATE_DAY DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+    LTEXT           "¥Ñ¤é´Á½T©w¤À²Õ¦¬¶O³W«h",IDC_STATIC,6,150,118,10
+END
+
+IDD_RATE_FIX DIALOGEX 0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_HAND_KDE_TICKET DIALOGEX 0, 0, 221, 113
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤â°Ê¿é¤J¥d¸¹"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TICKETNO,62,45,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    LTEXT           "ºÏ±ø²¼¸¹½X¡G",IDC_STATIC,9,30,140,10
+    LTEXT           "** 1 ~ 15 ¼Æ¦r",IDC_STATIC,88,65,61,8
+    LTEXT           "½Ð¦bªÅ®æ³B¿é¤JºÏ±ø²¼¸¹½X ...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,171,
+                    2,49,31
+    CTEXT           "P",IDC_BIG_P,43,46,16,15
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 377, 201
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,
+                    377,201
+    LTEXT           "...",IDC_CURRENT_OPR,206,163,164,12,NOT WS_GROUP
+END
+
+IDD_RATE_CALCULATE DIALOG DISCARDABLE  0, 0, 268, 165
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_ENTRYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,198,24,54,12
+    CONTROL         "DateTimePicker1",IDC_ENTRYTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,38,54,
+                    12
+    CONTROL         "DateTimePicker1",IDC_EXITDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,198,63,54,12
+    CONTROL         "DateTimePicker1",IDC_EXITTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,198,78,54,
+                    12
+    COMBOBOX        IDC_VEHICLETYPE,197,104,54,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GROUPTYPE,197,120,54,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "­pºâ",IDC_CALCULATE,142,146,56,14
+    DEFPUSHBUTTON   "½T»{",IDOK,202,146,56,14
+    PUSHBUTTON      "§ïÅÜ¼e«×",IDC_CHANGELISTWIDTH,40,146,56,14
+    LTEXT           "¶i¤J¤é´Á¡G",IDC_STATIC,144,26,39,8
+    LTEXT           "¶i¤J®É¶¡¡G",IDC_STATIC,144,41,40,8
+    LTEXT           "¥I´Ú¤é´Á¡G",IDC_STATIC,144,65,39,8
+    LTEXT           "¥I´Ú®É¶¡¡G",IDC_STATIC,144,80,43,8
+    LTEXT           "¨®½øÃþ«¬¡G",IDC_STATIC,144,104,49,12
+    LTEXT           "²Õ§OÃþ«¬¡G",IDC_STATIC,144,122,39,8
+    CONTROL         "List1",IDC_DETAILS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,129,136
+END
+
+IDD_PAYMENT_RECEIPT DIALOGEX 0, 0, 145, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt print ..."
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,42,206,63,14
+    CTEXT           "Title1",IDC_TITLE1,14,10,116,8
+    LTEXT           "Title2",IDC_TITLE2,14,21,116,8
+    LTEXT           "Title3",IDC_TITLE3,14,32,116,8
+    CTEXT           "End1",IDC_END1,16,173,116,8
+    CTEXT           "End2",IDC_END2,16,184,116,8
+    LTEXT           "value",IDC_TAX_NAME,76,142,29,8
+    LTEXT           "value",IDC_TAX_REG_NO,76,153,29,8
+    LTEXT           "value",IDC_TAX_PECENTAGE_RATE,92,164,29,8
+    LTEXT           "Ticket No.",IDC_LABEL_0,14,54,116,8
+    LTEXT           "Entry Date",IDC_LABEL_1,14,65,116,8
+    LTEXT           "Entry Time",IDC_LABEL_2,14,76,116,8
+    LTEXT           "Pay Date",IDC_LABEL_3,14,87,116,8
+    LTEXT           "Pay Time",IDC_LABEL_4,14,98,116,8
+    LTEXT           "Parking Fee",IDC_LABEL_7,14,109,116,8
+    GROUPBOX        "",IDC_STATIC,6,0,133,196
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,6,196,133,6
+    LTEXT           "Tax Name :",IDC_STATIC,15,142,57,8
+    LTEXT           "Tax Reg. No. :",IDC_STATIC,15,153,57,8
+    LTEXT           "Tax Pecentage Rate :",IDC_STATIC,15,164,71,8
+    LTEXT           "Receipt No :",IDC_LABEL_8,14,119,53,8
+    EDITTEXT        RECEIPTNO,81,117,50,14,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+END
+
+IDD_PAYMENT_HAND_ENTRYTIME DIALOGEX 0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤â°Ê¿é¤J«H®§"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_ENTRYDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,21,83,18
+    CONTROL         "DateTimePicker1",IDC_ENTRYTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,66,44,83,
+                    18
+    CONTROL         "DateTimePicker1",IDC_EXITDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,67,83,18
+    CONTROL         "DateTimePicker1",IDC_EXITTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,66,90,83,
+                    18
+    COMBOBOX        IDC_VEHICLETYPE,154,44,63,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTRYSTATION,154,60,63,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "½T»{",IDOK,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    LTEXT           "¿é¤J¶i¥X®É¶¡",CUR_STATUS,9,2,140,11,0,WS_EX_STATICEDGE
+    LTEXT           "¶i¤J¤é´Á",IDC_STATIC1,9,24,56,15,0,WS_EX_TRANSPARENT
+    LTEXT           "¶i¤J®É¶¡¡G",IDC_STATIC2,9,47,56,15
+    LTEXT           "¥I´Ú¤é´Á¡G",IDC_STATIC3,9,70,56,15
+    LTEXT           "¥I´Ú®É¶¡¡G",IDC_STATIC4,9,93,56,15
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,169,
+                    2,49,31
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,163,
+                    11,46,31
+END
+
+IDD_CARD_CATEGROY DIALOGEX 0, 0, 268, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¯S®í¥dºØÃþ©w¸q"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ãö³¬",IDOK,158,149,39,11
+    LTEXT           "¹î¬Ý¯S®í¥dºØÃþ©w¸q",IDC_STATIC,50,14,197,11
+    CONTROL         194,IDC_STATIC,"Static",SS_BITMAP,7,7,20,19
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,72,149,39,11
+    EDITTEXT        IDC_CATEGORY,8,27,253,119,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+END
+
+IDD_CARD_CREATE1 DIALOG DISCARDABLE  0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_CARD_TYPE_PART,12,46,27,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CARD_NUMBER_PART,41,46,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "¦Û°ÊÀò±o¥d¸¹",IDC_AUTOGAINNO,131,46,63,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "Category 1",IDC_CATE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,84,72,10
+    CONTROL         "Category 2",IDC_CATE2,"Button",BS_AUTORADIOBUTTON,12,99,
+                    72,10
+    CONTROL         "Category 3",IDC_CATE3,"Button",BS_AUTORADIOBUTTON,12,
+                    114,72,10
+    CONTROL         "Category 4",IDC_CATE4,"Button",BS_AUTORADIOBUTTON,12,
+                    129,72,10
+    PUSHBUTTON      "¬d¸ß¥dªº«H®§",IDC_QUERY,198,46,63,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_TYPE_BRIEF,89,84,172,55,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN | NOT WS_TABSTOP
+    ICON            IDI_ICON_CREATE1,IDC_STATIC,7,6,20,20
+    LTEXT           "1: ¿é¤J¥dªº¸¹½X¡C\n2: ¿ï¾Ü¯S®í¥dªººØÃþ¡C",IDC_STATIC,45,
+                    6,217,17
+    GROUPBOX        "¿é¤J¯S®í¥dªº¸¹½X",IDC_STATIC,3,32,262,33
+    GROUPBOX        "¿ï¾Ü¯S®í¥dªººØÃþ",IDC_STATIC,3,70,262,73
+END
+
+IDD_CARD_CREATE2 DIALOGEX 0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "DateTimePicker2",PERIODTO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,46,68,62,11
+    CONTROL         "¤@­Ó¤ë",RADIO_1M,"Button",BS_AUTORADIOBUTTON,123,53,42,
+                    10
+    CONTROL         "¨â­Ó¤ë",RADIO_2M,"Button",BS_AUTORADIOBUTTON,169,53,42,
+                    10
+    CONTROL         "¤T­Ó¤ë",RADIO_3M,"Button",BS_AUTORADIOBUTTON,216,53,42,
+                    10
+    CONTROL         "¥b¦~",RADIO_6M,"Button",BS_AUTORADIOBUTTON,123,69,42,10
+    CONTROL         "¤@¦~",RADIO_12M,"Button",BS_AUTORADIOBUTTON,169,69,42,
+                    10
+    CONTROL         "¨â¦~",RADIO_24M,"Button",BS_AUTORADIOBUTTON,216,69,42,
+                    10
+    EDITTEXT        TRANSTIMES,81,124,47,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,202,124,47,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_RIGHT | WS_EX_STATICEDGE
+    GROUPBOX        "¦³®Ä´Á",IDC_STATIC,3,32,262,67
+    LTEXT           "¶}©l :",IDC_STATIC,16,53,27,8
+    LTEXT           "ºI¤î :",IDC_STATIC,16,69,27,8
+    GROUPBOX        "§K¶O¥æ©ö¼Æ©ÎªÌ¨t²ÎÀx­È",IDC_STATIC,3,105,262,38
+    LTEXT           "1¡G ©w¸q¥dªº¦³®Ä´Á¡C\n2¡G¼W­Èª÷ÃB",IDC_STATIC,45,6,217,
+                    17
+    ICON            IDI_ICON_CREATE2,IDC_STATIC,5,6,20,20
+    CONTROL         "DateTimePicker1",PERIODFROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,46,52,62,11
+    LTEXT           "¥Î'¶}©l'©w¸q¦¹¥dªº¦³®Ä´Á¶}©l¤é´Á¡A¥Î'ºI¤î'©w¸qµ²§ô¤é´Á¡C",
+                    IDC_STATIC,45,87,216,8
+    LTEXT           "¨t²ÎÀx­È¡G",IDC_STATIC,156,126,39,8
+    LTEXT           "§K¶O¥æ©ö¼Æ¡G",IDC_STATIC,16,126,46,8
+    LTEXT           "< 10001",IDC_STATIC,128,129,24,8
+END
+
+IDD_CARD_CREATE3 DIALOGEX 0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "·sªº«ù¥d¤H",RADIO_NEW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,53,22,53,10
+    CONTROL         "µL«ù¥d¤H",RADIO_NO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,123,22,55,10
+    CONTROL         "²{¦³ªº«ù¥d¤H",RADIO_EXIST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,193,22,67,10
+    EDITTEXT        IDC_ID,68,48,28,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_NAME,68,64,76,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PLATE,178,64,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_TEL,68,80,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_IC,178,80,76,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR1,68,96,186,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR2,68,112,186,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADDR3,68,128,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ZIP,178,128,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "¬d¸ß¦pªG«ù¥d¤H¤w¦s¦b",IDC_BTN_SET,155,44,78,14
+    ICON            IDI_ICON_PARTICULARS,IDC_STATIC,5,6,20,20
+    LTEXT           "¿é¤J«ù¥d¤H­Ó¤H«H®§¡C",IDC_STATIC,45,6,217,11
+    GROUPBOX        "«ù¥d¤H«H®§",IDC_STATIC,3,32,262,111
+    LTEXT           "«ù¥d¤H½s¸¹¡G",IDC_STATIC,7,50,57,8
+    LTEXT           "«ù¥d¤H©m¦W¡G",IDC_STATIC,7,66,57,8
+    LTEXT           "¹q¸Ü¸¹½X¡G",IDC_STATIC,7,82,57,8
+    LTEXT           "Áp¨t¦í§}¡G",IDC_STATIC,7,98,57,8
+    LTEXT           "¨®µP¸¹",IDC_STATIC,151,66,23,8
+    LTEXT           "¨­¥÷ÃÒ",IDC_STATIC,151,82,25,8
+    LTEXT           "¶l½s¡F",IDC_STATIC,151,130,24,8
+    LTEXT           "< 5 ¼Æ¦r",IDC_STATIC,98,52,26,8
+END
+
+IDD_CARD_CREATE4 DIALOGEX 0, 0, 268, 144
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Jan 01,04  -->  May 23, 08",PERIOD,38,51,90,8
+    LTEXT           "¥Ó½Ð¶O¡G",IDC_STATIC,147,51,52,8
+    LTEXT           "¥d¶O¡G",IDC_STATIC,147,69,52,8
+    LTEXT           "$200 / year",PERIOD_PRICE,38,69,43,8
+    LTEXT           "¨t²ÎÀx­È¡G",IDC_STATIC,147,109,52,8
+    LTEXT           "Á`ÃB¡G",IDC_STATIC,147,127,52,8
+    LTEXT           "¥I´ÚÁ`ÃB¤@Äý",IDC_STATIC,45,6,145,12
+    ICON            IDI_ICON_CREATE4,IDC_STATIC,5,6,20,20
+    GROUPBOX        "§K¶O¥æ©ö¼Æ",IDC_STATIC,3,90,134,53
+    EDITTEXT        PERIOD_AMOUNT,84,66,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "2345",TRANSACTION,68,109,59,8
+    LTEXT           "$0.5 / Trans",TRANSACTION_PRICE,38,127,43,8
+    GROUPBOX        "¦³®Ä¤é´Á",IDC_STATIC,3,32,134,53
+    EDITTEXT        TRANSACTION_AMOUNT,84,124,49,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        STORE_VALUE,212,107,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    GROUPBOX        "¥d¶O©M¥Ó½Ð¶O",IDC_STATIC,139,32,126,53
+    EDITTEXT        TOTAL,212,124,49,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        JOINING_FEE,212,49,49,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        CARD_FEE,212,66,49,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "¦³®Ä´Á¡G",IDC_STATIC,7,51,31,8
+    LTEXT           "»ù®æ¡G",IDC_STATIC,7,69,24,8
+    LTEXT           "¥æ©ö¼Æ¡G",IDC_STATIC,7,109,31,8
+    LTEXT           "»ù®æ¡G",IDC_STATIC,7,127,24,8
+END
+
+IDD_CARD_SEARCH DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "·j¯Á¯S®í¥d"
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_CARD_TYPE,52,7,27,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CARD_NO,81,7,50,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "·j¯Á",IDC_SEARCH,152,7,38,12
+    PUSHBUTTON      "°h¥X",IDOK,197,7,38,12
+    EDITTEXT        IDC_DESCRIPTION,7,28,254,131,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT           "¥d¸¹¡G",IDC_STATIC,7,9,31,8
+END
+
+IDD_PAYMENT_HAND_OTP_TICKET DIALOGEX 0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤â°Ê¿é¤J¤K¹F³q²¼¸¹½X"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TICKETNO,62,45,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    LTEXT           "¤K¹F³q²¼¸¹½X¡G",IDC_STATIC,9,30,62,10
+    LTEXT           "** 1 ~ 16 ­Ó¼Æ¦r",IDC_STATIC,88,65,61,8
+    LTEXT           "½Ð¦bªÅ®æ³B¿é¤J¤K¹F³q²¼¸¹½X ...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,171,
+                    2,46,31
+    CTEXT           "O",IDC_BIG_O,43,46,16,15
+END
+
+IDD_SETTING_PAYMODE DIALOGEX 0, 0, 268, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View paymode settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        MODECASHCARD,98,22,86,14,ES_AUTOHSCROLL | NOT WS_BORDER | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "¤K¹F³q¥d¥I´Ú¤è¦¡¡G",IDC_STATIC,10,10,85,14
+    EDITTEXT        MODECASHBACK,98,51,86,14,ES_AUTOHSCROLL | NOT WS_BORDER | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "²{ª÷¥I´Ú¤è¦¡¡G",IDC_STATIC,10,39,85,14
+    EDITTEXT        MODESTROEVALUE,98,80,86,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "¨t²ÎÀx­È¥I´Ú¤è¦¡¡G",IDC_STATIC,10,68,85,14
+    CONTROL         "¥i¥Hµ¹¤©§ä¹s",IDC_CHECK1,"Button",BS_AUTOCHECKBOX,196,
+                    24,61,10
+    CONTROL         "¥i¥Hµ¹¤©§ä¹s",IDC_CHECK2,"Button",BS_AUTOCHECKBOX,196,
+                    53,61,10
+    CONTROL         "¥i¥Hµ¹¤©§ä¹s",IDC_CHECK3,"Button",BS_AUTOCHECKBOX,196,
+                    82,61,10
+    LTEXT           "©Ò¦³³]©w¥²¶·¦bºÞ²z¯¸¶i¦æ­×§ï¡A¥I´Ú»O¥u¥i¥H¹î¬Ý",
+                    IDC_STATIC,8,145,119,19
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_DISCOUNTPLAN DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View discount plan"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_SHIFTACCOUNT DIALOGEX 0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shift Account"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        CASH,73,29,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,73,52,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,73,75,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Âà½ã",IDOK,77,97,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,149,97,63,14
+    EDITTEXT        AMOUNT,73,6,64,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_REMAIN,157,81,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,157,58,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CASH_REMAIN,157,35,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "³Ñ§E¡G",IDC_STATIC,157,27,24,8
+    LTEXT           "³Ñ§E¡G",IDC_STATIC,157,50,24,8
+    LTEXT           "³Ñ§E¡G",IDC_STATIC,157,73,24,8
+    EDITTEXT        AMOUNT_REMAIN,157,12,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "³Ñ§E¡G",IDC_STATIC,157,4,24,8
+    LTEXT           "²{ª÷¡G",IDC_STATIC,12,32,48,15
+    LTEXT           "¤K¹F³q¡G",IDC_STATIC,12,55,48,15
+    LTEXT           "¨t²ÎÀx­È¡G",IDC_STATIC,12,78,48,15
+    LTEXT           "ª÷ÃB¡G",IDC_STATIC,12,9,48,15
+    CONTROL         "¥´¦L¦¬¾Ú",PRINT_RECEIPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED,8,99,46,10
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,7,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,30,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,53,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,76,20,20
+END
+
+IDD_PAYMENT_RECEIPT_SHIFTACCOUNT DIALOG DISCARDABLE  0, 0, 145, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt Shift Account"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,38,185,63,14
+    GROUPBOX        "",IDC_STATIC,6,0,133,174
+    CTEXT           "Shift Account",IDC_TITLE,14,10,116,8
+    LTEXT           "Operater :\tDeepool",OPERATER,19,27,106,8
+    LTEXT           "WithDrawal :",IDC_STATIC,19,66,106,8
+    LTEXT           "Old Balance :\t$1200.00",OLDBALANCE,19,40,106,8
+    LTEXT           "Balance :\t$400.00",BALANCE,19,53,106,8
+    LTEXT           "Time :\t\t12:23:45",TIME,19,144,106,8
+    LTEXT           "Date :\t\t2004-05-06",DATE,19,131,106,8
+    LTEXT           "Receipt No. : \t02000001",RECEIPTNO,19,157,106,8
+    LTEXT           "Cash:\t\t$500.00",CASH,33,79,103,8
+    LTEXT           "Octupos:\t$200.00",OCTUPOS,33,92,103,8
+    LTEXT           "Store Value:\t$100.00",STOREVALUE,33,105,103,8
+    LTEXT           "Total:\t\t$800.00",TOTAL,33,118,103,8
+END
+
+IDD_PAYMENT_RECEIPT_CLOSEACCOUNT DIALOG DISCARDABLE  0, 0, 145, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receipt Close Account"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,38,163,63,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,6,152,133,6
+    GROUPBOX        "",IDC_STATIC,6,0,133,152
+    CTEXT           "Close Account",IDC_TITLE,14,10,116,8
+    LTEXT           "Operater",IDC_OPERATER,59,35,79,8
+    LTEXT           "WithDrawal",IDC_WITHDRAWAL,59,63,79,8
+    LTEXT           "Old Balance",IDC_OLDBALANCE,59,49,79,8
+    LTEXT           "Balance",IDC_BALANCE,59,77,79,8
+    LTEXT           "LogoutTime",IDC_LOGOUTTIME,59,105,79,8
+    LTEXT           "LoginTime",IDC_LOGINTIME,59,91,79,8
+    LTEXT           "Operater :",IDC_STATIC,10,35,42,8
+    LTEXT           "WithDrawal :",IDC_STATIC,10,63,42,8
+    LTEXT           "Old Balance :",IDC_STATIC,10,49,42,8
+    LTEXT           "Balance :",IDC_STATIC,10,77,42,8
+    LTEXT           "Logout Time :",IDC_STATIC,10,105,42,8
+    LTEXT           "Login Time :",IDC_STATIC,10,91,42,8
+    LTEXT           "Receipt No. :",IDC_STATIC,10,119,42,8
+    LTEXT           "Receipt No.",IDC_RECEIPTNO,59,119,79,8
+END
+
+IDD_SETTING_CALCULATERULE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View calculate rule's parameters"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "³]©w¦¬¶O²v³W«h©M¬ÛÃö°Ñ¼Æ",IDC_STATIC,7,7,254,11
+    GROUPBOX        "°±¨®§K¶O®É¶¡",IDC_STATIC,7,26,124,59
+    GROUPBOX        "¯S®í¦¬¶Oª÷ÃB",IDC_STATIC,137,26,124,59
+    LTEXT           "¶i¤J§K¶O®É¶¡¡G",IDC_STATIC,11,40,54,8
+    LTEXT           "¥I´Ú§K¶O®É¶¡¡G",IDC_STATIC,11,55,54,8
+    LTEXT           "®É¶¡¬q§K¶O®É¶¡¡G",IDC_STATIC,11,70,61,8
+    LTEXT           "²¼¥á¥¢»@´Ú¡G",IDC_STATIC,145,40,46,8
+    LTEXT           "¶i¤J®É¥d¤º³Ì§Cª÷ÃB¡G",IDC_STATIC,145,55,76,8
+    LTEXT           "©T©w¦¬¶O®Éª÷ÃB",IDC_STATIC,145,70,54,8
+    EDITTEXT        ENTERGRACETIME,98,39,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        PAIDGRACETIME,98,54,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        TZONEGRACETIME,98,69,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        LOSTTICKETPENALTY,228,39,27,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CREDITLIMIT,228,54,27,12,ES_RIGHT | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        PERENTRYAMT,228,69,27,12,ES_RIGHT | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         "¤@¥¹¶W¶V®É¶¡¬q®É¥ß¨è¹Á¸Õ¨Ï¥Î·sªº¦¬¶O²v",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX,14,95,165,10
+    CONTROL         "·í¹ï¥á¥¢²¼¦¬¶O®É¡A¥[¤J°±¨®¶O",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX,14,113,121,10
+    CONTROL         "ªö¥Î©T©w®É¶¡§é¦©²v¦¬¶O³W«h",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX,14,130,114,10
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_STATION DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View all station settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_CARDTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View card category setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_GROUPTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View group type settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_PAYMODETYPE DIALOGEX 0, 0, 268, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View paymode type settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_SETTING_CARTYPE DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View vehicle  type setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_TRY_MNT DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test communication with 'MNT' (management)"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Exit View",IDOK,202,147,63,14
+    PUSHBUTTON      "Query from Server",IDC_BUTTON_REFRASH,134,147,63,14
+    PUSHBUTTON      "Operator Action Log",IDC_OPERATORACTIONLOG,7,25,91,14
+    PUSHBUTTON      "Payment",IDC_PAYMENT,7,43,91,14
+    PUSHBUTTON      "Time Synchronize",IDC_TIMESYNCHRONIZE,7,61,91,14
+    PUSHBUTTON      "Non Parking Payment",IDC_NONPARKINGPAYMENT,7,79,91,14
+    PUSHBUTTON      "Financial Maintain",IDC_FINANCIALMAINTAIN,7,97,91,14
+    PUSHBUTTON      "Error Warn Notice Log",IDC_ERRORWARNNOTICELOG,7,7,91,14
+    PUSHBUTTON      "Upload Octopus X File",IDC_UPLOADOTPXFILE,7,115,91,14
+END
+
+IDD_CARD_CREATE DIALOG DISCARDABLE  0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "³Ð«Ø¯S®í¥d"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "¨ú®ø (&C)",IDCANCEL,202,149,63,14
+    PUSHBUTTON      "¤U¤@¨B (&N) >",IDC_BUTTON_NEXT,134,149,63,14
+    PUSHBUTTON      "< ¤W¤@¨B (&B)",IDC_BUTTON_BACK,66,149,63,14,WS_DISABLED
+END
+
+IDD_PAYMENT_PARK_FEE DIALOGEX 0, 0, 287, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Fee receive"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        CASH,73,29,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,73,52,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,73,75,64,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "¥I´Ú",IDOK,77,97,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,149,97,63,14
+    EDITTEXT        AMOUNT,73,6,64,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_REMAIN,157,81,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,157,58,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CHANGE,157,35,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "³Ñ§E:",IDC_STATIC,157,27,18,8
+    LTEXT           "³Ñ§E:",IDC_STATIC,157,50,48,8
+    LTEXT           "³Ñ§E:",IDC_STATIC,157,73,48,8
+    EDITTEXT        UNPAID,157,12,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "³Ñ§E:",IDC_STATIC,157,4,18,8
+    LTEXT           "²{ª÷¡G",IDC_STATIC,12,32,48,15
+    LTEXT           "¤K¹F³q¡G",IDC_STATIC,12,55,58,9
+    LTEXT           "¨t²ÎÀx­È¡G",IDC_STATIC,12,78,58,8
+    LTEXT           "ª÷ÃB¡G",IDC_STATIC,12,9,48,15
+    CONTROL         "¥´¦L¦¬¾Ú",PRINT_RECEIPT,"Button",BS_AUTOCHECKBOX,8,99,
+                    46,10
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,7,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,30,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,53,20,20
+    ICON            IDI_ICON_SLASH,IDC_STATIC,138,76,20,20
+    LTEXT           "(O12345678)",IDC_OTP_CARDNO,16,65,55,8,0,WS_EX_RIGHT
+    LTEXT           "(K12345678)",IDC_STOREVALUE_CARDNO,16,88,55,8,0,
+                    WS_EX_RIGHT
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,231,
+                    7,49,31
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,225,
+                    16,46,31
+    PUSHBUTTON      "¨Ï¥Î¨ä¥¦\nªº¤K¹F³q¥d",ID_WAIT_OTP_POLL,216,56,64,25,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE | NOT WS_TABSTOP
+END
+
+IDD_PAYMENT_ACCOUNT DIALOGEX 0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¹î¬Ý½ã¥Ø"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "·í«e",IDC_STATIC,65,5,68,88
+    DEFPUSHBUTTON   "¨ê·s",IDOK,77,97,63,14
+    PUSHBUTTON      "°h¥X",IDCANCEL,149,97,63,14
+    EDITTEXT        AMOUNT,75,19,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CASH,75,38,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS,75,57,48,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE,75,76,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT_TOTAL,157,19,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        CASH_TOTAL,157,38,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_TOTAL,157,57,48,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        STOREVALUE_TOTAL,157,76,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    LTEXT           "²{ª÷¡G",IDC_STATIC,12,38,48,12
+    LTEXT           "¤K¹F³q¦¬´Ú¡G",IDC_STATIC,12,57,48,12
+    LTEXT           "¨t²ÎÀx­È¦¬´Ú¡G",IDC_STATIC,12,78,60,12
+    LTEXT           "Á`ª÷ÃB¡G",IDC_STATIC,12,19,48,12
+    GROUPBOX        "Á`ÃB",IDC_STATIC,147,5,66,88
+END
+
+IDD_SETTING_RECEIPT_FORMAT DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View receipt format setting"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PAYMENT_OTP_PRE_ADDVALUE DIALOGEX 0, 0, 221, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤K¹F³q¥d¼W­È"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        AMOUNT,62,67,87,18,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "½T»{",IDOK,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    EDITTEXT        OCTOPUS_CARDNO,62,21,87,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,62,44,87,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,172,
+                    2,46,31
+    LTEXT           "¥¿¦b·j´M¤K¹F³q¥d ...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "¼W­Èª÷ÃB¡G",IDC_LABEL_10,9,69,48,15
+    LTEXT           "¤K¹F³q¤ºª÷ÃB¡G",IDC_LABEL_13,9,46,53,15
+    LTEXT           "¤K¹F³q¥d¸¹½X¡G",IDC_LABEL_14,9,23,53,15
+    PUSHBUTTON      "Åª¥d",ID_WAIT_OTP_POLL,154,58,63,14,NOT WS_TABSTOP
+    LTEXT           "¥R­È¦Z¥d¤ºª÷ÃB¶·¤p¤_1000¤¸¡C\n¥R­ÈÃB¥²¶·¬O50¤¸ªº­¿¼Æ¡C",
+                    IDC_STATIC,36,89,113,17
+END
+
+IDD_PAYMENT_OTP_SUB_ADDVALUE DIALOGEX 0, 0, 221, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤K¹F³q¥d¼W­È"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "¼W­È",IDOK,154,76,63,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,154,94,63,14
+    EDITTEXT        OCTOPUS_CARDNO,67,21,82,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        OCTOPUS_REMAIN,67,44,82,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        AMOUNT,67,67,82,18,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,172,
+                    2,46,31
+    LTEXT           "¥¿¦b·j´M¤K¹F³q¥d ...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "¤K¹F³q¥d¸¹½X¡G",IDC_LABEL_14,9,23,55,15
+    LTEXT           "¼W­Èª÷ÃB¡G",IDC_LABEL_10,9,69,48,15
+    LTEXT           "¤K¹F³q¤ºª÷ÃB¡G",IDC_LABEL_13,9,46,56,15
+END
+
+IDD_SETTING_PERMISSION DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View function permission settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 187, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View progress ..."
+FONT 9, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    20,173,8
+    LTEXT           "Operate name: ",IDC_STATIC,7,7,51,11
+    LTEXT           "Elapse Time :",IDC_STATIC,7,32,51,11
+    PUSHBUTTON      "Continue",IDOK,130,31,50,14
+    LTEXT           "Printer ... ",IDC_OPERATE,64,7,116,11
+    LTEXT           "10sec.",IDC_ELAPSE,64,32,51,11
+END
+
+IDD_RECEIPT_PARKING_FEE DIALOG DISCARDABLE  0, 0, 145, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview parking fee receipt"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "Print Receipt",IDOK,39,225,63,14
+    CTEXT           "Title1",IDC_TITLE1,14,10,116,8
+    LTEXT           "Title2",IDC_TITLE2,14,19,116,8
+    LTEXT           "Title3",IDC_TITLE3,14,28,116,8
+    CTEXT           "End1",IDC_END1,14,199,116,8
+    CTEXT           "End2",IDC_END2,14,208,116,8
+    LTEXT           "¥d¸¹ :",IDC_CARD_NO,14,64,116,8
+    LTEXT           "¶i¤J®É¶¡ :",IDC_TIME_ENTRY,14,91,116,8
+    LTEXT           "¥I´Ú®É¶¡ :",IDC_TIME_PAY,14,100,116,8
+    LTEXT           "Ãº¥Iª÷ÃB :",IDC_AMOUNT,14,118,116,8
+    GROUPBOX        "",IDC_STATIC,6,0,133,220
+    LTEXT           "Tax Name :",IDC_TAX_NAME,14,163,116,8
+    LTEXT           "Tax Reg. No. :",IDC_TAX_REG_NO,14,172,116,8
+    LTEXT           "Tax Pecentage Rate :",IDC_TAX_PECENTAGE,14,181,116,8
+    LTEXT           "¦¬¾Ú¸¹:",IDC_RECEIPT_NO,14,55,116,8
+    LTEXT           "----------------------------------------------------------",
+                    IDC_STATIC,14,37,116,8
+    LTEXT           "----------------------------------------------------------",
+                    IDC_STATIC,14,190,116,8
+    LTEXT           "¯¸¸¹ :",IDC_STATION_ID,14,46,116,8
+    LTEXT           "¥I´Ú¥d¸¹ :",IDC_PAY_CARD_NO,14,73,116,8
+    LTEXT           "¥dºØÃþ   :",IDC_CARD_CATEGORY,14,82,116,8
+    LTEXT           "§é¦©²v   :",IDC_DISCOUNT,14,109,116,8
+    LTEXT           "¹ê¥Iª÷ÃB :",IDC_PAID,14,127,116,8
+    LTEXT           "§ä¹s :",IDC_CHANGE,14,136,116,8
+    LTEXT           "¥d¤ºª÷ÃB :",IDC_CARD_REMAIN,14,145,116,8
+    LTEXT           "¨t²ÎÀx­È :",IDC_STORE_VALUE,14,154,116,8
+END
+
+IDD_VIEW_OTP_CARD DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¤K¹F³q¥d«H®§"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "¥d¸¹¡G",IDC_STATIC,10,14,28,8
+    GROUPBOX        "¥d«H®§",IDC_STATIC,2,0,139,140
+    EDITTEXT        IDC_CARD_NO,93,12,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Åª¥d",ID_WAIT_OTP_POLL,128,151,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "°h¥X",IDCANCEL,198,151,63,14,NOT WS_TABSTOP
+    LTEXT           "³Ñ§E¡G",IDC_STATIC,10,30,28,8
+    EDITTEXT        IDC_REMAIN,93,28,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "¥R­È¸Ô±¡¡G",IDC_STATIC,10,46,39,8
+    EDITTEXT        IDC_ADD_VALUE_DETAIL,93,44,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "¤W¦¸¥R­È³]³Æ¡G",IDC_STATIC,10,62,54,8
+    EDITTEXT        IDC_LAST_ADD_VALUE_DEVICE,93,60,42,12,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Ãþ§O¡G",IDC_STATIC,10,78,24,8
+    EDITTEXT        IDC_CLASS,93,76,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "»y¨¥¡G",IDC_STATIC,10,94,24,8
+    EDITTEXT        IDC_LANGUAGE,93,92,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "¥i¥Îª÷ÃB¡G",IDC_STATIC,10,110,39,8
+    LTEXT           "¥Í²£°Ó¡G",IDC_STATIC,10,126,31,8
+    EDITTEXT        IDC_AVAILABLE_AMOUNT,93,108,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MANUFACTURE_ID,62,124,73,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Ãþ§O:  1.¦¨¤H 2.¾Ç¥Í 3.¤pµ£ 4.¦Ñ¤H\n+8 ¨p¤H¥d;",
+                    IDC_STATIC,8,146,120,18
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    141,4,125,136,WS_EX_STATICEDGE
+END
+
+IDD_SETTING_OTPREADER DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OTP RWL Settings"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Dev ID",IDC_STATIC,8,103,22,8
+    LTEXT           "Oper ID",IDC_STATIC,8,118,26,8
+    LTEXT           "Company ID",IDC_STATIC,8,88,41,8
+    LTEXT           "Dev Time",IDC_STATIC,176,88,42,8
+    LTEXT           "EOD Ver",IDC_STATIC,98,102,33,8
+    LTEXT           "BList Ver",IDC_STATIC,98,87,33,8
+    LTEXT           "CCHS Ver",IDC_STATIC,98,132,33,8
+    LTEXT           "Fware Ver",IDC_STATIC,98,117,33,8
+    LTEXT           "Loc ID",IDC_STATIC,176,103,22,8
+    LTEXT           "Key Ver",IDC_STATIC,8,133,26,8
+    EDITTEXT        IDC_DEVID,50,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_OPERID,50,116,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_COMPID,50,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_LOCID,222,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_DEVTIME,222,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_BLVER,134,86,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EODVER,134,101,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FIRMVER,134,116,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CCHSVER,134,131,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_KEYVER,50,131,36,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "New Loc ID",IDC_STATIC,176,118,36,8
+    EDITTEXT        IDC_EDIT_NEWLOCID,222,116,36,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_XFILEPATH,181,12,77,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BLISTPATH,50,12,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FWAREPATH,50,27,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EODPATH,50,42,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CCHSPATH,50,57,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ARPATH1,181,27,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ARPATH2,181,42,77,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        " Folders ",IDC_STATIC,2,0,264,74
+    LTEXT           "XFile :",IDC_STATIC,145,14,19,8
+    LTEXT           "Black List :",IDC_STATIC,8,14,33,8
+    LTEXT           "Firmware :",IDC_STATIC,8,29,32,8
+    LTEXT           "EOD :",IDC_STATIC,8,44,19,8
+    LTEXT           "CCHS :",IDC_STATIC,8,59,23,8
+    LTEXT           "AR1 :",IDC_STATIC,145,29,17,8
+    LTEXT           "AR2 :",IDC_STATIC,145,44,17,8
+    PUSHBUTTON      "Set Folders",ID_SET_FOLDERS,195,57,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Set Time Read Ver",ID_SET_TIME_READ_VER,195,132,63,14,
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "°h¥X",IDCANCEL,195,152,63,14,NOT WS_TABSTOP
+    GROUPBOX        " ª©¥»¸¹/®É¶¡/¸¹½X",IDC_STATIC,2,75,264,74
+    PUSHBUTTON      "Load Folders",ID_READ_FOLDERS,130,57,63,14,NOT 
+                    WS_TABSTOP
+END
+
+IDD_SETTING_SYS_PARAMETERS DIALOGEX 0, 0, 268, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System parameters"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,0,268,144,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "°h¥X",IDOK,202,147,63,14
+    PUSHBUTTON      "¨ê·s",IDC_BUTTON_REFRASH,134,147,63,14
+END
+
+IDD_VIEW_KDE_CARD DIALOGEX 0, 0, 268, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¹î¬Ý²¼¥d«H®§"
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "¥d¤º®e",IDC_STATIC,5,26,257,121
+    DEFPUSHBUTTON   "Åª¥d",ID_READ_TICKET,128,151,63,14,NOT WS_TABSTOP
+    PUSHBUTTON      "°h¥X",IDCANCEL,198,151,63,14,NOT WS_TABSTOP
+    LTEXT           "¥d¸¹¡G",IDC_STATIC,20,40,28,8
+    EDITTEXT        IDC_CARD_NO,73,38,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "¯S®í¥d",IDC_RADIO_SPECIAL,"Button",BS_AUTORADIOBUTTON,
+                    66,8,57,10
+    GROUPBOX        "¥dÃþ«¬",IDC_STATIC,5,0,207,22
+    CONTROL         "´¶³q¥d",IDC_RADIO_HOURLY,"Button",BS_AUTORADIOBUTTON,
+                    147,8,39,10
+    LTEXT           "¨®½øÃþ«¬¡G",IDC_STATIC,20,58,48,8
+    EDITTEXT        IDC_VEHICLE_TYPE,73,56,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "¶i¤f¯¸¸¹¡G",IDC_STATIC,20,94,49,8
+    EDITTEXT        IDC_ENTRY_STATION,73,92,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "¶i¤J®É¶¡¡G",IDC_STATIC,122,94,39,8
+    LTEXT           "¥I´Ú¯¸¸¹¡G",IDC_STATIC,20,111,46,8
+    EDITTEXT        IDC_PAY_STATION,73,110,42,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "¥I´Ú®É¶¡¡G",IDC_STATIC,122,111,38,8
+    EDITTEXT        IDC_PAY_TIME,162,110,84,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "§é¦©²v¡G",IDC_STATIC,20,76,40,8
+    EDITTEXT        IDC_DISCOUNT,73,74,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "¥I´Ú¦¸¼Æ¡G",IDC_STATIC,122,58,50,8
+    EDITTEXT        IDC_PAYMENT_TIMES,176,56,70,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "¥I´Úª÷ÃB¡G",IDC_STATIC,122,77,48,8
+    EDITTEXT        IDC_AMOUNT,176,74,70,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "³Æª`¡G",IDC_STATIC,20,130,34,8
+    EDITTEXT        IDC_REMARK,73,128,174,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_TIME,162,92,84,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,216,
+                    3,49,31
+END
+
+IDD_TOOL_KDE DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "½T»{",IDOK,130,7,50,14
+    PUSHBUTTON      "¨ú®ø",IDCANCEL,130,24,50,14
+END
+
+IDD_PAYMENT_SELECT_DISCOUNT DIALOGEX 0, 0, 221, 113
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¬°·í«eªº«È¤á¿ï¾Ü¤@ºØ§é¦©¤è¦¡..."
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "½T»{",IDOK,87,94,63,14
+    PUSHBUTTON      "¨ú®ø¾Þ§@",IDCANCEL,154,94,63,14
+    LTEXT           "½Ð¿ï¾Ü§é¦©¤è¦¡...",CUR_STATUS,9,2,140,11,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,8,16,207,75,WS_EX_STATICEDGE
+END
+
+IDD_PAYMENT DIALOGEX 0, 0, 396, 248
+STYLE WS_CHILD
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TICKET_NO,98,16,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_DATE,98,28,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ENTRY_TIME,98,40,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PAY_DATE,98,55,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PAY_TIME,98,67,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DURATION,98,79,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PARKING_FEE,98,106,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISCOUNT,98,130,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_AMOUNT,98,145,87,21,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_RECEIVE,98,168,87,21,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CHANGE,98,191,87,21,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "ºÏ??¤â?¥I´Ú(&K)",IDC_ERROR_KDE_CARD,211,7,79,15
+    PUSHBUTTON      "¤K?³q¤â?¥I´Ú(&O)",IDC_ERROR_OTP_CARD,301,7,79,15
+    PUSHBUTTON      "?¤K?³q¥d¼W­È(&A)",IDC_OTP_CARD_ADD_VALUE,211,23,79,15
+    PUSHBUTTON      "????»î¨B(&S)",IDC_TIMESYNCHRONIZE,301,23,79,15
+    EDITTEXT        IDC_PAY_RULE,98,94,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISCOUNT_RULE,98,118,87,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "??¥æ©ö«H®§ ...",IDC_STATIC,3,0,189,215
+    GROUPBOX        "",IDC_STATIC,196,0,195,57
+    CONTROL         "List2",PAYMENT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,196,71,195,61,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "?¦¬´Ú¥x´£??ª÷(&S)",IDC_SHIFT_ACCOUNT,211,39,79,15
+    PUSHBUTTON      "¨t???(&C)",IDC_CLOSEACCOUNT,301,39,79,15
+    CONTROL         "List2",ACCOUNT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,196,147,195,68,WS_EX_CLIENTEDGE
+    LTEXT           "?¥v¥æ©ö¡G",IDC_STATIC,196,60,57,8
+    LTEXT           "???¥Ø¡GAccount :",IDC_STATIC,196,136,56,8
+    LISTBOX         IDC_MSG_LIST,3,218,389,26,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         IDI_ICON_CREATE1,IDC_STATIC,"Static",SS_BITMAP,11,16,87,
+                    196
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SETTING_COMMUNICATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_SETTING_PERIPHERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PAYMENT_KDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_EVENTLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_RATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_RATE_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_TIMEZONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_CARTYPE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_RATE_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_DAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_RATE_FIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_PAYMENT_HAND_KDE_TICKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_RATE_CALCULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_PAYMENT_RECEIPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PAYMENT_HAND_ENTRYTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_CARD_CATEGROY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_CARD_CREATE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 265
+        TOPMARGIN, 3
+    END
+
+    IDD_CARD_CREATE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_CARD_CREATE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 257
+    END
+
+    IDD_CARD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_HAND_OTP_TICKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SETTING_PAYMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_SETTING_DISCOUNTPLAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_SHIFTACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_PAYMENT_RECEIPT_SHIFTACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PAYMENT_RECEIPT_CLOSEACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_SETTING_CALCULATERULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_STATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_CARDTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_GROUPTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_PAYMODETYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_SETTING_CARTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_TRY_MNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_CARD_CREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_PARK_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_PAYMENT_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SETTING_RECEIPT_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PAYMENT_OTP_PRE_ADDVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_PAYMENT_OTP_SUB_ADDVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_SETTING_PERMISSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_RECEIPT_PARKING_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_VIEW_OTP_CARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_SETTING_OTPREADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_SETTING_SYS_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_VIEW_KDE_CARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_TOOL_KDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PAYMENT_SELECT_DISCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_PAYMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  37, 35
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_VIEW_ACCOUNT
+    BUTTON      ID_EVENT_LOG
+    BUTTON      ID_SETTING_SYSTEM
+    BUTTON      ID_SETTING_FEERATE
+    BUTTON      ID_CALCULATE
+    BUTTON      ID_APP_EXIT
+END
+
+IDR_TIME TOOLBAR DISCARDABLE  155, 35
+BEGIN
+    BUTTON      ID_CURRENT_TIME
+END
+
+IDR_OPERATOR TOOLBAR DISCARDABLE  155, 35
+BEGIN
+    BUTTON      ID_BUTTON32772
+END
+
+IDR_STATUS TOOLBAR DISCARDABLE  35, 35
+BEGIN
+    BUTTON      ID_STATUS_MNT_STOP
+    BUTTON      ID_STATUS_MNT_NORMAL
+    BUTTON      ID_STATUS_MNT_BUSY
+    BUTTON      ID_STATUS_MNT_ERROR
+    BUTTON      ID_STATUS_OTP_STOP
+    BUTTON      ID_STATUS_OTP_NORMAL
+    BUTTON      ID_STATUS_OTP_BUSY
+    BUTTON      ID_STATUS_OTP_ERROR
+    BUTTON      ID_STATUS_KDE_STOP
+    BUTTON      ID_STATUS_KDE_NORMAL
+    BUTTON      ID_STATUS_KDE_BUSY
+    BUTTON      ID_STATUS_KDE_ERROR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "¨t²Î(&S)"
+    BEGIN
+        MENUITEM "°h¥X(&E)",                    ID_APP_EXIT
+    END
+    POPUP "¹î¬Ý(&V)"
+    BEGIN
+        MENUITEM "¤u¨ãÄæ(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ª¬ºAÄæ(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "®É¶¡Äæ(&M)",                  ID_VIEW_TIME_BAR
+        MENUITEM "¾Þ§@­ûÄæ(&O)",                ID_VIEW_OPERATOR_BAR
+    END
+    POPUP "³øªí(&R)"
+    BEGIN
+        MENUITEM "¨Æ¥ó¬ö¿ý(&E)",                ID_EVENT_LOG
+        MENUITEM "¹î¬Ý½ã¥Ø(&A)",                ID_VIEW_ACCOUNT
+    END
+    POPUP "¯S®í¥d(&C)"
+    BEGIN
+        MENUITEM "·j¯Á(&S)...",                 ID_CARD_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "¼W­È(&T)...",                 ID_CARD_TOPUP
+        MENUITEM "´À´«(&R)...",                 ID_CARD_REPLACE
+        MENUITEM "³Ð«Ø(&C)...",                 ID_CARD_CREATE
+        MENUITEM "¿E¬¡/§@¼o(A)...",             ID_CARD_ACTIVATE
+    END
+    POPUP "¤u¨ã(&T)"
+    BEGIN
+        MENUITEM "­pºâ¾¹(&C)",                  ID_CALCULATE
+        MENUITEM "¹î¬Ý¤K¹F³q«H®§(&O)",          ID_TOOL_VIEW_OTP_CARD
+        MENUITEM "¹î¬ÝKDE«H®§(&K)",             ID_TOOL_VIEW_KDE_CARD
+    END
+    POPUP "¨t²Î³]©w(&S)"
+    BEGIN
+        MENUITEM "¨t²Î³]©w(&S)",                ID_SETTING_SYSTEM
+        MENUITEM "¦¬¶O²v³]©w(&F)",              ID_SETTING_FEERATE
+        MENUITEM "¥I´Ú¤è¦¡³]©w(&E)",            ID_SETTING_PAYMODE
+        MENUITEM "§é¦©²v³]©w(&D)",              ID_SETTING_DISCOUNTPLAN
+        MENUITEM "­pºâ¤è¦¡(&L)",                ID_SETTING_CALCULATERULE
+        MENUITEM SEPARATOR
+        MENUITEM "²ÕÃþ§O³]©w(&G)",              ID_SETTING_GROUPTYPE
+        MENUITEM "¥dºØÃþ³]©w(&C)",              ID_SETTING_CARDTYPE
+        MENUITEM "¯¸³]©w(&T)",                  ID_SETTING_STATION
+        MENUITEM "¥I´ÚºØÃþ(&M)",                ID_SETTING_PAYMODETYPE
+        MENUITEM "¨®½øºØÃþ(&V)",                ID_SETTING_CARTYPE
+        MENUITEM "¾Þ§@­ûÅv­­(&I)",              ID_SETTING_PERMISSION
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "¦¬¾Ú®æ¦¡(&R)",                ID_SETTING_RECEIPT_FORMAT
+        MENUITEM "¤K¹F³qÅª¥d¾¹(&O)",            ID_SETTING_OTP_READER
+        MENUITEM "¨t²Î°Ñ¼Æ(&P)",                ID_SETTING_SYS_PARAMETERS
+    END
+    POPUP "³q°T(&C)"
+    BEGIN
+        POPUP "ºÞ²z¯¸(&C)"
+        BEGIN
+            MENUITEM "¶}©l / ­«·s¶}©l",             ID_MNT_SET_START
+            MENUITEM "°±¤î",                        ID_MNT_SET_STOP
+        END
+        POPUP "ºÏ±øÅª¥d¾¹(&K)"
+        BEGIN
+            MENUITEM "¶}©l / ­«·s¶}©l",             ID_KDE_SET_START
+            MENUITEM "°±¤î",                        ID_KDE_SET_STOP
+        END
+        POPUP "¤K¹F³qÅª¥d¾¹(&O)"
+        BEGIN
+            MENUITEM "¶}©l / ­«·s¶}©l",             ID_OTP_SET_START
+            MENUITEM "°±¤î",                        ID_OTP_SET_STOP
+        END
+        MENUITEM "´ú¸Õ»PºÞ²z¯¸ªº³q°T(&T)",      ID_TRY_MNT
+    END
+    POPUP "À°§U(&H)"
+    BEGIN
+        MENUITEM "À°§U(&H)",                    ID_HELP
+        MENUITEM "¬d§äÀ°§U(&F)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "Ãö¤_...(&A)",                 ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CashierGUI MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CashierGUI\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CashierGUI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CashierGUI Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CARD_SEARCH DLGINIT
+BEGIN
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0050, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x004f, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0043, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x004d, 
+    IDC_CARD_TYPE, 0x403, 2, 0
+0x0052, 
+    0
+END
+
+IDD_CARD_CREATE1 DLGINIT
+BEGIN
+    IDC_CARD_TYPE_PART, 0x403, 2, 0
+0x0050, 
+    IDC_CARD_TYPE_PART, 0x403, 2, 0
+0x004f, 
+    IDC_CARD_TYPE_PART, 0x403, 2, 0
+0x0043, 
+    IDC_CARD_TYPE_PART, 0x403, 2, 0
+0x004d, 
+    IDC_CARD_TYPE_PART, 0x403, 2, 0
+0x0052, 
+    0
+END
+
+IDD_PAYMENT_HAND_ENTRYTIME DLGINIT
+BEGIN
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3128, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3165, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3228, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3265, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3328, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3365, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3428, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3465, "\000" 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3028, 0x2931, 0x4520, 0x746e, 0x7972, 0x0031, 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3128, 0x2932, 0x4520, 0x746e, 0x7972, 0x0032, 
+    IDC_ENTRYSTATION, 0x403, 12, 0
+0x3228, 0x2931, 0x4520, 0x746e, 0x7972, 0x0033, 
+    0
+END
+
+IDD_RATE_CALCULATE DLGINIT
+BEGIN
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3128, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3165, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3228, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3265, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3328, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3365, "\000" 
+    IDC_VEHICLETYPE, 0x403, 17, 0
+0x3428, 0x2029, 0x6556, 0x6968, 0x6c63, 0x5465, 0x7079, 0x3465, "\000" 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3028, 0x2931, 0x4520, 0x746e, 0x7972, 0x0031, 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3128, 0x2932, 0x4520, 0x746e, 0x7972, 0x0032, 
+    IDC_GROUPTYPE, 0x403, 12, 0
+0x3228, 0x2931, 0x4520, 0x746e, 0x7972, 0x0033, 
+    0
+END
+
+IDD_SETTING_PERIPHERAL DLGINIT
+BEGIN
+    IDC_OTP_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_OTP_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_OTP_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_OTP_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_OTP_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_OTP_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_KDE_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_KDE_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_KDE_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_KDE_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_KDE_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_LCD_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_LCD_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_LCD_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_LCD_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_LCD_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x554e, 0x4c4c, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3154, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3254, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3354, "\000" 
+    IDC_PRINTER_PORT, 0x403, 5, 0
+0x504c, 0x3454, "\000" 
+    IDC_PRINTER_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_PRINTER_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_PRINTER_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_PRINTER_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PAYMENT_LABEL       BITMAP  DISCARDABLE     "res\\PaymentLabel(Taiwan).bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "CashierGUI"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CashierGUI"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "show help\nhelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "§R°£¿ï¾Ü¶µ\n§R°£"
+    ID_EDIT_CLEAR_ALL       "¥þ³¡§R°£\n¥þ³¡§R°£"
+    ID_EDIT_COPY            "±N¿ï¾Ü¶µ«þ¨©¦Ü°Å¶KªO\n«þ¨©"
+    ID_EDIT_CUT             "±N¿ï¾Ü¶µ°Å¶K¦Ü°Å¶KªO\n°Å¶K"
+    ID_EDIT_FIND            "¬d§ä«ü©wªº¤å¦r\n¬d§ä"
+    ID_EDIT_PASTE           "±N°Å¶KªO¤º®eÖß¶K¶i¨Ó\nÖß¶K"
+    ID_EDIT_REPEAT          "°Ê§@­«´_\n­«´_"
+    ID_EDIT_REPLACE         "´À´««ü©wªº¤å¦r\n´À´«"
+    ID_EDIT_SELECT_ALL      "¿ï¾Ü¥þ³¡ªº¤åÀÉ\n¥þ¿ï"
+    ID_EDIT_UNDO            "ºM¾P¤W¦¸ªº°Ê§@\nºM¾P"
+    ID_EDIT_REDO            "­«´_¤W¤@¦¸ªº°Ê§@\n­«´_"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "±Nµ¡¤f¤Ø¤o½Õ¨î¥¿±`¤j¤p"
+    AFX_IDS_SCTASKLIST      "¿E¬¡¥ô°ÈÄæ"
+    KDE_MSG_READCARDERR     "Åª¥d¥X¿ù\n½ÐÀË¬d²¼¥d©Î¤â°Ê¿é¤J«H®§\n\nÂIÀ»¡¥­«Åª¡¦¥H¦A¦¸Åª¥d\nÂIÀ»¡¥¨ú®ø¡¦¥H¤â°Ê¿é¤J«H®§"
+    KDE_MSG_CAPTION         "ºÏ±øÅª¥d¾¹¾Þ§@«H®§"
+    KDE_MSG_READENTERTIMEERR "¥d¤º«H®§µL®Ä!\n½Ð¤â°Ê¿é¤J¬ÛÃö«H®§"
+    MSG_CONNECT_MNT_ERR     "ºÞ²z¯¸µLªkÅTÀ³©ÎÅTÀ³¿ù»~\n½Ð­«¸Õ©Î¦V¨t²ÎºÞ²z­û´M¨DÀ°§U"
+    SYS_SHOW_DATE           "%b-%d-%Y"
+    SYS_SHOW_HHMMSS         "%H:%M:%S"
+    SYS_SHOW_TIMESPAN       "%D Days, %H : %M"
+    SYS_SHOW_DATETIME       "%b-%d-%Y %H:%M:%S"
+    SYS_STORE_DATE          "%y%m%d"
+    SYS_STORE_HHMM          "%H%M"
+    SYS_STORE_WEEK          "W%w"
+    SYS_SHOW_WEEK           "%W"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_SYSTEM       "\nAll system setting at here"
+    ID_BUTTON32777          "Comm With Management Status ""Stop"""
+    ID_BUTTON32778          "Comm With Management Status"
+    ID_BUTTON32779          "Comm With Management Status"
+    ID_BUTTON32780          "Octopus Reader Status"
+    ID_BUTTON32781          "Octopus Reader Status"
+    ID_STATUS_OTP_ERROR     "\n'error' communication with Octopus reader status"
+    ID_BUTTON32783          "KDE Reader Status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32784          "ºÏ±øÅª¥d¾÷ª¬ºA"
+    ID_BUTTON32785          "ºÏ±øÅª¥d¾÷ª¬ºA"
+    ID_STATUS_MNT_STOP      "'°±¤î'»PºÞ²z¯¸ªº³q°T"
+    ID_STATUS_MNT_NORMAL    "'¥¿±`'»PºÞ²z¯¸ªº³q°T"
+    ID_STATUS_MNT_ERROR     "'¿ù»~' »PºÞ²z¯¸ªº³q°T"
+    ID_STATUS_OTP_STOP      "\n¤¤Â_¤K¹F³qÅª¥d¾¹ªº³q°T"
+    ID_STATUS_OTP_NORMAL    "\n«ì´_¤K¹F³qÅª¥d¾¹ªº³q°T"
+    ID_STATUS_KDE_STOP      "\n¤¤Â_»PºÏ±øÅª¥d¾¹ªº³q°T"
+    ID_STATUS_KDE_NORMAL    "\n«ì´_»PºÏ±øÅª¥d¾¹ªº³q°T"
+    ID_STATUS_KDE_ERROR     "\n»PºÏ±øÅª¥d¾¹ªº³q°T¥X¿ù"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EVENT_LOG            "\n¥´¶}¨Æ¥ó¬ö¿ý"
+    ID_CALCULATE            "\n­pºâ¾¹"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_SHOW_HHMM           "%H:%M"
+    SYS_SHOW_MONEY          "%.2f"
+    OTP_MSG_CAPTION         "¤K¹F³qÅª¥d¾¹¾Þ§@«H®§"
+    OTP_MSG_READENTERTIMEERR 
+                            "µLªk±q¥d¤Wµo²{¥ô¦ó¥H©¹¶i¤J¡B¥I¶O¬ö¿ý\n½Ð¤â°Ê¿é¤J«H®§"
+    ERR_MSG_OPENDATABASE    "¥´¶}¼Æ¾Ú®w¥X¿ù¡I\n©Ò¦³Ãö¤_¼Æ¾Ú®wªº¾Þ§@µLªk°õ¦æ¡I\n1. ½ÐÃö³¬µ{§Ç¡AµM¦Z¦A¦¸¹Á¸Õ¥´¶}¼Æ¾Ú®w\n2. ½ÐÀË¬d¬O§_¼Æ¾Ú®w¤å¥ó¿ò¥¢©Î·lÃa\n"
+    SYS_MSG_CANCEL_PAYMENT  "§A¥¿¸Õ¹Ï¨ú®ø·í«e¥I´Ú¾Þ§@¡I \n\n½Ð½T»{¡H"
+    SYS_MSG_NOT_ENOUGH      "°±¨®¶O¥I´Ú¤£¨¬¡I"
+    SYS_MSG_WARNING         "Äµ§i¡I"
+    SYS_MSG_CANCEL_OPERATE  "§A¥¿¸Õ¹Ï¨ú®ø·í«e¾Þ§@¡I \n\n½Ð½T»{¡H"
+    ERR_READ_KDE_TICKET     "ºÏ±ø²¼ªº¤º®eµLªk¥¿±`Åª¥X¡I\n\n­«¸Õ©Î¤â°Ê¿é¤J¡H"
+    SYS_MSG_KDE_DEVICE      "ºÏ±øÅª¥d¾¹"
+    SYS_MSG_MNT_COMMUNICATE "»PºÞ²z¯¸³q°T"
+    SYS_MSG_OTP_DEVICE      "¤K¹F³qÅª¥d¾¹"
+    MNT_ERR_READ_CARD_STATUS "Åª¥d®É¥X¿ù \n\n­«¸Õ©Î¨ú®ø?"
+    MNT_ERR_READ_OPERATOR_MSG "µLªk¥¿½TÀò±o¾Þ§@­û«H®§ \n\n­«¸Õ©Î¨ú®øl?"
+    MNT_ERR_READ_ENTRYLOG   "µLªk§ä¨ì¦¹¥d¶i¤J«H®§¡I \n\n½Ð¤â°Ê¿ï¾Ü¡I"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_STORE_DATETIME      "%y%m%d%H%M%S"
+    SYS_SHOW_PERCENTAGE     "%.2f%%"
+    CONFIRM_KDE_START       "Åª¥d¾¹¥¿¦b¤u§@¡A½T©w­n¨Ï¥¦°±¤î¤u§@¶Ü¡H"
+    CONFIRM_MNT_START       "³o±N·|¸Õ¹Ï±Ò°Ê»PºÞ²z¯¸ªº³q°T¡A\n¦pªG¥¿¦b³q°T´N¥ý°±¤î¥¦¡C\n½T©w¶i¦æ³o­Ó¾Þ§@¶Ü¡H"
+    CONFIRM_OTP_START       "³o±N·|¸Õ¹Ï±Ò°Ê¤K¹F³qÅª¥d¾¹¡A\n¦pªG¤w¸g±Ò°Ê´N¥ý°±¤î¥¦¡C\n½T©w¶i¦æ³o­Ó¾Þ§@¶Ü¡H"
+    TIP_CARDNO_NUMERIC      "¥d¸¹¥²¶·¬O¼Æ¦r§Î¦¡"
+    TIP_CARDNO_LENGTH       "¥d¸¹ªø«×À³¬°1~16¦ì¡C"
+    Err_Read_Entry_Msg      "¥d¸¹ªø«×À³¬°1~16¦ì¡C"
+    Err_No_Entry_Info       "¨S¦³¬ÛÀ³ªº¤J³õ«H®§¡I½ÐÀË´ú¥d¸¹¬O§_¥¿½T"
+    CONFIRM_MNT_STOP        "³o±N·|°±¤î»PºÞ²z¯¸ªº³q°T¡A\n©Ò¦³°ò¤_»PºÞ²z¯¸³q°Tªº¼Ò¶ô±N¹B¦æ¤_³q°T²§±`¼Ò¦¡¡C"
+    CONFIRM_KDE_STOP        "³o±N·|°±¤îKDEÅª¥d¾¹ªº¤u§@¡A\n±N¤£·|¦Û°ÊÅª²¼¡A\n½T©wÄ~Äò³o¶µ¾Þ§@¶Ü¡H"
+    CONFIRM_OTP_STOP        "³o±N·|°±¤î¤K¹F³qÅª¥d¾¹ªº¤u§@¡A\n±N¤£·|¦Û°ÊÅª¥d¡A\n½T©wÄ~Äò³o¶µ¾Þ§@¶Ü¡H"
+    SPECIAL_CARD_MODE_PERIOD "®Ú¾Ú¨Ï¥Î¦³®Ä´Á­pºâ"
+    SPECIAL_CARD_MODE_TIMES "®Ú¾Ú¨Ï¥Îªº¦³®Ä¦¸¼Æ­pºâ"
+    SPECIAL_CARD_MODE_FREE  "µL­­¨î"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_PAYMODE      "¥I´Ú¤è¦¡³]©w"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_MNT_BUSY      "\n'busy' communication with Management"
+    ID_STATUS_OTP_BUSY      "\n'busy' communication with Octopus reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_KDE_BUSY      "\n'busy' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SPECIAL_CARD_MODE_ILLEGAL "«Dªk¨Ï¥Î¼Ò¦¡"
+    TIP_CARD_CATEGORY_ABSENCE "¯Ê¤Ö¥dºØÃþ¡A½Ð¦bºÞ²z¯¸²K¥["
+    TIP_EMPTY_CARDNO        "¥d¸¹¤£¯à¬°ªÅ¡A½Ð¿é¤J¥d¸¹"
+    TIP_EXIST_CARDNO        "ÀË´ú¨ì¬Û¦Pªº¥d¸¹¡I½Ð¿é¤J¨ä¥¦ªº¥d¸¹"
+    TIP_ERROR_QUERY         "³q°T¿ù»~¡A¤£¯à¦A³q°T²§±`ªº±¡ªp¤U¿ì²z¯S®í¥d¡A½Ðµ¥«Ý³q°T«ì´_©Î±q¸Õ"
+    TIP_INVALID_PERIOD      "¦³®Ä´Á¿é¤J¿ù»~"
+    TIP_EMPTY_HOLDERID      "«ù¦³ªÌ½s¸¹¤£¯à¬°ªÅ¡A½Ð¿é¤J"
+    TIP_INEXISTENCE_HOLDERID "¨S¦³ÀË´ú¨ì¬Û¦Pªº«ù¦³ªÌ½s¸¹"
+    TIP_DUPLICATE_HOLDERID  "«ù¦³ªÌ½s¸¹¤w¸g¦s¦b¡A½Ð¿é¤J¨ä¥¦ªº½s¸¹©Î¿ï¾Ü¨Ï¥Î¤w¸g¦s¦bªº«ù¦³ªÌ"
+    TIP_EMPTY_NAME_PWD      "¥Î¤á¦W©M±K½X¤£¯à¬°ªÅ¡I"
+    TIP_COMM_ERROR          "³q°T¿ù»~¡A¨S¦³ÅTÀ³©Î¬ÛÀ³¿ù»~¡A½Ð­«¸Õ¡I"
+    TIP_INVALID_NAME_PWD    "µL®Äªº¥Î¤á¦W©Î±K½X¡I½Ð­«·s¿é¤J"
+    TIP_INVALID_ADD_VALUE   "ª÷ÃB¥²¶·¬O50ªº­¿¼Æ¡I"
+    TIP_MIN_LIMIT_ADD_VALUE "¥R­Èª÷ÃB¹L¤Ö"
+    TIP_MAX_LIMIT_ADD_VALUE "¥R­Èª÷ÃB¹L¦h"
+    TIP_SUCCESSFUL_ADDVALUE "¥R­È¦¨¥\"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING1             "The value of 'Cash Remain' is negative, Too many cash withdrawal!\n\ní}\n\tTIP_NEGATIVE_STOREVALUEREMAIN = ""The value of 'Store Value Remain' is negative,\nToo many store value  withdrawal!"";\n\tTIP_NEGATIVE_OCTOPUSREMAIN = ""The value of 'Octopus Remain' is negative,\nToo many octopus withdrawal!"";\n"
+    IDS_STRING2             "Save setting successful!\nUse the new parameters now.\n\n÷ç”Z?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIP_SHORTAGE_STORE_VALUE "Àx­È§EÃB¤£¨¬¡I"
+    TIP_SHORTAGE_OCTOPUS_REMAIN "¤K¹F³q§EÃB¤£¨¬¡I"
+    TIP_SHORTAGE_PAYMENT    "¥I´Úª÷ÃB¤£¨¬¡I"
+    TIP_SUCCESSFUL_OTP_DEDUCT "¤K¹F³q¦©¶O¦¨¥\"
+    TIP_SUCCESSFUL_SAVE_SETTING "³]¸m¤w¸g§ïÅÜ¦}¥Í®Ä"
+    TIP_NEGATIVE_CASHREMAIN "²{ª÷§EÃB¬°­t"
+    TIP_NEGATIVE_OCTOPUSREMAIN "¤K¹F³q§EÃB¬°­t"
+    TIP_NEGATIVE_STOREVALUEREMAIN "¥d¤ºÀx­È§EÃB¬°­t"
+    TIP_KDE_STOP            "KDEÅª¥d¾¹¨S¦³±Ò°Ê"
+    TIP_KDE_NO_TICKET       "¨S¦³ÀË´ú¨ìºÏ±ø²¼"
+    TIP_KDE_EMPTY_TICKET    "³o¬O¤@±iªÅ²¼¡A½Ð´«²¼"
+    TIP_INVALID_IO_TIME     "¶i¥X®É¶¡¿é¤J¦³»~"
+    TIP_NEED_READ_OTP_CARD  "½Ð¥ý©ç¤K¹F³q¥d"
+    TIP_OTP_NO_CARD         "¨S¦³ÀË´ú¨ì¤K¹F³q¥d"
+    TIP_NEED_DISCOUNT       "¨S¦³ÀË´ú¨ì¤K¹F³q¥d"
+    IDS_STRING_COMM         "³q°T"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_DAYRULE      "¤é´Á¦¬¶O³W«h"
+    IDS_STRING_GROUPRULE    "²Õ§O¦¬¶O³W«h"
+    IDS_STRING_VEHRULE      "¨®«¬¦¬¶O³W«h"
+    IDS_STRING_TZRULE       "®É¶¡¬q¦¬¶O³W«h"
+    IDS_STRING_FEERULE      "³æ¦ì®É¶¡¦¬¶O³W«h"
+    IDS_STRING_FIXRULE      "©TºA§é¦©²v¦¬¶O³W«h"
+    IDS_STRING_CALCULATE    "¦¬¶O¸Ô±¡"
+    IDS_STRING_PERIP        "¥~³]"
+    IDS_STRING_TIME         "®É¶¡"
+    IDS_STRING_TYPE         "Ãþ«¬"
+    IDS_STRING_MSG          "«H®§"
+    IDS_STRING_CARDNO       "¥d¸¹"
+    IDS_STRING_CATEGORY     "¥dºØÃþ"
+    IDS_STRING_VEHTYPE      "¨®Ãþ«¬"
+    IDS_STRING_STNID        "¯¸¸¹"
+    IDS_STRING_PAYTIME      "¥I´Ú®É¶¡"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_RECEIPTNO    "¦¬¾Ú¸¹"
+    IDS_STRING_AMOUNT       "ª÷ÃB"
+    IDS_STRING_TRANSNO      "¥æ©ö¸¹"
+    IDS_STRING_DESCRIP      "´y­z"
+    IDS_STRING_OPTR         "¾Þ§@­û"
+    IDS_STRING_CUROPTR      "·í«e¾Þ§@­û"
+    IDS_STRING_INDEX        "§Ç¸¹"
+    IDS_STRING_NAME         "¦W¦r"
+    IDS_STRING_DISCOUNT     "§é¦©"
+    IDS_STRING_RULEID       "³W«h½s¸¹"
+    IDS_STRING_DATEWEEK     "¤é´Á/¬P´Á"
+    IDS_STRING_GROUPID      "¤À²Õ½s¸¹"
+    IDS_STRING_TIMEUNIT     "®É¶¡³æ¦ì"
+    IDS_STRING_CHARGE       "¦¬¶O"
+    IDS_STRING_INZONESTART  "¶i¤J¬q¶}©l"
+    IDS_STRING_INZONEEND    "¶i¤J¬qµ²§ô"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_INZONEDATE   "¶i¤J¬q¤é´Á"
+    IDS_STRING_OUTZONESTART "Â÷¶}¬q¶}©l"
+    IDS_STRING_OUTZONEEND   "Â÷¶}¬qµ²§ô"
+    IDS_STRING_OUTZONEDATE  "Â÷¶}¬q¤é´Á"
+    IDS_STRING_IODAYDIFF    "¶i¤J¤Ñ¼Æ"
+    IDS_STRING_START        "¶}©l®É¶¡"
+    IDS_STRING_END          "µ²§ô®É¶¡"
+    IDS_STRING_UNITRULEID   "³æ¦ì¦¬¶O½s¸¹"
+    IDS_STRING_WORKMODE     "¤u§@¼Ò¦¡"
+    IDS_STRING_JOINFEE      "¥Ó½Ð¶O"
+    IDS_STRING_CARDFEE      "¥d¶O"
+    IDS_STRING_UNITPRICE    "³æ»ù"
+    IDS_STRING_WARNLVL      "Äµ§Ù½u"
+    IDS_STRING_ISSV         "¬O§_Àx­È"
+    IDS_STRING_PLOTS        "°±¨®¦ì"
+    IDS_STRING_PAYMODE      "¥I´Ú¤è¦¡"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_NEEDCHANGE   "»Ý­n§ä¹s"
+    IDS_STRING_STNTYPE      "¯¸Ãþ«¬"
+    IDS_STRING_GUEST        "³X«È¯Å"
+    IDS_STRING_OPTRLVL      "¾Þ§@­û¯Å"
+    IDS_STRING_SUPR         "ºÞ²z­û¯Å"
+    IDS_STRING_MGR          "¸g²z¯Å"
+    IDS_STRING_ADMIN        "¨t²Î­û¯Å"
+    IDS_STRING_SETTING      "³]©w"
+    IDS_STRING_IPADDR       "IP¦a§}"
+    IDS_STRING_SPID         "¨ÑÀ³°Ó"
+    IDS_STRING_MID          "¾÷¾¹¸¹"
+    IDS_STRING_AMOUNT2      "ª÷ÃB2"
+    IDS_STRING_AMOUNT3      "ª÷ÃB3"
+    IDS_STRING_AMOUNT1      "ª÷ÃB1"
+    IDS_STRING_PAYMODE2     "¥I´Ú¤è¦¡2"
+    IDS_STRING_PAYMODE3     "¥I´Ú¤è¦¡3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_PAYMODE1     "¥I´Ú¤è¦¡1"
+    IDS_STRING61345         "¨S¦³ÀË´ú¨ì¤K¹F³q¥d"
+    IDS_CMS_DOWNLOAD        "ºÞ²z¯¸¤U¸ü"
+    IDS_CMS_UPLOAD          "ºÞ²z¯¸¤W¸ü"
+    IDS_BACKUP              "³Æ¥÷"
+    IDS_LOG                 "¬ö¿ý"
+    IDS_MYCOMPUTER          "§Úªº¹q¸£"
+    IDS_MSG_TYPE_ALL        "©Ò¦³"
+    IDS_MSG_TYPE_WARNING    "Äµ§i"
+    IDS_MSG_TYPE_ERROR      "¿ù»~"
+    IDS_MSG_TYPE_OPERATOR   "¾Þ§@­û"
+    IDS_MSG_TYPE_SHOWONLY   "¥u¥i¹î¬Ý"
+    IDS_MSG_TYPE_SYSTEM     "¨t²Î"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TYPE_DETAIL     "¸Ô±¡"
+END
+
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "CashierGUI"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CashierGUI"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "show help\nhelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    KDE_MSG_READCARDERR     "There have some error\nCheck the card or input by hand.\n\nClick 'Retry' to reread the card\nClick 'Cancel' to input by hand."
+    KDE_MSG_CAPTION         "KDE Operate Message"
+    KDE_MSG_READENTERTIMEERR 
+                            "This card didn't have transaction message!\nYou need input by hand."
+    MSG_CONNECT_MNT_ERR     "Car Park Management no response or error esponse,\nPlease retry or ask System manager!"
+    SYS_SHOW_DATE           "%b-%d-%Y"
+    SYS_SHOW_HHMMSS         "%H:%M:%S"
+    SYS_SHOW_TIMESPAN       "%D Days, %H : %M"
+    SYS_SHOW_DATETIME       "%b-%d-%Y %H:%M:%S"
+    SYS_STORE_DATE          "%y%m%d"
+    SYS_STORE_HHMM          "%H%M"
+    SYS_STORE_WEEK          "W%w"
+    SYS_SHOW_WEEK           "%W"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_SYSTEM       "\nAll system setting at here"
+    ID_BUTTON32777          "Comm With Management Status ""Stop"""
+    ID_BUTTON32778          "Comm With Management Status"
+    ID_BUTTON32779          "Comm With Management Status"
+    ID_BUTTON32780          "Octopus Reader Status"
+    ID_BUTTON32781          "Octopus Reader Status"
+    ID_STATUS_OTP_ERROR     "\n'error' communication with Octopus reader status"
+    ID_BUTTON32783          "KDE Reader Status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32784          "KDE Reader Status"
+    ID_BUTTON32785          "KDE Reader Status"
+    ID_STATUS_MNT_STOP      "\n'stop' communication with Management"
+    ID_STATUS_MNT_NORMAL    "\n'normal' communication with Management"
+    ID_STATUS_MNT_ERROR     "\n'error' communication with Management"
+    ID_STATUS_OTP_STOP      "\n'stop' communication with Octopus reader status"
+    ID_STATUS_OTP_NORMAL    "\n'normal' communication with Octopus reader status"
+    ID_STATUS_KDE_STOP      "\n'stop' communication with KDE reader status"
+    ID_STATUS_KDE_NORMAL    "\n'normal' communication with KDE reader status"
+    ID_STATUS_KDE_ERROR     "\n'error' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EVENT_LOG            "\nView the log files "
+    ID_CALCULATE            "\nCalculate"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_SHOW_HHMM           "%H:%M"
+    SYS_SHOW_MONEY          "%.2f"
+    OTP_MSG_CAPTION         "OTP Operate Message"
+    OTP_MSG_READENTERTIMEERR 
+                            "This card didn't have transaction message!\nYou need input by hand."
+    ERR_MSG_OPENDATABASE    "Open Database Error!\nAll Operate about database cancel!\n1. You should reopen the system try again.\n2. You database file breakon or miss.\n"
+    SYS_MSG_CANCEL_PAYMENT  "This operate 'Cancel' current payment!\nAre you sure!"
+    SYS_MSG_NOT_ENOUGH      "Not enough park fee payment!"
+    SYS_MSG_WARNING         "Warning!"
+    SYS_MSG_CANCEL_OPERATE  "Cancel current operate.     \n\nAre you sure!"
+    ERR_READ_KDE_TICKET     "Read KDE ticket error,     \n\nReread or hand input?"
+    SYS_MSG_KDE_DEVICE      "KDE Device"
+    SYS_MSG_MNT_COMMUNICATE "Communicate with car park management"
+    SYS_MSG_OTP_DEVICE      "Octopus card reader device"
+    MNT_ERR_READ_CARD_STATUS 
+                            "Read card status error,     \n\nRetry or cancel?"
+    MNT_ERR_READ_OPERATOR_MSG 
+                            "Read operate msg error,     \n\nRetry or cancel?"
+    MNT_ERR_READ_ENTRYLOG   "Entry log inexistent,     \n\nPlease input by hand."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SYS_STORE_DATETIME      "%y%m%d%H%M%S"
+    SYS_SHOW_PERCENTAGE     "%.2f%%"
+    CONFIRM_KDE_START       "This will try to start the\nKDE reader. If KDE reader is\nworking, we'll stop it first!\nReally want to do this?"
+    CONFIRM_MNT_START       "This will try to start the\ncommunicate with MNT(Car Park\nManagement). If communicate is\nrunning, we restart it!\n\nReally want to do this?"
+    CONFIRM_OTP_START       "This will try to start the\nOTP reader. If OTP reader is\nworking, we'll stop it first!\n\nReally want to do this?"
+    SPECIAL_CARD_MODE_PERIOD "Define the using period"
+    SPECIAL_CARD_MODE_TIMES "Define the using times"
+    SPECIAL_CARD_MODE_FREE  "Using freely"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETTING_PAYMODE      "Paymode settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_MNT_BUSY      "\n'busy' communication with Management"
+    ID_STATUS_OTP_BUSY      "\n'busy' communication with Octopus reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STATUS_KDE_BUSY      "\n'busy' communication with KDE reader status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SPECIAL_CARD_MODE_ILLEGAL "Illegal mode"
+    TIP_CARD_CATEGORY_ABSENCE "Card category absence, please input at 'MNT'."
+    TIP_EMPTY_CARDNO        "'Card no' is empty.Please input 'Card no'."
+    TIP_EXIST_CARDNO        "Same 'Card no' detected! Please input another 'Card no'."
+    TIP_ERROR_QUERY         "Communicate Error, Can't create special card communicate down or error! Retry or create card when communicate resumed!"
+    TIP_INVALID_PERIOD      "'Valid From' date must before 'Valid To' date."
+    TIP_EMPTY_HOLDERID      "'Holder ID' is Empty, You must input it."
+    TIP_INEXISTENCE_HOLDERID "Not find 'Holder ID' same as current."
+    TIP_DUPLICATE_HOLDERID  "Duplicate 'Holder ID' is find, Input another or select a exist user info."
+    TIP_EMPTY_NAME_PWD      "OperatorID or Password is empty, Please input !"
+    TIP_COMM_ERROR          "Communicate Error, No response or Error response, Please retry! "
+    TIP_INVALID_NAME_PWD    "Invalid Name or Password! Please retry. "
+    TIP_INVALID_ADD_VALUE   "Amount must whole times of 50!"
+    TIP_MIN_LIMIT_ADD_VALUE "Too little value add. "
+    TIP_MAX_LIMIT_ADD_VALUE "Too much value add."
+    TIP_SUCCESSFUL_ADDVALUE "Add value successful."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIP_SHORTAGE_STORE_VALUE "Shortage Store Value!"
+    TIP_SHORTAGE_OCTOPUS_REMAIN "Shortage Octopus Remain!"
+    TIP_SHORTAGE_PAYMENT    "Shortage payment!"
+    TIP_SUCCESSFUL_OTP_DEDUCT "OTP deduct value successful."
+    TIP_SUCCESSFUL_SAVE_SETTING 
+                            "Save setting successful! Use the new parameters now."
+    TIP_NEGATIVE_CASHREMAIN "Negative cash remain."
+    TIP_NEGATIVE_OCTOPUSREMAIN "Negative octopus remain."
+    TIP_NEGATIVE_STOREVALUEREMAIN "Negative store value remain."
+    TIP_KDE_STOP            "KDE reader is stop."
+    TIP_KDE_NO_TICKET       "No ticket detected."
+    TIP_KDE_EMPTY_TICKET    "This is a empty ticket."
+    TIP_INVALID_IO_TIME     "Exit time must later than entry time."
+    TIP_NEED_READ_OTP_CARD  "Please read OCTOPUS card first."
+    TIP_OTP_NO_CARD         "No Card Detected. Please poll the otp card at reader."
+    TIP_NEED_DISCOUNT       "You must select a discount.\n\n”ª?¤æ¦J©Ú’ÃüR?£Là"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CashierGUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

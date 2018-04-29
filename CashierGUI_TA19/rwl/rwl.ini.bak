@@ -1,0 +1,39 @@
+[Main]
+BLACKLISTCHECK=0
+NEGVAL=0
+INITHOUSE=1
+CCHSLOG=0
+
+
+[AR]
+SAVELOG=0
+DIR1=\Hard Disk\RWL\AR
+DIR2=\Hard Disk\RWL\AR2
+DAYKEEP=7
+
+[EXCHANGE]
+FILEDIR=\Hard Disk\RWL\upload
+
+[BLACKLIST]
+FILEDIR=\Hard Disk\RWL\download
+
+[FIRMWARE]
+FILEDIR=\Hard Disk\RWL\download
+
+[EOD]
+FILEDIR=\Hard Disk\RWL\download
+
+[CCHS]
+FILEDIR=\Hard Disk\RWL\download
+
+[COMM]
+PORT=2
+BAUD=1115200
+TIMEOUT=10
+TTLTIMEOUT=1000
+TIME1=3
+
+
+
+[Reminder]
+In [AR] above, the entry "DIR1" must be assigned with a valid and accessible path in your system 

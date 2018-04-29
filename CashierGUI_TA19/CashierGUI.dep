@@ -1,0 +1,1288 @@
+# Microsoft Developer Studio Generated Dependency File, included by CashierGUI.mak
+
+.\Card.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Rate.h"\
+	
+
+.\CashierGUI.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\kde\kde.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\ChildView.h"\
+	".\CMDKDE.h"\
+	".\CmdMntRecv.h"\
+	".\CmdMntSend.h"\
+	".\CmdOtp.h"\
+	".\Dlg\dlglogin.h"\
+	".\Dlg\dlgmessage.h"\
+	".\Dlg\dlgpayment.h"\
+	".\Dlg\dlgpaymentkde.h"\
+	".\Dlg\DlgPaymentOtp.h"\
+	".\Dlg\dlgsplash.h"\
+	".\Include\Sxbutton.h"\
+	".\MainFrm.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	".\ZZ\ZZClocktext.h"\
+	".\ZZ\ZZSocket.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\CashierGUI.rc : \
+	".\res\3D.ico"\
+	".\res\bitmap1.bmp"\
+	".\res\Book04.ico"\
+	".\res\CashierGUI.ico"\
+	".\res\CashierGUI.rc2"\
+	".\res\Client.ico"\
+	".\res\Contactl.ico"\
+	".\res\icon1.ico"\
+	".\res\KDECard.bmp"\
+	".\res\KDEErrorCard.bmp"\
+	".\res\key.ico"\
+	".\res\operator.bmp"\
+	".\res\OTPCard.bmp"\
+	".\res\OTPErrorCard.bmp"\
+	".\res\Splash.bmp"\
+	".\res\status.bmp"\
+	".\res\Toolbar.bmp"\
+	".\res\toolbar1.bmp"\
+	
+
+.\ChildView.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\ChildView.h"\
+	".\Dlg\dlgpayment.h"\
+	".\Dlg\dlgpaymentkde.h"\
+	".\Dlg\DlgPaymentOtp.h"\
+	".\Include\Sxbutton.h"\
+	".\Rate.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\Customer.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\kde\kde.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CMDKDE.h"\
+	".\CmdMntSend.h"\
+	".\CmdOtp.h"\
+	".\Customer.h"\
+	".\Dlg\dlgcreatecard.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpayment.h"\
+	".\Dlg\dlgpaymentcash.h"\
+	".\Dlg\dlgpaymentkde.h"\
+	".\Dlg\dlgpaymentKDEcard.h"\
+	".\Dlg\dlgpaymentkdeentry.h"\
+	".\Dlg\dlgpaymentkdeticketno.h"\
+	".\Dlg\DlgPaymentOtp.h"\
+	".\Dlg\dlgpaymentotpaddvalue.h"\
+	".\Dlg\DlgPaymentOTPCard.h"\
+	".\Dlg\dlgpaymentotpentry.h"\
+	".\Dlg\dlgpaymentotpticketno.h"\
+	".\Dlg\dlgpaymentreceipt.h"\
+	".\Dlg\dlgpaymentreceiptcloseaccount.h"\
+	".\Dlg\dlgpaymentreceiptshiftaccount.h"\
+	".\Dlg\dlgpaymentshiftaccount.h"\
+	".\Include\Sxbutton.h"\
+	".\Rate.h"\
+	".\ZZ\ZZSocket.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\MainFrm.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\kde\kde.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\helpcashier\htmlhelp.h"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\ChildView.h"\
+	".\CMDKDE.h"\
+	".\CmdMntRecv.h"\
+	".\CmdMntSend.h"\
+	".\CmdOtp.h"\
+	".\Customer.h"\
+	".\Dlg\dlgcardcategory.h"\
+	".\Dlg\dlgcardsearch.h"\
+	".\Dlg\dlgeventlog.h"\
+	".\Dlg\DLGOtpTest.h"\
+	".\Dlg\dlgpayment.h"\
+	".\Dlg\dlgpaymentkde.h"\
+	".\Dlg\DlgPaymentOtp.h"\
+	".\Dlg\dlgrate.h"\
+	".\Dlg\DlgSetting.h"\
+	".\Dlg\dlgsettingcalculaterrule.h"\
+	".\Dlg\dlgsettingcardtype.h"\
+	".\Dlg\dlgsettingcartype.h"\
+	".\Dlg\DlgSettingDiscountPlan.h"\
+	".\Dlg\dlgsettinggrouptype.h"\
+	".\Dlg\DlgSettingPaymode.h"\
+	".\Dlg\dlgsettingpaymodetype.h"\
+	".\Dlg\dlgsettingstation.h"\
+	".\Dlg\dlgtrymnt.h"\
+	".\Dlg\trypckdeimpdlg.h"\
+	".\Include\Sxbutton.h"\
+	".\MainFrm.h"\
+	".\Rate.h"\
+	".\ZZ\ZZClocktext.h"\
+	".\ZZ\ZZcolorbutton.h"\
+	".\ZZ\ZZMovetabctrl.h"\
+	".\ZZ\ZZSocket.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\OtpReader.cpp : \
+	"..\common\otp\rwl_exp.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\loaddll.h"\
+	".\OtpReader.h"\
+	
+
+.\Rate.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Setting.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\Include\Sxbutton.cpp : \
+	".\Include\Sxbutton.h"\
+	
+
+.\Dlg\trypckdeimpdlg.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\kde\kde.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CMDKDE.h"\
+	".\Dlg\trypckdeimpdlg.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DlgRate.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgrate.h"\
+	".\Dlg\dlgratecalculate.h"\
+	".\Dlg\dlgratecar.h"\
+	".\Dlg\dlgrateday.h"\
+	".\Dlg\dlgratefee.h"\
+	".\Dlg\dlgratefix.h"\
+	".\Dlg\dlgrategroup.h"\
+	".\Dlg\dlgratetimezone.h"\
+	".\Rate.h"\
+	".\ZZ\ZZMovetabctrl.h"\
+	
+
+.\Dlg\dlgratecalculate.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgratecalculate.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgratecar.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgratecar.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgrateday.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgrateday.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgratefee.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgratefee.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgratefix.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgratefix.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgrategroup.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgrategroup.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgratetimezone.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgratetimezone.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DlgSetting.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\DlgSetting.h"\
+	".\Dlg\dlgsettingotpreader.h"\
+	".\Dlg\dlgsettingperipheral.h"\
+	".\Dlg\dlgsettingreceipt.h"\
+	".\Dlg\dlgsettingsystem.h"\
+	".\Rate.h"\
+	".\ZZ\ZZMovetabctrl.h"\
+	
+
+.\Dlg\dlgsettingcalculaterrule.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingcalculaterrule.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingcardtype.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingcardtype.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingcartype.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingcartype.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\DlgSettingDiscountPlan.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\DlgSettingDiscountPlan.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettinggrouptype.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettinggrouptype.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingotpreader.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingotpreader.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DlgSettingPaymode.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\DlgSettingPaymode.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingpaymodetype.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingpaymodetype.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingperipheral.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingperipheral.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgsettingreceipt.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingreceipt.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgsettingstation.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingstation.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	
+
+.\Dlg\dlgsettingsystem.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsettingsystem.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpayment.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntSend.h"\
+	".\CmdOtp.h"\
+	".\Customer.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpayment.h"\
+	".\Dlg\dlgpaymentotpaddvalue.h"\
+	".\Include\Sxbutton.h"\
+	".\Rate.h"\
+	".\ZZ\ZZSocket.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\Dlg\dlgpaymentcash.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentcash.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentkde.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgpaymentkde.h"\
+	".\Rate.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\Dlg\dlgpaymentKDEcard.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentKDEcard.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentkdeentry.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentkdeentry.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentkdeticketno.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentkdeticketno.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DlgPaymentOtp.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\DlgPaymentOtp.h"\
+	".\Rate.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\Dlg\dlgpaymentotpaddvalue.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdOtp.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentotpaddvalue.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DlgPaymentOTPCard.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdOtp.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\DlgPaymentOTPCard.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentotpentry.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentotpentry.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentotpticketno.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentotpticketno.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentreceipt.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgpaymentreceipt.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentreceiptcloseaccount.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentreceiptcloseaccount.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentreceiptshiftaccount.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgpaymentreceiptshiftaccount.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgpaymentshiftaccount.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Dlg\dlgpaymentshiftaccount.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcardcategory.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcardcategory.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcardsearch.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntSend.h"\
+	".\Dlg\dlgcardsearch.h"\
+	".\Rate.h"\
+	".\ZZ\ZZSocket.h"\
+	
+
+.\Dlg\dlgcreatecard.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcreatecard.h"\
+	".\Dlg\dlgcreatecard1.h"\
+	".\Dlg\dlgcreatecard2.h"\
+	".\Dlg\dlgcreatecard3.h"\
+	".\Dlg\dlgcreatecard4.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcreatecard1.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcreatecard1.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcreatecard2.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcreatecard2.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcreatecard3.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcreatecard3.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgcreatecard4.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgcreatecard4.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgtrymnt.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntSend.h"\
+	".\Dlg\dlgtrymnt.h"\
+	".\Rate.h"\
+	".\ZZ\ZZSocket.h"\
+	
+
+.\Dlg\dlgeventlog.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgeventlog.h"\
+	".\Rate.h"\
+	".\ZZ\ZZcolorbutton.h"\
+	
+
+.\Dlg\dlginput.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlginput.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlglogin.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntSend.h"\
+	".\Dlg\dlglogin.h"\
+	".\Rate.h"\
+	".\ZZ\ZZSocket.h"\
+	
+
+.\Dlg\dlgmessage.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgmessage.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\DLGOtpTest.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\DLGOtpTest.h"\
+	".\OtpReader.h"\
+	".\Rate.h"\
+	
+
+.\Dlg\dlgsplash.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Dlg\dlgsplash.h"\
+	".\Rate.h"\
+	
+
+.\ZZ\ZZClocktext.cpp : \
+	".\ZZ\ZZClocktext.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\ZZ\ZZColorButton.cpp : \
+	".\ZZ\ZZcolorbutton.h"\
+	
+
+.\ZZ\ZZCtrltoolbar.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\Rate.h"\
+	".\ZZ\ZZClocktext.h"\
+	".\ZZ\ZZCtrltoolbar.h"\
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\ZZ\ZZMoveTabCtrl.cpp : \
+	".\ZZ\ZZMovetabctrl.h"\
+	
+
+.\ZZ\ZZSocket.cpp : \
+	".\ZZ\ZZSocket.h"\
+	
+
+.\ZZ\ZZTitleStatic.cpp : \
+	".\ZZ\ZZTitleStatic.h"\
+	
+
+.\CmdKde.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\kde\kde.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CMDKDE.h"\
+	".\CmdOtp.h"\
+	".\Customer.h"\
+	".\Rate.h"\
+	
+
+.\CmdMntRecv.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntRecv.h"\
+	".\CmdMntSend.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	".\ZZ\ZZSocket.h"\
+	
+
+.\CmdMntSend.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdMntSend.h"\
+	".\Rate.h"\
+	".\Setting.h"\
+	".\ZZ\ZZSocket.h"\
+	
+
+.\CmdOtp.cpp : \
+	"..\common\eventlog\log.h"\
+	"..\common\eventlog\stringfile\stringfile.h"\
+	"..\common\otp\rwl_exp.h"\
+	"..\common\receiptprn\receiptprn.h"\
+	"..\common\registry\registry.h"\
+	"..\common\utility\discount.h"\
+	"..\common\utility\hourandmin.h"\
+	"..\common\utility\utilities.h"\
+	"..\common\utility\weekordate.h"\
+	"..\DEFINE.H"\
+	"..\loaddll.h"\
+	".\Card.h"\
+	".\CashierGUI.h"\
+	".\CmdOtp.h"\
+	".\Customer.h"\
+	".\Rate.h"\
+	

@@ -1,0 +1,122 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CashierGUI - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\cs\AppData\Local\Temp\RSPF3BB.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/CashierGUI.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\HKFiles\HK36_SG\CashierGUI_TA19\DlgExitConfirm.cpp"
+]
+Creating command line "cl.exe @C:\Users\cs\AppData\Local\Temp\RSPF3BB.tmp" 
+Creating temporary file "C:\Users\cs\AppData\Local\Temp\RSPF3BC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/CashierGUI_SG.pdb" /machine:I386 /out:"Release/CashierGUI_SG.exe" 
+.\Release\CashierGUI.obj
+.\Release\ChildView.obj
+.\Release\CmdBuffer.obj
+.\Release\CmdJmdm.obj
+.\Release\CmdLcd.obj
+.\Release\CmdPrint.obj
+.\Release\Customer.obj
+.\Release\DlgCardRenew.obj
+.\Release\DlgCheckCard.obj
+.\Release\DlgEntCreate.obj
+.\Release\DlgExitConfirm.obj
+.\Release\DlgOTP4Record.obj
+.\Release\DlgPaymentAccount.obj
+.\Release\DlgPaymentOperate.obj
+.\Release\DlgPaymentParkFee11.obj
+.\Release\DlgProgress.obj
+.\Release\dlgreceiptparkingfee.obj
+.\Release\dlgviewkdecard.obj
+.\Release\dlgviewotpcard.obj
+.\Release\Eltra.obj
+.\Release\FeeCalculate.obj
+.\Release\Jmdm.obj
+.\Release\MainFrm.obj
+.\Release\MsgBoxWait.obj
+.\Release\PayMode.obj
+.\Release\Setting.obj
+.\Release\StdAfx.obj
+.\Release\Sxbutton.obj
+.\Release\DlgRate.obj
+.\Release\dlgratecalculate.obj
+.\Release\dlgratecar.obj
+.\Release\dlgrateday.obj
+.\Release\dlgratefee.obj
+.\Release\dlgratefix.obj
+.\Release\dlgrategroup.obj
+.\Release\dlgratetimezone.obj
+.\Release\DlgSetting.obj
+.\Release\dlgsettingcalculaterrule.obj
+.\Release\dlgsettingcardtype.obj
+.\Release\dlgsettingcartype.obj
+.\Release\dlgsettingcommunicate.obj
+.\Release\DlgSettingDiscountPlan.obj
+.\Release\dlgsettinggrouptype.obj
+.\Release\dlgsettingotpreader.obj
+.\Release\DlgSettingPaymode.obj
+.\Release\dlgsettingpaymodetype.obj
+.\Release\dlgsettingperipheral.obj
+.\Release\dlgsettingpermission.obj
+.\Release\dlgsettingreceiptformat.obj
+.\Release\dlgsettingstation.obj
+.\Release\dlgsettingsysparameters.obj
+.\Release\dlgpayment.obj
+.\Release\dlgpaymentkde.obj
+.\Release\dlgpaymentkdeticketno.obj
+.\Release\dlgpaymentotpentry.obj
+.\Release\dlgpaymentotppreaddvalue.obj
+.\Release\dlgpaymentotpsubaddvalue.obj
+.\Release\dlgpaymentotpticketno.obj
+.\Release\dlgpaymentparkfee.obj
+.\Release\dlgpaymentreceipt.obj
+.\Release\dlgpaymentreceiptcloseaccount.obj
+.\Release\dlgpaymentreceiptshiftaccount.obj
+.\Release\dlgpaymentselectdiscount.obj
+.\Release\dlgpaymentshiftaccount.obj
+.\Release\dlgcardcategory.obj
+.\Release\dlgcardsearch.obj
+.\Release\dlgcreatecard.obj
+.\Release\dlgcreatecard1.obj
+.\Release\dlgcreatecard2.obj
+.\Release\dlgcreatecard3.obj
+.\Release\dlgcreatecard4.obj
+.\Release\dlgtrymnt.obj
+.\Release\dlgeventlog.obj
+.\Release\dlginput.obj
+.\Release\dlglogin.obj
+.\Release\dlgmessage.obj
+.\Release\dlgsplash.obj
+.\Release\ZZClocktext.obj
+.\Release\ZZColorButton.obj
+.\Release\ZZCtrltoolbar.obj
+.\Release\ZZMoveTabCtrl.obj
+.\Release\ZZSocket.obj
+.\Release\ZZTitleStatic.obj
+.\Release\CmdKde.obj
+.\Release\CmdMntRecv.obj
+.\Release\CmdMntSend.obj
+.\Release\CmdOtp.obj
+.\Release\CashierGUI.res
+]
+Creating command line "link.exe @C:\Users\cs\AppData\Local\Temp\RSPF3BC.tmp"
+<h3>Output Window</h3>
+Compiling...
+DlgExitConfirm.cpp
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library Release/CashierGUI_SG.lib and object Release/CashierGUI_SG.exp
+LINK : warning LNK4089: all references to "COMCTL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+CashierGUI_SG.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

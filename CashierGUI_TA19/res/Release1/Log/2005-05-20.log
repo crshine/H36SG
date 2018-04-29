@@ -1,0 +1,186 @@
+[2005-05-20 02:48:10][操作員]Buffer Command: <OperatorActionLog>.
+[2005-05-20 02:48:10][錯誤]Send buffer command error! Auto retry.
+[2005-05-20 02:48:11][系統]System normal exit.
+[2005-05-20 02:48:11][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2005-05-20 02:48:25][系統]System initialize
+[2005-05-20 02:48:25][系統]Socket Listen start Successful.
+[2005-05-20 02:48:31][系統]login by "NORVASEA","X65536"
+[2005-05-20 02:48:31][系統]Login successful.
+[2005-05-20 02:48:31][操作員]Send Command: <Time Synchronize>.
+[2005-05-20 02:48:31][操作員]Recv Command: <Time Synchronize>.
+[2005-05-20 02:48:31][操作員]Send Command: <Time Synchronize success reply>.
+[2005-05-20 02:52:21][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 02:52:22][詳情]SendOk TickCount: 50040975
+[2005-05-20 02:52:22][詳情]RecvOK TickCount: 50041095
+[2005-05-20 02:52:22][操作員]Recv Command: <CardStatus>.
+[2005-05-20 06:34:59][操作員]Recv Command: <Otp Meta File>.
+[2005-05-20 06:35:00][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 09:57:06][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 09:57:06][詳情]SendOk TickCount: 75524678
+[2005-05-20 09:57:06][詳情]RecvOK TickCount: 75524848
+[2005-05-20 09:57:06][操作員]Recv Command: <CardStatus>.
+[2005-05-20 09:57:11][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 09:57:11][詳情]SendOk TickCount: 75529836
+[2005-05-20 09:57:11][詳情]RecvOK TickCount: 75530006
+[2005-05-20 09:57:11][操作員]Recv Command: <CardStatus>.
+[2005-05-20 09:57:18][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 09:57:18][詳情]SendOk TickCount: 75536886
+[2005-05-20 09:57:18][詳情]RecvOK TickCount: 75537066
+[2005-05-20 09:57:18][操作員]Recv Command: <CardStatus>.
+[2005-05-20 09:57:39][操作員]Buffer Command: <Add Value>.
+[2005-05-20 10:04:09][操作員]Recv Command: <Parking Fee Setting>.
+[2005-05-20 10:04:09][操作員]Send Command: <Parking Fee Setting success reply>.
+[2005-05-20 10:04:26][操作員]Recv Command: <Parking Fee Setting>.
+[2005-05-20 10:04:26][操作員]Send Command: <Parking Fee Setting success reply>.
+[2005-05-20 10:29:02][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 10:29:02][詳情]SendOk TickCount: 77441555
+[2005-05-20 10:29:03][詳情]RecvOK TickCount: 77441795
+[2005-05-20 10:29:03][操作員]Recv Command: <CardStatus>.
+[2005-05-20 10:33:45][操作員]Buffer Command: <OperatorActionLog>.
+[2005-05-20 10:33:46][系統]System normal exit.
+[2005-05-20 10:33:46][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2005-05-20 10:34:27][系統]System initialize
+[2005-05-20 10:34:27][系統]Socket Listen start Successful.
+[2005-05-20 10:34:32][系統]login by "NORVASEA","X65536"
+[2005-05-20 10:34:32][系統]Login successful.
+[2005-05-20 10:34:32][操作員]Send Command: <Time Synchronize>.
+[2005-05-20 10:34:32][操作員]Recv Command: <Time Synchronize>.
+[2005-05-20 10:34:28][操作員]Send Command: <Time Synchronize success reply>.
+[2005-05-20 11:01:08][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:01:08][詳情]SendOk TickCount: 79372391
+[2005-05-20 11:01:08][詳情]RecvOK TickCount: 79372531
+[2005-05-20 11:01:08][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:01:22][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:01:29][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:01:29][詳情]SendOk TickCount: 79392890
+[2005-05-20 11:01:29][詳情]RecvOK TickCount: 79393181
+[2005-05-20 11:01:29][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:01:39][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:02:00][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:02:00][詳情]SendOk TickCount: 79424456
+[2005-05-20 11:02:01][詳情]RecvOK TickCount: 79424706
+[2005-05-20 11:02:01][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:08:11][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:08:11][詳情]SendOk TickCount: 79795009
+[2005-05-20 11:08:11][詳情]RecvOK TickCount: 79795209
+[2005-05-20 11:08:11][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:10:33][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:10:33][詳情]SendOk TickCount: 79937153
+[2005-05-20 11:10:33][詳情]RecvOK TickCount: 79937313
+[2005-05-20 11:10:33][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:10:38][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:10:48][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:10:48][詳情]SendOk TickCount: 79951974
+[2005-05-20 11:10:48][詳情]RecvOK TickCount: 79952385
+[2005-05-20 11:10:48][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:10:52][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:12:13][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:12:13][詳情]SendOk TickCount: 80036906
+[2005-05-20 11:12:13][詳情]RecvOK TickCount: 80037217
+[2005-05-20 11:12:13][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:12:27][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:12:27][詳情]SendOk TickCount: 80051257
+[2005-05-20 11:12:27][詳情]RecvOK TickCount: 80051507
+[2005-05-20 11:12:27][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:12:38][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:12:38][詳情]SendOk TickCount: 80062183
+[2005-05-20 11:12:38][詳情]RecvOK TickCount: 80062403
+[2005-05-20 11:12:38][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:13:04][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:13:05][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:13:05][詳情]SendOk TickCount: 80088841
+[2005-05-20 11:13:05][詳情]RecvOK TickCount: 80089011
+[2005-05-20 11:13:05][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:13:24][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:13:24][詳情]SendOk TickCount: 80108139
+[2005-05-20 11:13:24][詳情]RecvOK TickCount: 80108219
+[2005-05-20 11:13:24][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:13:46][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:13:46][詳情]SendOk TickCount: 80129840
+[2005-05-20 11:13:46][詳情]RecvOK TickCount: 80130141
+[2005-05-20 11:13:46][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:15:37][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:15:37][詳情]SendOk TickCount: 80241170
+[2005-05-20 11:15:37][詳情]RecvOK TickCount: 80241401
+[2005-05-20 11:15:37][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:15:43][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:15:43][詳情]SendOk TickCount: 80247029
+[2005-05-20 11:15:43][詳情]RecvOK TickCount: 80247269
+[2005-05-20 11:15:43][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:15:51][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:15:58][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:15:58][詳情]SendOk TickCount: 80262160
+[2005-05-20 11:15:58][詳情]RecvOK TickCount: 80262391
+[2005-05-20 11:15:58][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:16:12][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:16:39][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:16:39][詳情]SendOk TickCount: 80303129
+[2005-05-20 11:16:39][詳情]RecvOK TickCount: 80303259
+[2005-05-20 11:16:39][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:16:56][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:17:08][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:17:08][詳情]SendOk TickCount: 80331640
+[2005-05-20 11:17:08][詳情]RecvOK TickCount: 80331851
+[2005-05-20 11:17:08][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:17:34][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:17:35][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:17:35][詳情]SendOk TickCount: 80359550
+[2005-05-20 11:17:36][詳情]RecvOK TickCount: 80359721
+[2005-05-20 11:17:36][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:17:52][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:17:52][詳情]SendOk TickCount: 80376555
+[2005-05-20 11:17:53][詳情]RecvOK TickCount: 80376675
+[2005-05-20 11:17:53][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:19:00][操作員]Buffer Command: <Payment>.
+[2005-05-20 11:19:10][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:19:10][詳情]SendOk TickCount: 80454267
+[2005-05-20 11:19:10][詳情]RecvOK TickCount: 80454377
+[2005-05-20 11:19:10][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:19:42][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 11:19:42][詳情]SendOk TickCount: 80486142
+[2005-05-20 11:19:42][詳情]RecvOK TickCount: 80486513
+[2005-05-20 11:19:42][操作員]Recv Command: <CardStatus>.
+[2005-05-20 11:20:03][操作員]Buffer Command: <Add Value>.
+[2005-05-20 11:46:18][操作員]Recv Command: <Request Octopus exchange files>.
+[2005-05-20 11:46:18][操作員]Send Command: <Request Octopus exchange files success reply>.
+[2005-05-20 11:46:18][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 11:46:21][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 11:47:35][操作員]Recv Command: <Request Octopus exchange files>.
+[2005-05-20 11:47:35][操作員]Send Command: <Request Octopus exchange files success reply>.
+[2005-05-20 11:47:35][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 11:47:35][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 11:59:50][操作員]Recv Command: <Otp Meta File>.
+[2005-05-20 11:59:50][操作員]Buffer Command: <ErrorWarnNoticeLog>.
+[2005-05-20 12:03:54][操作員]Buffer Command: <OperatorActionLog>.
+[2005-05-20 12:03:54][錯誤]Send buffer command error! Auto retry.
+[2005-05-20 12:03:55][系統]System normal exit.
+[2005-05-20 12:03:55][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2005-05-20 17:31:53][系統]System initialize
+[2005-05-20 17:31:53][系統]Socket Listen start Successful.
+[2005-05-20 17:31:59][操作員]Send Command: <QueryOperator>.
+[2005-05-20 17:32:00][詳情]SendOk TickCount: 102823822
+[2005-05-20 17:32:00][詳情]RecvOK TickCount: 102823922
+[2005-05-20 17:32:00][操作員]Recv Command: <Operator>.
+[2005-05-20 17:32:00][系統]Try to login by "NORVASEA","X655.6"
+[2005-05-20 18:04:01][操作員]Send Command: <QueryOperator>.
+[2005-05-20 18:04:01][詳情]SendOk TickCount: 104744925
+[2005-05-20 18:04:01][詳情]RecvOK TickCount: 104745045
+[2005-05-20 18:04:01][操作員]Recv Command: <Operator>.
+[2005-05-20 18:04:01][系統]Try to login by "NORVASEA","X655.6"
+[2005-05-20 18:04:07][系統]login by "NORVASEA","X65536"
+[2005-05-20 18:04:07][系統]Login successful.
+[2005-05-20 18:04:07][操作員]Send Command: <Time Synchronize>.
+[2005-05-20 18:04:07][操作員]Recv Command: <Time Synchronize>.
+[2005-05-20 18:04:02][操作員]Send Command: <Time Synchronize success reply>.
+[2005-05-20 18:26:36][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 18:26:36][詳情]SendOk TickCount: 106105741
+[2005-05-20 18:26:37][詳情]RecvOK TickCount: 106105982
+[2005-05-20 18:26:37][操作員]Recv Command: <CardStatus>.
+[2005-05-20 18:26:53][操作員]Send Command: <QueryCardStatus>.
+[2005-05-20 18:26:53][詳情]SendOk TickCount: 106122536
+[2005-05-20 18:26:53][詳情]RecvOK TickCount: 106122896
+[2005-05-20 18:26:53][操作員]Recv Command: <CardStatus>.
+[2005-05-20 19:01:58][操作員]Buffer Command: <OperatorActionLog>.
+[2005-05-20 19:01:58][錯誤]Send buffer command error! Auto retry.
+[2005-05-20 19:01:58][系統]System normal exit.
+[2005-05-20 19:01:58][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

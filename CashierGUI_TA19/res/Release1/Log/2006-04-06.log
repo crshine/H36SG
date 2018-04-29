@@ -1,0 +1,11 @@
+[2006-04-06 17:11:08][系統]System initialize
+[2006-04-06 17:11:08][系統]Socket Listen start Successful.
+[2006-04-06 17:11:16][系統]login by "NORVASEA","X65536"
+[2006-04-06 17:11:16][系統]Login successful.
+[2006-04-06 17:11:16][操作員]Send Command: <Time Synchronize>.
+[2006-04-06 17:11:51][錯誤]Send buffer command error! Auto retry.
+[2006-04-06 17:12:13][錯誤]Start reader error: '笷硄弄竟竒氨ゎ!' 
+[2006-04-06 17:12:15][系統]Start communication with OtpReader thread failure!
+[2006-04-06 17:12:54][錯誤]Send buffer command error! Auto retry.
+[2006-04-06 17:13:58][錯誤]Send buffer command error! Auto retry.
+[2006-04-06 17:15:01][錯誤]Send buffer command error! Auto retry.

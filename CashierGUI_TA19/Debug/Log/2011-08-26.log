@@ -1,0 +1,9 @@
+[2011-08-26 11:58:25][系統]System initialize
+[2011-08-26 11:58:25][系統]Socket Listen start Successful.
+[2011-08-26 11:58:26][系統]login by "NORVASEA","X65536"
+[2011-08-26 11:58:26][系統]Login successful.
+[2011-08-26 11:58:26][操作員]Send Command: <Time Synchronize>.
+[2011-08-26 11:59:07][錯誤]Send buffer command error! Auto retry.
+[2011-08-26 11:59:16][操作員]Buffer Command: <OperatorActionLog>.
+[2011-08-26 11:59:29][系統]System normal exit.
+[2011-08-26 11:59:29][系統]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
